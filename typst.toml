@@ -1,0 +1,11 @@
+[package]
+name = "pixelman"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["PixelMan Contributors"]
+license = "MIT"
+description = "Pixel art characters drawn with CeTZ"
+repository = "https://github.com/pixelman/pixelman"
+keywords = ["cetz", "pixel", "character", "avatar"]
+categories = ["components"]
+compiler = "0.13.0"

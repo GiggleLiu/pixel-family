@@ -43,6 +43,6 @@
   shirt: defaults.shirt-white,
   pants: defaults.pants-black,
 ) = {
-  let palette = (none, skin, hair, shirt, pants, pants, shirt-red)
+  let palette = (none, skin, hair, shirt, pants, pants, defaults.shirt-red)
   pixel-grid(alice-data, palette, size)
 }

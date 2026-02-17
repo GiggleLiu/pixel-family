@@ -1,7 +1,7 @@
 // PixelMan - Pixel art characters for Typst
 // A CeTZ-based library for drawing customizable pixel characters
 
-#import "@local/cetz:0.4.2": canvas, draw
+#import "@preview/cetz:0.4.0": canvas, draw
 
 // Import core modules
 #import "src/draw.typ": pixel-grid

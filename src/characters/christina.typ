@@ -44,6 +44,6 @@
   shirt: defaults.shirt-white,
   pants: defaults.pants-black,
 ) = {
-  let palette = (none, skin, hair, shirt, pants, pants, rgb("#f1c40f"), shirt-green)
+  let palette = (none, skin, hair, shirt, pants, pants, rgb("#f1c40f"), defaults.shirt-green)
   pixel-grid(christina-data, palette, size)
 }

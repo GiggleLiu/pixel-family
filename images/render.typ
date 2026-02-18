@@ -1,0 +1,25 @@
+// Render each character as a separate page for SVG export
+#import "../lib.typ": *
+
+#let sz = 128pt
+#set page(width: sz, height: sz, margin: 0pt)
+
+#align(center + horizon, bob(size: sz))
+#pagebreak()
+#align(center + horizon, alice(size: sz))
+#pagebreak()
+#align(center + horizon, christina(size: sz))
+#pagebreak()
+#align(center + horizon, mary(size: sz))
+#pagebreak()
+#align(center + horizon, eve(size: sz))
+#pagebreak()
+#align(center + horizon, frank(size: sz))
+#pagebreak()
+#align(center + horizon, grace(size: sz))
+#pagebreak()
+#align(center + horizon, trent(size: sz))
+#pagebreak()
+#align(center + horizon, mallory(size: sz))
+#pagebreak()
+#align(center + horizon, victor(size: sz))

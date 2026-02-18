@@ -1,8 +1,7 @@
-// PixelMan - Pixel art characters for Typst
-// Inline pixel characters that can be inserted into text like a UTF-8 character
+// Pixel Family — Inline pixel characters for Typst
 //
 // Usage:
-//   #import "@preview/pixelman:0.1.0": bob, alice, eve
+//   #import "@preview/pixel-family:0.1.0": bob, alice, eve
 //   Hello #bob() and #alice() and #eve()!
 
 #import "@preview/cetz:0.4.2": canvas, draw
@@ -77,115 +76,12 @@
   }
 }
 
-// === Character Data (16x16 grids) ===
-// 0 = transparent, 1+ = palette index
+// === Character Definitions (Batch 1) ===
 
-#let bob-data = (
-  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
-  (0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
-  (0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
-  (0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0),
-  (0, 0, 2, 1, 1, 5, 1, 1, 5, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 0, 1, 1, 1, 5, 5, 1, 1, 1, 0, 0, 0, 0, 0),
-  (0, 0, 0, 0, 1, 1, 3, 3, 1, 1, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 4, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0, 0),
-  (0, 0, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, 0, 0, 0, 0),
-  (0, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0),
-  (0, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-)
-
-#let alice-data = (
-  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
-  (0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
-  (0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
-  (0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0),
-  (0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 2, 1, 1, 5, 1, 1, 5, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 0, 1, 5, 5, 5, 5, 1, 1, 1, 0, 0, 0, 0, 0),
-  (0, 0, 0, 0, 1, 1, 3, 3, 1, 1, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 0, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-)
-
-#let christina-data = (
-  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
-  (0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 0, 0, 0, 0),
-  (0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
-  (0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0),
-  (0, 0, 2, 1, 1, 5, 1, 1, 5, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
-  (0, 0, 0, 0, 1, 1, 3, 3, 7, 1, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 3, 3, 3, 3, 3, 7, 3, 3, 0, 0, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-)
-
-#let mary-data = (
-  (0, 6, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 6, 0, 0, 0),
-  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
-  (0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
-  (0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
-  (0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0),
-  (0, 0, 2, 1, 1, 5, 1, 1, 5, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
-  (0, 0, 0, 0, 1, 1, 3, 3, 1, 1, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 3, 3, 3, 3, 6, 3, 3, 3, 0, 0, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 6, 6, 6, 3, 3, 3, 0, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 6, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-)
-
-#let eve-data = (
-  (0, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 0, 0, 0),
-  (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0),
-  (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0),
-  (0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
-  (0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0),
-  (0, 0, 2, 1, 1, 5, 1, 1, 5, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
-  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
-  (0, 0, 0, 0, 1, 1, 3, 3, 1, 1, 0, 0, 0, 0, 0, 0),
-  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
-  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-  (0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0),
-)
-
-// === Character Functions ===
-// Each returns inline content — use like #bob() in running text.
+#import "characters/batch-1-initial.typ": *
 
 /// Bob: green hair, white shirt, black vest
-///
-/// - size (length): character height (default: 1em, scales with text)
-/// - skin (color): skin tone
-/// - hair (color): hair color
-/// - shirt (color): shirt color
-/// - pants (color): vest/pants color
-/// -> content
+/// -> content (inline)
 #let bob(
   size: 1em,
   skin: skin-default,
@@ -193,18 +89,11 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = box(canvas(length: size / 16, {
-  let colors = (none, skin, hair, shirt, pants, pants)
-  pixel-grid(bob-data, colors)
+  pixel-grid(bob-data, bob-colors(skin, hair, shirt, pants))
 }))
 
 /// Alice: brown hair, white shirt, red pocket, mustache
-///
-/// - size (length): character height (default: 1em, scales with text)
-/// - skin (color): skin tone
-/// - hair (color): hair color
-/// - shirt (color): shirt color
-/// - pants (color): pants color
-/// -> content
+/// -> content (inline)
 #let alice(
   size: 1em,
   skin: skin-default,
@@ -212,18 +101,11 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = box(canvas(length: size / 16, {
-  let colors = (none, skin, hair, shirt, pants, pants, shirt-red)
-  pixel-grid(alice-data, colors)
+  pixel-grid(alice-data, alice-colors(skin, hair, shirt, pants))
 }))
 
-/// Christina: purple hair with yellow accessory, green tie
-///
-/// - size (length): character height (default: 1em, scales with text)
-/// - skin (color): skin tone
-/// - hair (color): hair color
-/// - shirt (color): shirt color
-/// - pants (color): pants color
-/// -> content
+/// Christina: purple hair with yellow clip, green tie
+/// -> content (inline)
 #let christina(
   size: 1em,
   skin: skin-default,
@@ -231,18 +113,11 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = box(canvas(length: size / 16, {
-  let colors = (none, skin, hair, shirt, pants, pants, rgb("#f1c40f"), shirt-green)
-  pixel-grid(christina-data, colors)
+  pixel-grid(christina-data, christina-colors(skin, hair, shirt, pants))
 }))
 
 /// Mary: black hair with red ribbons, red bow
-///
-/// - size (length): character height (default: 1em, scales with text)
-/// - skin (color): skin tone
-/// - hair (color): hair color
-/// - shirt (color): shirt color
-/// - pants (color): pants color
-/// -> content
+/// -> content (inline)
 #let mary(
   size: 1em,
   skin: skin-default,
@@ -250,18 +125,11 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = box(canvas(length: size / 16, {
-  let colors = (none, skin, hair, shirt, pants, pants, shirt-red)
-  pixel-grid(mary-data, colors)
+  pixel-grid(mary-data, mary-colors(skin, hair, shirt, pants))
 }))
 
 /// Eve: red curly hair, green shirt
-///
-/// - size (length): character height (default: 1em, scales with text)
-/// - skin (color): skin tone
-/// - hair (color): hair color
-/// - shirt (color): shirt color
-/// - pants (color): pants color
-/// -> content
+/// -> content (inline)
 #let eve(
   size: 1em,
   skin: skin-default,
@@ -269,6 +137,69 @@
   shirt: shirt-green,
   pants: pants-black,
 ) = box(canvas(length: size / 16, {
-  let colors = (none, skin, hair, shirt, pants, pants)
-  pixel-grid(eve-data, colors)
+  pixel-grid(eve-data, eve-colors(skin, hair, shirt, pants))
+}))
+
+// === Character Definitions (Batch 2 — bust/portrait, no legs) ===
+
+#import "characters/batch-2-top.typ": *
+
+/// Frank: top hat, sideburns, mustache, bowtie
+/// -> content (inline)
+#let frank(
+  size: 1em,
+  skin: skin-default,
+  hair: hair-black,
+  shirt: shirt-white,
+  pants: pants-black,
+) = box(canvas(length: size / 16, {
+  pixel-grid(frank-data, frank-colors(skin, hair, shirt, pants))
+}))
+
+/// Grace: elegant updo, gold necklace
+/// -> content (inline)
+#let grace(
+  size: 1em,
+  skin: skin-default,
+  hair: hair-blonde,
+  shirt: shirt-blue,
+  pants: pants-black,
+) = box(canvas(length: size / 16, {
+  pixel-grid(grace-data, grace-colors(skin, hair, shirt, pants))
+}))
+
+/// Trent: balding, beard, jacket over shirt
+/// -> content (inline)
+#let trent(
+  size: 1em,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-white,
+  pants: pants-black,
+) = box(canvas(length: size / 16, {
+  pixel-grid(trent-data, trent-colors(skin, hair, shirt, pants))
+}))
+
+/// Mallory: hooded figure, kangaroo pocket
+/// -> content (inline)
+#let mallory(
+  size: 1em,
+  skin: skin-default,
+  hair: hair-black,
+  shirt: shirt-black,
+  pants: pants-black,
+) = box(canvas(length: size / 16, {
+  pixel-grid(mallory-data, mallory-colors(skin, hair, shirt, pants))
+}))
+
+/// Victor: peaked cap with badge, uniform
+/// -> content (inline)
+#let victor(
+  size: 1em,
+  skin: skin-default,
+  hair: hair-black,
+  shirt: shirt-blue,
+  pants: pants-blue,
+) = box(canvas(length: size / 16, {
+  pixel-grid(victor-data, victor-colors(skin, hair, shirt, pants))
 }))

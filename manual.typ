@@ -1,196 +1,304 @@
-// PixelMan Manual
-// Usage guide and examples
+// Pixel Family Manual
 
-#import "@preview/cetz:0.4.0": canvas
 #import "lib.typ": *
 
 #set page(margin: 2cm)
 #set heading(numbering: "1.")
+#set text(font: "New Computer Modern")
 
-#align(center, text(size: 24pt, weight: "bold")[PixelMan Manual])
-#align(center, text(size: 12pt)[Pixel art characters for Typst using CeTZ])
+#align(center)[
+  #text(size: 28pt, weight: "bold")[
+    #bob(size: 28pt) #alice(size: 28pt) #christina(size: 28pt) #mary(size: 28pt) #eve(size: 28pt)
+    #frank(size: 28pt) #grace(size: 28pt) #trent(size: 28pt) #mallory(size: 28pt) #victor(size: 28pt)
+  ]
+  #v(4pt)
+  #text(size: 24pt, weight: "bold")[The Pixel Family]
+  #v(4pt)
+  #text(size: 12pt, fill: luma(40%))[Inline pixel characters for Typst]
+]
 
-#outline()
+#v(1em)
+
+#outline(indent: auto)
 
 = Introduction
 
-PixelMan is a Typst library that draws customizable pixel art characters using CeTZ (CeTZ, ein Typst Zeichenpaket). Instead of using external PNG images, characters are rendered as native vector graphics that scale perfectly.
+The Pixel Family is a cast of ten characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
-= Installation
+Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
-Add to your `typst.toml` dependencies:
+#v(0.5em)
+#align(center, text(size: 20pt)[
+  Hello #bob(size: 20pt) and #alice(size: 20pt), watch out for #eve(size: 20pt)!
+  \
+  #frank(size: 20pt) forged a pass, but #victor(size: 20pt) caught him.
+])
 
-```toml
-[dependencies]
-pixelman = "0.1.0"
-```
+= Meet the Family
 
-Or use locally:
+#let card(name, char, size: 4cm, body) = {
+  grid(
+    columns: (size + 1cm, 1fr),
+    column-gutter: 1em,
+    align(center + horizon, char(size: size)),
+    body,
+  )
+}
+
+== #bob(size: 12pt) Bob --- The Messenger
+
+#card("Bob", bob)[
+  *Signature look:* Green hair, white shirt, black vest.
+
+  Bob is the eternal optimist. He believes every message will arrive safely, every handshake will complete, and every key exchange will go smoothly. His green hair is the result of a "minor lab accident" that he now considers a fashion statement.
+
+  As the classic *sender* in every cryptographic protocol, Bob spends his days composing plaintext and wrapping it in layers of encryption. He and Alice have exchanged so many messages that they finish each other's ciphertexts.
+
+  _Hobbies:_ Collecting vintage modems, rooftop gardening, writing letters nobody asked for.
+]
+
+== #alice(size: 12pt) Alice --- The Decoder
+
+#card("Alice", alice)[
+  *Signature look:* Brown hair, white shirt, red pocket, distinguished mustache.
+
+  Alice is the brains of the operation. Her mustache is legendary --- some say it helps her think; she says it filters out bad entropy. The red pocket on her shirt always holds a folded piece of paper: her current private key, written in pencil so she can rotate it.
+
+  As the *receiver*, Alice can decrypt anything Bob sends and spot a forged signature at twenty paces. She trusts math more than people, which is why she gets along so well with Bob --- their relationship is purely transactional.
+
+  _Hobbies:_ Sudoku speedruns, lockpicking, cataloguing prime numbers.
+]
+
+== #christina(size: 12pt) Christina --- The Architect
+
+#card("Christina", christina)[
+  *Signature look:* Purple hair, yellow hair clip, white shirt, green tie.
+
+  Christina designs the protocols that everyone else follows. Her purple hair changes shade depending on her mood (or so she claims --- nobody has proven it). The yellow clip holds back the ideas that would otherwise spill out everywhere.
+
+  She is the *protocol designer*, the one who draws boxes and arrows on whiteboards and turns them into provably secure schemes. When Alice and Bob have a problem, they call Christina. When Christina has a problem, she draws another diagram.
+
+  _Hobbies:_ Origami, competitive Scrabble, inventing card games with too many rules.
+]
+
+== #mary(size: 12pt) Mary --- The Auditor
+
+#card("Mary", mary)[
+  *Signature look:* Black hair with red ribbons, white shirt, red bow.
+
+  Mary keeps everyone honest. Her red ribbons are not just decorative --- they're a reminder that every system has loose ends that need tying up. She reviews every protocol Christina designs, tests every message Bob sends, and double-checks every key Alice generates.
+
+  As the *auditor*, Mary is meticulous to a fault. She once rejected a 256-bit key because it "looked too symmetric." Her desk is immaculate. Her code has zero warnings. Her commit messages are haiku.
+
+  _Hobbies:_ Bonsai pruning, calligraphy, finding edge cases in board game rulebooks.
+]
+
+== #eve(size: 12pt) Eve --- The Eavesdropper
+
+#card("Eve", eve)[
+  *Signature look:* Red curly hair, green shirt.
+
+  Eve is always listening. Her wild red curls act as natural antennas (she insists this is scientifically plausible). She doesn't mean any harm --- she's just *curious*. Every conversation is a puzzle, every encrypted channel a challenge.
+
+  As the classic *eavesdropper*, Eve sits between Alice and Bob on every network diagram. She has tried man-in-the-middle attacks, replay attacks, and once just asked Bob for his password (it almost worked). Despite her reputation, she's the life of every party.
+
+  _Hobbies:_ Amateur radio, reading other people's horoscopes, competitive crosswords.
+]
+
+== #frank(size: 12pt) Frank --- The Forger
+
+#card("Frank", frank)[
+  *Signature look:* Top hat with red band, sideburns, mustache, bowtie.
+
+  Frank is a gentleman of questionable ethics. His top hat is always immaculate, his bowtie always straight, and his digital signatures always... almost right. He has forged more certificates than he can count, and he counts very well.
+
+  As the classic *forger*, Frank specializes in creating messages that appear to come from someone else. He has impersonated Bob so convincingly that even Alice was fooled --- for exactly one round of the protocol. Christina has designed three schemes specifically to stop him. He considers this a compliment.
+
+  _Hobbies:_ Calligraphy, vintage typewriter collecting, magic tricks involving cards that aren't his.
+]
+
+== #grace(size: 12pt) Grace --- The Authority
+
+#card("Grace", grace)[
+  *Signature look:* Blonde updo, gold necklace, blue blouse.
+
+  Grace is the certificate authority everyone trusts --- or has to. Her elegant bun keeps things tidy on top, just like she keeps the public key infrastructure tidy underneath. The gold necklace is a chain of trust made literal.
+
+  As the *certificate authority*, Grace signs the keys that make the whole system work. When Alice needs to verify Bob's identity, she asks Grace. When Frank tries to forge a certificate, Grace's signature is the wall he can't climb. She takes her role seriously --- she hasn't taken a vacation since RSA was published.
+
+  _Hobbies:_ Notary public (for fun), genealogy, maintaining very long lists.
+]
+
+== #trent(size: 12pt) Trent --- The Trusted Third Party
+
+#card("Trent", trent)[
+  *Signature look:* Balding head, distinguished beard, jacket over shirt.
+
+  Trent has been in the game longer than anyone. His receding hairline is a map of every protocol he's arbitrated; his beard contains the wisdom of a thousand key exchanges. He wears a jacket because *someone* has to look professional around here.
+
+  As the *trusted third party*, Trent mediates disputes, holds escrow keys, and timestamps everything. Both Alice and Bob trust him, which is remarkable given that they barely trust each other. He has never leaked a secret, though he has forgotten where he put a few.
+
+  _Hobbies:_ Chess (correspondence only), pipe smoking (unlit), reading arbitration law for pleasure.
+]
+
+== #mallory(size: 12pt) Mallory --- The Attacker
+
+#card("Mallory", mallory)[
+  *Signature look:* Dark hoodie with hood up, hidden face.
+
+  Nobody knows what Mallory looks like --- that's the point. The hood is always up, the hoodie always dark, and the kangaroo pocket always holds something suspicious. Unlike Eve, who merely listens, Mallory *acts*. Modify a message in transit? Inject a packet? Redirect a connection? All in a day's work.
+
+  As the *active attacker*, Mallory is the reason protocols need to be formally verified. She once rewrote an entire TLS handshake mid-flight just to see if she could (she could). Christina designed her most complex protocol specifically because of Mallory. Mallory framed it.
+
+  _Hobbies:_ Lockpicking, social engineering workshops, writing exploit code that rhymes.
+]
+
+== #victor(size: 12pt) Victor --- The Verifier
+
+#card("Victor", victor)[
+  *Signature look:* Peaked cap with gold badge, blue uniform.
+
+  Victor checks everything twice. His peaked cap says "I have authority," his badge says "and I will use it." He stands at the gate of every zero-knowledge proof, every digital signature verification, and every access control list.
+
+  As the *verifier*, Victor's job is simple: accept or reject. Is this signature valid? Is this proof sound? Does this credential check out? He doesn't need to know the secret --- he just needs to know it's real. His false-positive rate is zero. His false-negative rate is also zero. He is very proud of this.
+
+  _Hobbies:_ Proofreading, stamp collecting, recounting ballots for fun.
+]
+
+= Usage
+
+== Installation
 
 ```typst
-#import "@local/pixelman:0.1.0": *
+// From the Typst package registry
+#import "@preview/pixel-family:0.1.0": *
+
+// Or locally
+#import "@local/pixel-family:0.1.0": *
 ```
-
-= Quick Start
-
-```typst
-#import "@local/pixelman:0.1.0": *
-
-// Basic usage
-#bob() #alice() #eve()
-
-// Custom size
-#bob(size: 60pt)
-
-// Custom colors
-#alice(skin: brown, hair: red, shirt: blue)
-```
-
-= Character Gallery
-
-== Bob
-
-Green hair, white shirt, black vest.
-
-#canvas(length: 1cm, {
-  bob(size: 4cm)
-})
-
-```typst
-#bob()                              // Default
-#bob(size: 60pt)                   // Larger
-#bob(hair: blue, shirt: red)       // Custom colors
-```
-
-== Alice
-
-Brown hair, white shirt with red pocket, mustache.
-
-#canvas(length: 1cm, {
-  alice(size: 4cm)
-})
-
-```typst
-#alice()
-#alice(size: 50pt, hair: black)
-```
-
-== Christina
-
-Purple hair with yellow accessory, white shirt with green tie.
-
-#canvas(length: 1cm, {
-  christina(size: 4cm)
-})
-
-```typst
-#christina()
-#christina(size: 55pt)
-```
-
-== Mary
-
-Black hair with red ribbons, white shirt with red bow.
-
-#canvas(length: 1cm, {
-  mary(size: 4cm)
-})
-
-```typst
-#mary()
-#mary(size: 45pt, hair: brown)
-```
-
-== Eve
-
-Red curly hair, green shirt.
-
-#canvas(length: 1cm, {
-  eve(size: 4cm)
-})
-
-```typst
-#eve()
-#eve(size: 50pt, hair: pink)
-```
-
-= All Characters
-
-#canvas(length: 1cm, {
-  bob(size: 2cm)
-  alice(size: 2cm)
-  christina(size: 2cm)
-  mary(size: 2cm)
-  eve(size: 2cm)
-})
-
-= Customization
-
-All characters accept these parameters:
-
-- `size`: Overall size (default: 40pt)
-- `skin`: Skin color
-- `hair`: Hair color
-- `shirt`: Shirt color
-- `pants`: Pants color
-
-= Available Colors
-
-Access the color palette:
-
-```typst
-#import "@local/pixelman:0.1.0": palette
-
-#palette.skin        // Default skin tone
-#palette.hair-brown  // Brown hair
-#palette.shirt-blue  // Blue shirt
-// etc.
-```
-
-= Advanced Usage
 
 == Inline Characters
 
-Use in text:
+Characters work like text. Default size is `1em` --- they scale with the surrounding font:
 
 ```typst
-#bob() says hello to #alice()!
+Hello #bob() and #alice() are talking while #eve() listens.
 ```
 
-Result: #bob() says hello to #alice()!
+Hello #bob() and #alice() are talking while #eve() listens.
 
-== Different Sizes
+They scale automatically with text size:
+
+#text(size: 24pt)[Large: #bob(size: 24pt) #alice(size: 24pt) #eve(size: 24pt)]
+
+#text(size: 8pt)[Tiny: #bob(size: 8pt) #alice(size: 8pt) #eve(size: 8pt)]
+
+== Explicit Sizes
+
+Pass any length to `size`:
+
+#bob(size: 1cm) #alice(size: 2cm) #christina(size: 3cm) #mary(size: 4cm) #eve(size: 5cm)
+
+== Color Customization
+
+Every character accepts `skin`, `hair`, `shirt`, and `pants`:
 
 ```typst
-#bob(size: 20pt)   // Small
-#bob(size: 40pt)   // Default
-#bob(size: 80pt)   // Large
+#bob(size: 3cm, hair: blue, shirt: red)
+#alice(size: 3cm, hair: black, shirt: green)
+#eve(size: 3cm, hair: rgb("#ff69b4"), shirt: rgb("#ffd700"))
 ```
 
-#canvas(length: 1cm, {
-  bob(size: 1.5cm)
-  bob(size: 3cm)
-  bob(size: 4.5cm)
-})
+#bob(size: 3cm, hair: blue, shirt: red)
+#alice(size: 3cm, hair: black, shirt: green)
+#eve(size: 3cm, hair: rgb("#ff69b4"), shirt: rgb("#ffd700"))
+
+== Skin Tones
+
+Built-in skin tone presets:
+
+#{
+  let tones = (
+    ("Default", skin-default),
+    ("Light", skin-light),
+    ("Medium", skin-medium),
+    ("Dark", skin-dark),
+  )
+  for (label, tone) in tones {
+    [#bob(size: 2cm, skin: tone) ]
+  }
+}
 
 = API Reference
 
-== Functions
+== Character Functions
 
-Each character function has the same signature:
+All ten characters share the same signature:
 
 ```typst
-#let character-name(
-  size: 40pt,
-  skin: palette.skin,
-  hair: palette.hair-color,
-  shirt: palette.shirt-color,
-  pants: palette.pants-color,
-) = { ... }
+#let name(
+  size: 1em,       // character height — scales with text by default
+  skin: color,     // skin tone
+  hair: color,     // hair color
+  shirt: color,    // shirt/top color
+  pants: color,    // pants/bottom color
+) -> content       // inline content, like a box
 ```
 
-Available characters: `bob`, `alice`, `christina`, `mary`, `eve`
+#table(
+  columns: (auto, auto, auto, auto, auto),
+  align: center,
+  table.header[*Character*][*Hair*][*Shirt*][*Pants*][*Extras*],
+  [#bob(size: 16pt) `bob`], [green], [white], [black vest], [---],
+  [#alice(size: 16pt) `alice`], [brown], [white], [black], [red pocket, mustache],
+  [#christina(size: 16pt) `christina`], [purple], [white], [black], [yellow clip, green tie],
+  [#mary(size: 16pt) `mary`], [black], [white], [black], [red ribbons, red bow],
+  [#eve(size: 16pt) `eve`], [red], [green], [black], [curly hair],
+  table.hline(stroke: 0.5pt),
+  [#frank(size: 16pt) `frank`], [black], [white], [black (hat)], [top hat, bowtie, mustache],
+  [#grace(size: 16pt) `grace`], [blonde], [blue], [black], [updo, gold necklace],
+  [#trent(size: 16pt) `trent`], [brown], [white], [black (jacket)], [balding, beard],
+  [#mallory(size: 16pt) `mallory`], [black], [black (hoodie)], [black], [hood up, pocket],
+  [#victor(size: 16pt) `victor`], [black], [blue (uniform)], [blue (cap)], [peaked cap, badge],
+)
+
+== Color Palette
+
+The library exports individual color constants:
+
+#table(
+  columns: (1fr, 1fr, 1fr),
+  table.header[*Skin*][*Hair*][*Clothing*],
+  [`skin-default`], [`hair-brown`], [`shirt-white`],
+  [`skin-light`], [`hair-blonde`], [`shirt-blue`],
+  [`skin-medium`], [`hair-black`], [`shirt-red`],
+  [`skin-dark`], [`hair-red`], [`shirt-green`],
+  [], [`hair-green`], [`shirt-pink`],
+  [], [], [`pants-black`],
+  [], [], [`pants-blue`],
+  [], [], [`pants-gray`],
+)
+
+== Custom Characters with `pixel-grid`
+
+For advanced use, the `pixel-grid` function is exported. Define a 2D array and a color palette to draw your own pixel art:
+
+```typst
+#import "lib.typ": pixel-grid
+#import "@preview/cetz:0.4.2": canvas, draw
+
+#box(canvas(length: 0.3cm, {
+  pixel-grid(
+    (
+      (0, 1, 0),
+      (1, 1, 1),
+      (0, 1, 0),
+    ),
+    (none, red),  // index 0 = transparent, index 1 = red
+  )
+}))
+```
 
 = License
 
-MIT License - See repository for details.
+MIT License --- See repository for details.

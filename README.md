@@ -1,67 +1,66 @@
-# PixelMan
+# Pixel Family
 
-Pixel art characters for Typst, drawn using CeTZ (CeTZ, ein Typst Zeichenpaket).
+[![CI](https://github.com/GiggleLiu/pixel-family/actions/workflows/ci.yml/badge.svg)](https://github.com/GiggleLiu/pixel-family/actions/workflows/ci.yml)
 
-## Features
+Inline pixel art characters for Typst, drawn as vector graphics with [CeTZ](https://github.com/cetz-package/cetz). Drop them into running text like emoji.
 
-- **5 pixel characters**: Bob, Alice, Christina, Mary, Eve
-- **Vector graphics**: Scales perfectly to any size
-- **Customizable colors**: Skin, hair, shirt, and pants
-- **Simple API**: Function-based usage (`#bob()`, `#alice()`)
-- **Self-contained**: No external image files needed
+**[Download the manual (PDF)](https://github.com/GiggleLiu/pixel-family/releases/latest/download/manual.pdf)**
 
-## Installation
+## Meet the Family
 
-Add to your `typst.toml`:
+<table>
+<tr>
+<td align="center"><img src="images/bob.svg" width="64"><br><b>Bob</b><br>The Messenger</td>
+<td align="center"><img src="images/alice.svg" width="64"><br><b>Alice</b><br>The Decoder</td>
+<td align="center"><img src="images/christina.svg" width="64"><br><b>Christina</b><br>The Architect</td>
+<td align="center"><img src="images/mary.svg" width="64"><br><b>Mary</b><br>The Auditor</td>
+<td align="center"><img src="images/eve.svg" width="64"><br><b>Eve</b><br>The Eavesdropper</td>
+</tr>
+<tr>
+<td align="center"><img src="images/frank.svg" width="64"><br><b>Frank</b><br>The Forger</td>
+<td align="center"><img src="images/grace.svg" width="64"><br><b>Grace</b><br>The Authority</td>
+<td align="center"><img src="images/trent.svg" width="64"><br><b>Trent</b><br>The Third Party</td>
+<td align="center"><img src="images/mallory.svg" width="64"><br><b>Mallory</b><br>The Attacker</td>
+<td align="center"><img src="images/victor.svg" width="64"><br><b>Victor</b><br>The Verifier</td>
+</tr>
+</table>
 
-```toml
-[dependencies]
-pixelman = "0.1.0"
-```
-
-Or use locally:
-
-```typst
-#import "@local/pixelman:0.1.0": *
-```
+Their names come from the cast of cryptography: Alice and Bob exchange secret messages, Eve eavesdrops, Frank forges signatures, Grace certifies keys, Trent arbitrates, Mallory attacks, and Victor verifies.
 
 ## Quick Start
 
 ```typst
-#import "@local/pixelman:0.1.0": *
+#import "@preview/pixel-family:0.1.0": *
 
-// Basic usage
-#bob() #alice() #eve()
-
-// Custom size
-#bob(size: 60pt)
-
-// Custom colors
-#alice(skin: brown, hair: red, shirt: blue)
+Hello #bob() and #alice() are talking while #eve() listens.
 ```
 
-## Characters
-
-- **Bob**: Green hair, white shirt
-- **Alice**: Brown hair, white shirt with red pocket
-- **Christina**: Purple hair with yellow accessory, white shirt with green tie
-- **Mary**: Black hair with red ribbons, white shirt with red bow
-- **Eve**: Red curly hair, green shirt
-
-## API
-
-Each character function accepts:
+Characters default to `1em` and scale with surrounding text. Pass `size` for explicit sizing:
 
 ```typst
-#let character-name(
-  size: 40pt,
-  skin: palette.skin,
-  hair: palette.hair-color,
-  shirt: palette.shirt-color,
-  pants: palette.pants-color,
-)
+#bob(size: 3cm)
+```
+
+## Color Customization
+
+Every character accepts `skin`, `hair`, `shirt`, and `pants`:
+
+```typst
+#bob(size: 3cm, hair: blue, shirt: red)
+#alice(size: 3cm, hair: black, shirt: green)
+```
+
+Built-in skin tone presets: `skin-default`, `skin-light`, `skin-medium`, `skin-dark`.
+
+## Build
+
+```bash
+make          # compile manual + render SVGs
+make manual   # compile manual.pdf only
+make images   # render character SVGs only
+make clean    # remove generated files
 ```
 
 ## License
 
-MIT License
+MIT

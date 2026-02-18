@@ -1,7 +1,9 @@
 CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
+LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/0.1.0
+PKG_FILES := lib.typ typst.toml LICENSE README.md
 
-.PHONY: all manual images clean
+.PHONY: all manual images install uninstall test clean
 
 all: manual images
 
@@ -28,6 +30,19 @@ $(SVGS): images/render.typ lib.typ characters/*.typ
 	mv render-11.svg ina.svg && \
 	mv render-12.svg murphy.svg && \
 	mv render-13.svg bella.svg
+
+install:
+	@mkdir -p $(LOCAL_PKG)/characters
+	@cp $(PKG_FILES) $(LOCAL_PKG)/
+	@cp characters/*.typ $(LOCAL_PKG)/characters/
+	@echo "Installed to $(LOCAL_PKG)"
+
+uninstall:
+	@rm -rf $(LOCAL_PKG)
+	@echo "Removed $(LOCAL_PKG)"
+
+test: install manual
+	@echo "All tests passed (manual compiled successfully)"
 
 clean:
 	rm -f manual.pdf images/*.svg

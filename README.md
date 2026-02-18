@@ -42,10 +42,16 @@ Their names come from the cast of cryptography: Alice and Bob exchange secret me
 Hello #bob() and #alice() are talking while #eve() listens.
 ```
 
-Characters default to `1em` and scale with surrounding text. Pass `size` for explicit sizing:
+Characters default to `1em` and center-align with surrounding text. Pass `size` for explicit sizing:
 
 ```typst
 #bob(size: 3cm)
+```
+
+Use `baseline: 0pt` for bottom alignment:
+
+```typst
+#bob(size: 3cm, baseline: 0pt)
 ```
 
 ## Color Customization
@@ -58,15 +64,6 @@ Every character accepts `skin`, `hair`, `shirt`, and `pants`:
 ```
 
 Built-in skin tone presets: `skin-default`, `skin-light`, `skin-medium`, `skin-dark`.
-
-## Build
-
-```bash
-make          # compile manual + render SVGs
-make manual   # compile manual.pdf only
-make images   # render character SVGs only
-make clean    # remove generated files
-```
 
 ## License
 

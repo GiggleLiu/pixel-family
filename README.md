@@ -34,6 +34,8 @@ Inline pixel art characters for Typst, drawn as vector graphics with [CeTZ](http
 
 Their names come from the cast of cryptography: Alice and Bob exchange secret messages, Eve eavesdrops, Frank forges signatures, Grace certifies keys, Trent arbitrates, Mallory attacks, and Victor verifies.
 
+**[Vote for your favorite character!](https://github.com/GiggleLiu/pixel-family/discussions/1)**
+
 ## Quick Start
 
 ```typst

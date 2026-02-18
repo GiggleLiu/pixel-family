@@ -76,6 +76,16 @@
   }
 }
 
+// === Character Box Helper ===
+// Wraps pixel data into inline content with configurable baseline.
+// baseline: auto = center-aligned with text, or pass a length (e.g. 0pt for bottom)
+#let _char-box(size, baseline, data, colors) = box(
+  baseline: if baseline == auto { (size - 1em) / 2 } else { baseline },
+  canvas(length: size / 16, {
+    pixel-grid(data, colors)
+  })
+)
+
 // === Character Definitions (Batch 1) ===
 
 #import "characters/batch-1-initial.typ": *
@@ -84,61 +94,56 @@
 /// -> content (inline)
 #let bob(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-green,
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(bob-data, bob-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, bob-data, bob-colors(skin, hair, shirt, pants))
 
 /// Alice: brown hair, white shirt, red pocket, mustache
 /// -> content (inline)
 #let alice(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-brown,
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(alice-data, alice-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, alice-data, alice-colors(skin, hair, shirt, pants))
 
 /// Christina: purple hair with yellow clip, green tie
 /// -> content (inline)
 #let christina(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: rgb("#8b5a9f"),
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(christina-data, christina-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, christina-data, christina-colors(skin, hair, shirt, pants))
 
 /// Mary: black hair with red ribbons, red bow
 /// -> content (inline)
 #let mary(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-black,
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(mary-data, mary-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, mary-data, mary-colors(skin, hair, shirt, pants))
 
 /// Eve: red curly hair, green shirt
 /// -> content (inline)
 #let eve(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-red,
   shirt: shirt-green,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(eve-data, eve-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, eve-data, eve-colors(skin, hair, shirt, pants))
 
 // === Character Definitions (Batch 2 — bust/portrait, no legs) ===
 
@@ -148,58 +153,90 @@
 /// -> content (inline)
 #let frank(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-black,
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(frank-data, frank-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, frank-data, frank-colors(skin, hair, shirt, pants))
 
 /// Grace: elegant updo, gold necklace
 /// -> content (inline)
 #let grace(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-blonde,
   shirt: shirt-blue,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(grace-data, grace-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, grace-data, grace-colors(skin, hair, shirt, pants))
 
 /// Trent: balding, beard, jacket over shirt
 /// -> content (inline)
 #let trent(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-brown,
   shirt: shirt-white,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(trent-data, trent-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, trent-data, trent-colors(skin, hair, shirt, pants))
 
 /// Mallory: hooded figure, kangaroo pocket
 /// -> content (inline)
 #let mallory(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-black,
   shirt: shirt-black,
   pants: pants-black,
-) = box(canvas(length: size / 16, {
-  pixel-grid(mallory-data, mallory-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, mallory-data, mallory-colors(skin, hair, shirt, pants))
 
 /// Victor: peaked cap with badge, uniform
 /// -> content (inline)
 #let victor(
   size: 1em,
+  baseline: auto,
   skin: skin-default,
   hair: hair-black,
   shirt: shirt-blue,
   pants: pants-blue,
-) = box(canvas(length: size / 16, {
-  pixel-grid(victor-data, victor-colors(skin, hair, shirt, pants))
-}))
+) = _char-box(size, baseline, victor-data, victor-colors(skin, hair, shirt, pants))
+
+// === Character Definitions (Batch 3 — bust/portrait, no legs) ===
+
+#import "characters/batch-3-top.typ": *
+
+/// Ina: asymmetric purple hair covering one eye, teal pin
+/// -> content (inline)
+#let ina(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#7b1fa2"),
+  shirt: shirt-black,
+  pants: pants-black,
+) = _char-box(size, baseline, ina-data, ina-colors(skin, hair, shirt, pants))
+
+/// Murphy: gray curly hair, glasses, lab coat
+/// -> content (inline)
+#let murphy(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#9e9e9e"),
+  shirt: shirt-white,
+  pants: pants-black,
+) = _char-box(size, baseline, murphy-data, murphy-colors(skin, hair, shirt, pants))
+
+/// Bella: side ponytail with flower, pendant necklace
+/// -> content (inline)
+#let bella(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-pink,
+  pants: pants-black,
+) = _char-box(size, baseline, bella-data, bella-colors(skin, hair, shirt, pants))

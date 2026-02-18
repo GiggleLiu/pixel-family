@@ -1,4 +1,4 @@
-CHARACTERS := bob alice christina mary eve frank grace trent mallory victor
+CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
 
 .PHONY: all manual images clean
@@ -24,7 +24,10 @@ $(SVGS): images/render.typ lib.typ characters/*.typ
 	mv render-07.svg grace.svg && \
 	mv render-08.svg trent.svg && \
 	mv render-09.svg mallory.svg && \
-	mv render-10.svg victor.svg
+	mv render-10.svg victor.svg && \
+	mv render-11.svg ina.svg && \
+	mv render-12.svg murphy.svg && \
+	mv render-13.svg bella.svg
 
 clean:
 	rm -f manual.pdf images/*.svg

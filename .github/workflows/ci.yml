@@ -22,10 +22,10 @@ jobs:
 
       - name: Verify all SVGs generated
         run: |
-          for i in 01 02 03 04 05 06 07 08 09 10; do
+          for i in 01 02 03 04 05 06 07 08 09 10 11 12 13; do
             test -f "images/render-${i}.svg" || { echo "Missing render-${i}.svg"; exit 1; }
           done
-          echo "All 10 character SVGs generated successfully"
+          echo "All 13 character SVGs generated successfully"
 
       - name: Upload manual PDF
         if: github.ref == 'refs/heads/main'

@@ -10,6 +10,7 @@
   #text(size: 28pt, weight: "bold")[
     #bob(size: 28pt) #alice(size: 28pt) #christina(size: 28pt) #mary(size: 28pt) #eve(size: 28pt)
     #frank(size: 28pt) #grace(size: 28pt) #trent(size: 28pt) #mallory(size: 28pt) #victor(size: 28pt)
+    #ina(size: 28pt) #murphy(size: 28pt) #bella(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -23,7 +24,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of ten characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of thirteen characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -32,6 +33,8 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   Hello #bob(size: 20pt) and #alice(size: 20pt), watch out for #eve(size: 20pt)!
   \
   #frank(size: 20pt) forged a pass, but #victor(size: 20pt) caught him.
+  \
+  #ina(size: 20pt) analyzed the logs, #murphy(size: 20pt) tested the fix, and #bella(size: 20pt) announced it.
 ])
 
 = Meet the Family
@@ -165,6 +168,42 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Proofreading, stamp collecting, recounting ballots for fun.
 ]
 
+== #ina(size: 12pt) Ina --- The Analyst
+
+#card("Ina", ina)[
+  *Signature look:* Deep purple asymmetric hair covering one eye, dark outfit, teal pin.
+
+  Ina sees patterns where others see noise. Her signature asymmetric hair isn't just a style choice --- it's a philosophy. She sees the world from one angle at a time, and that focus is what makes her dangerous. The teal pin on her lapel is a gift from Christina, who considers Ina her best critic.
+
+  As the *analyst*, Ina reviews traffic logs, protocol transcripts, and cipher outputs. She found the side-channel leak in Christina's third protocol, the timing attack in Trent's timestamp service, and the padding oracle in Bob's latest message format --- all before lunch. Eve is jealous of her insight; Mallory is wary of her thoroughness.
+
+  _Hobbies:_ Data visualization, true crime podcasts, solving jigsaw puzzles face-down.
+]
+
+== #murphy(size: 12pt) Murphy --- The Tester
+
+#card("Murphy", murphy)[
+  *Signature look:* Gray curly hair, round glasses, white lab coat.
+
+  Murphy's Law states that anything that can go wrong, will go wrong. Murphy the person ensures that it goes wrong *before* deployment. His round glasses have seen every edge case, every race condition, every off-by-one error. His gray hair was brown when he started this job.
+
+  As the *tester*, Murphy subjects every protocol to chaos. He flips bits, drops packets, reorders messages, and injects garbage at the worst possible moment. If your system survives Murphy, it survives anything. Christina both dreads and depends on his reviews. He once found a critical vulnerability by accidentally spilling coffee on a keyboard.
+
+  _Hobbies:_ Rube Goldberg machines, stress-testing kitchen appliances, pessimistic poetry.
+]
+
+== #bella(size: 12pt) Bella --- The Herald
+
+#card("Bella", bella)[
+  *Signature look:* Brown side ponytail, pink flower, pendant necklace.
+
+  Bella is the voice of the network. When a certificate is revoked, Bella announces it. When a protocol is updated, Bella publishes the changelog. When someone joins the neighborhood, Bella makes the introductions. Her side ponytail and flower suggest approachability, but her broadcasts are all business.
+
+  As the *herald*, Bella manages the public bulletin board, the certificate revocation lists, and the system-wide announcements. She works closely with Grace (who signs the certificates) and Victor (who enforces the rules). Her pink flower is a broadcast antenna --- at least, that's what she tells Eve.
+
+  _Hobbies:_ Public speaking, newsletter writing, arranging flowers by Fibonacci sequence.
+]
+
 = Usage
 
 == Installation
@@ -233,11 +272,12 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All ten characters share the same signature:
+All thirteen characters share the same signature:
 
 ```typst
 #let name(
   size: 1em,       // character height — scales with text by default
+  baseline: auto,  // auto = center-aligned, or pass a length (0pt = bottom)
   skin: color,     // skin tone
   hair: color,     // hair color
   shirt: color,    // shirt/top color
@@ -260,6 +300,10 @@ All ten characters share the same signature:
   [#trent(size: 16pt) `trent`], [brown], [white], [black (jacket)], [balding, beard],
   [#mallory(size: 16pt) `mallory`], [black], [black (hoodie)], [black], [hood up, pocket],
   [#victor(size: 16pt) `victor`], [black], [blue (uniform)], [blue (cap)], [peaked cap, badge],
+  table.hline(stroke: 0.5pt),
+  [#ina(size: 16pt) `ina`], [purple], [black], [black], [asymmetric hair, teal pin],
+  [#murphy(size: 16pt) `murphy`], [gray], [white (coat)], [black], [glasses],
+  [#bella(size: 16pt) `bella`], [brown], [pink], [black], [side ponytail, flower, pendant],
 )
 
 == Color Palette

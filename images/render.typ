@@ -2,7 +2,7 @@
 #import "../lib.typ": *
 
 #let sz = 128pt
-#set page(width: sz, height: sz, margin: 0pt)
+#set page(width: sz, height: sz, margin: 0pt, fill: none)
 
 #align(center + horizon, bob(size: sz))
 #pagebreak()

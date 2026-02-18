@@ -1,50 +1,29 @@
 // Test file for PixelMan library
-// Tests basic rendering of all characters
 
 #import "lib.typ": *
-#import "@preview/cetz:0.4.0": canvas
 
-= Basic Rendering Test
+= Inline Usage
 
-== All Characters at Default Size
+Default size (1em) — characters scale with text:
 
-#canvas(length: 1cm, {
-  bob(size: 3cm)
-  alice(size: 3cm)
-  christina(size: 3cm)
-  mary(size: 3cm)
-  eve(size: 3cm)
-})
+Hello #bob() and #alice() are here with #christina(), #mary(), and #eve()!
 
-== Size Variations
+#text(size: 20pt)[Bigger text: #bob() #alice() #eve()]
 
-#canvas(length: 1cm, {
-  bob(size: 1.5cm)
-  bob(size: 3cm)
-  bob(size: 4.5cm)
-})
+#text(size: 8pt)[Tiny text: #bob() #alice() #eve()]
 
-== Color Customization
+= Explicit Sizes
 
-#canvas(length: 1cm, {
-  bob(size: 3cm, hair: blue, shirt: red)
-  alice(size: 3cm, hair: black, shirt: green)
-  eve(size: 3cm, hair: rgb("#ff69b4"), shirt: rgb("#ffd700"))
-})
+#bob(size: 1cm) #alice(size: 2cm) #christina(size: 3cm) #mary(size: 4cm) #eve(size: 5cm)
 
-== Individual Characters
+= Color Customization
 
-Bob:
-#canvas(length: 1cm, { bob(size: 4cm) })
+#bob(size: 3cm, hair: blue, shirt: red)
+#alice(size: 3cm, hair: black, shirt: green)
+#eve(size: 3cm, hair: rgb("#ff69b4"), shirt: rgb("#ffd700"))
 
-Alice:  
-#canvas(length: 1cm, { alice(size: 4cm) })
+= All Characters Gallery
 
-Christina:
-#canvas(length: 1cm, { christina(size: 4cm) })
-
-Mary:
-#canvas(length: 1cm, { mary(size: 4cm) })
-
-Eve:
-#canvas(length: 1cm, { eve(size: 4cm) })
+#for char in (bob, alice, christina, mary, eve) {
+  char(size: 4cm)
+}

@@ -11,6 +11,7 @@
     #bob(size: 28pt) #alice(size: 28pt) #christina(size: 28pt) #mary(size: 28pt) #eve(size: 28pt)
     #frank(size: 28pt) #grace(size: 28pt) #trent(size: 28pt) #mallory(size: 28pt) #victor(size: 28pt)
     #ina(size: 28pt) #murphy(size: 28pt) #bella(size: 28pt)
+    #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -24,7 +25,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of thirteen characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of eighteen characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -35,6 +36,8 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   #frank(size: 20pt) forged a pass, but #victor(size: 20pt) caught him.
   \
   #ina(size: 20pt) analyzed the logs, #murphy(size: 20pt) tested the fix, and #bella(size: 20pt) announced it.
+  \
+  #bolt(size: 20pt) built the server, #crank(size: 20pt) moved it, and #sentinel(size: 20pt) guards the door.
 ])
 
 = Meet the Family
@@ -204,6 +207,68 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Public speaking, newsletter writing, arranging flowers by Fibonacci sequence.
 ]
 
+= Meet the Robots
+
+== #bolt(size: 12pt) Bolt --- The Classic Bot
+
+#card("Bolt", bolt)[
+  *Signature look:* Boxy head, twin antenna prongs, horizontal visor band.
+
+  Bolt was built in a garage from spare parts and has outlasted three owners. It does exactly what you tell it, no more, no less. Its antenna picks up AM radio on good days and cosmic background radiation on bad ones. It has no opinions about protocol design, which makes it the only entity Christina has never argued with.
+
+  As the *classic bot*, Bolt handles the routine work nobody else wants to do: forwarding packets, running checksums, and keeping the lights on. It once processed ten million messages without a single error, then crashed because someone forgot to wind its spring.
+
+  _Hobbies:_ Sorting resistors by color, tuning AM frequencies, standing perfectly still.
+]
+
+== #pixel-char(size: 12pt) Pixel --- The Helper Drone
+
+#card("Pixel", pixel-char)[
+  *Signature look:* Large dome head, single green LED eye, compact body.
+
+  Pixel hovers around the neighborhood helping everyone. It organizes files, delivers packages, and once alphabetized Bob's entire bookshelf while he slept. It communicates in cheerful beeps that only Bella can translate. Its single green eye is always watching --- not in a creepy way, more in a "do you need anything?" way.
+
+  As the *helper drone*, Pixel is the neighborhood's utility player. Need a message delivered? Pixel. Need a file compressed? Pixel. Need someone to hover silently behind you while you work, making you slightly uneasy? Also Pixel. It means well.
+
+  _Hobbies:_ Organizing things by size, chasing laser pointers, defragmenting.
+]
+
+== #crank(size: 12pt) Crank --- The Industrial Bot
+
+#card("Crank", crank)[
+  *Signature look:* Flat-top head, extra-wide shoulders, two small square eyes, warning stripe.
+
+  Crank lifts things. Heavy things. It once moved Trent's entire office --- with Trent still in it --- because it was "blocking the maintenance corridor." Its two small eyes look perpetually unimpressed. The red warning stripe on its chest is technically required by safety regulations, but Crank considers it decorative.
+
+  As the *industrial bot*, Crank handles the physical infrastructure. Server racks, cable runs, cooling systems --- if it's heavy and boring, Crank moves it. Murphy once asked Crank to stress-test a server by shaking it. Crank obliged. The server did not survive. Murphy was delighted.
+
+  _Hobbies:_ Benchmarking hydraulic pressure, crushing empty cans, intimidating furniture.
+]
+
+== #nova(size: 12pt) Nova --- The Sleek AI
+
+#card("Nova", nova)[
+  *Signature look:* Tapered head, V-shaped visor, glowing cyan core, slim profile.
+
+  Nova speaks in complete sentences and never uses contractions. It considers itself the most advanced entity in the neighborhood, which may actually be true. Christina consults it on protocol design; it consults itself on everything else. Its cyan glow brightens when it is processing and dims when it is judging you.
+
+  As the *sleek AI*, Nova handles the thinking nobody else can do: formal verification, theorem proving, and writing emails that sound natural. It once solved a zero-knowledge proof while simultaneously composing a haiku about it. The haiku was better than the proof. Nova does not agree with this assessment.
+
+  _Hobbies:_ Contemplating infinity, optimizing its own firmware, correcting grammar.
+]
+
+== #sentinel(size: 12pt) Sentinel --- The Guardian
+
+#card("Sentinel", sentinel)[
+  *Signature look:* Helmet head, single red visor slit, shoulder armor plates, broad torso.
+
+  Sentinel patrols the perimeter. It has scanned every packet, inspected every certificate, and questioned every visitor. Victor respects its thoroughness. Mallory avoids its sector entirely. It has never smiled, though its visor briefly flickered once when Murphy told a joke.
+
+  As the *guardian*, Sentinel is the last line of defense. Firewalls, intrusion detection, physical security --- Sentinel handles them all with the same unwavering red gaze. It once caught Frank trying to forge an access badge by standing perfectly still in a shadow. Frank maintains he was just admiring the architecture. Sentinel's incident report was fourteen pages long.
+
+  _Hobbies:_ Perimeter walks, threat assessment, standing in doorways.
+]
+
 = Usage
 
 == Installation
@@ -272,7 +337,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All thirteen characters share the same signature:
+All eighteen characters share the same signature:
 
 ```typst
 #let name(
@@ -304,6 +369,12 @@ All thirteen characters share the same signature:
   [#ina(size: 16pt) `ina`], [purple], [black], [black], [asymmetric hair, teal pin],
   [#murphy(size: 16pt) `murphy`], [gray], [white (coat)], [black], [glasses],
   [#bella(size: 16pt) `bella`], [brown], [pink], [black], [side ponytail, flower, pendant],
+  table.hline(stroke: 0.5pt),
+  [#bolt(size: 16pt) `bolt`], [silver], [gray (head)], [blue (panel)], [antenna prongs, visor band],
+  [#pixel-char(size: 16pt) `pixel-char`], [white], [cyan (dome)], [light-gray], [single LED eye, dome head],
+  [#crank(size: 16pt) `crank`], [orange], [dark-gray (head)], [orange (panel)], [wide shoulders, warning stripe],
+  [#nova(size: 16pt) `nova`], [navy], [navy (head)], [dark-blue], [V-visor, cyan glow core],
+  [#sentinel(size: 16pt) `sentinel`], [gunmetal], [dark-gray (helmet)], [dark-gray], [red visor slit, shoulder armor],
 )
 
 == Color Palette
@@ -321,6 +392,11 @@ The library exports individual color constants:
   [], [], [`pants-black`],
   [], [], [`pants-blue`],
   [], [], [`pants-gray`],
+  [], [], [`chassis-silver`],
+  [], [], [`chassis-white`],
+  [], [], [`chassis-orange`],
+  [], [], [`chassis-navy`],
+  [], [], [`chassis-gunmetal`],
 )
 
 == Custom Characters with `pixel-grid`

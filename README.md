@@ -27,8 +27,13 @@ Inline pixel art characters for Typst, drawn as vector graphics with [CeTZ](http
 <td align="center"><img src="images/ina.svg" width="64"><br><b>Ina</b><br>The Analyst</td>
 <td align="center"><img src="images/murphy.svg" width="64"><br><b>Murphy</b><br>The Tester</td>
 <td align="center"><img src="images/bella.svg" width="64"><br><b>Bella</b><br>The Herald</td>
-<td></td>
-<td></td>
+</tr>
+<tr>
+<td align="center"><img src="images/bolt.svg" width="64"><br><b>Bolt</b><br>The Classic Bot</td>
+<td align="center"><img src="images/pixel-char.svg" width="64"><br><b>Pixel</b><br>The Helper Drone</td>
+<td align="center"><img src="images/crank.svg" width="64"><br><b>Crank</b><br>The Industrial Bot</td>
+<td align="center"><img src="images/nova.svg" width="64"><br><b>Nova</b><br>The Sleek AI</td>
+<td align="center"><img src="images/sentinel.svg" width="64"><br><b>Sentinel</b><br>The Guardian</td>
 </tr>
 </table>
 

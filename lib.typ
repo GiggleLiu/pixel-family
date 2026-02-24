@@ -36,6 +36,11 @@
 #let chassis-navy = rgb("#1a237e")
 #let chassis-gunmetal = rgb("#78909c")
 
+#let fur-orange = rgb("#e8944a")
+#let fur-golden = rgb("#daa520")
+#let fur-cream = rgb("#f5e6d0")
+#let fur-gray = rgb("#9e9e9e")
+
 #let palette = (
   skin: skin-default,
   skin-light: skin-light,
@@ -60,6 +65,10 @@
   chassis-orange: chassis-orange,
   chassis-navy: chassis-navy,
   chassis-gunmetal: chassis-gunmetal,
+  fur-orange: fur-orange,
+  fur-golden: fur-golden,
+  fur-cream: fur-cream,
+  fur-gray: fur-gray,
 )
 
 // === Pixel Grid Renderer ===
@@ -310,3 +319,62 @@
   shirt: rgb("#455a64"),
   pants: pants-black,
 ) = _char-box(size, baseline, sentinel-data, sentinel-colors(skin, hair, shirt, pants))
+
+// === Character Definitions (Batch 5 — Pets, bust/portrait) ===
+
+#import "characters/batch-5-pets.typ": *
+
+/// Whiskers: orange tabby cat, pointy ears, whiskers, collar with bell
+/// -> content (inline)
+#let whiskers(
+  size: 1em,
+  baseline: auto,
+  skin: fur-orange,
+  hair: rgb("#c06a2a"),
+  shirt: rgb("#e74c3c"),
+  pants: pants-black,
+) = _char-box(size, baseline, whiskers-data, whiskers-colors(skin, hair, shirt, pants))
+
+/// Barkley: golden retriever, floppy ears, tongue out, collar with tag
+/// -> content (inline)
+#let barkley(
+  size: 1em,
+  baseline: auto,
+  skin: fur-golden,
+  hair: rgb("#8b6914"),
+  shirt: shirt-blue,
+  pants: pants-black,
+) = _char-box(size, baseline, barkley-data, barkley-colors(skin, hair, shirt, pants))
+
+/// Bamboo: panda, round ears, black eye patches, black arms
+/// -> content (inline)
+#let bamboo(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#f5f5f5"),
+  hair: rgb("#1a1a1a"),
+  shirt: shirt-green,
+  pants: pants-black,
+) = _char-box(size, baseline, bamboo-data, bamboo-colors(skin, hair, shirt, pants))
+
+/// Trunks: elephant, big floppy ears, trunk, pink inner ears
+/// -> content (inline)
+#let trunks(
+  size: 1em,
+  baseline: auto,
+  skin: fur-gray,
+  hair: rgb("#757575"),
+  shirt: shirt-red,
+  pants: pants-black,
+) = _char-box(size, baseline, trunks-data, trunks-colors(skin, hair, shirt, pants))
+
+/// Clover: rabbit, tall ears with pink insides, buck teeth
+/// -> content (inline)
+#let clover(
+  size: 1em,
+  baseline: auto,
+  skin: fur-cream,
+  hair: rgb("#d4a574"),
+  shirt: shirt-green,
+  pants: pants-black,
+) = _char-box(size, baseline, clover-data, clover-colors(skin, hair, shirt, pants))

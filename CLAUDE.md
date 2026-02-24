@@ -35,7 +35,7 @@ There is no separate test file — `manual.typ` exercises all characters, sizes,
 - `xxx-data`: 16x16 array of color indices (0=transparent, 1=skin, 2=hair, 3=shirt, 4=pants, 5=eyes, 6+=accents)
 - `xxx-colors(skin, hair, shirt, pants)`: returns the color palette array
 
-Four batches: `batch-1-initial.typ` (full-body: Bob, Alice, Christina, Mary, Eve), `batch-2-top.typ` (bust: Frank, Grace, Trent, Mallory, Victor), `batch-3-top.typ` (bust: Ina, Murphy, Bella), `batch-4-robots.typ` (bust robots: Bolt, Pixel, Crank, Nova, Sentinel).
+Five batches: `batch-1-initial.typ` (full-body: Bob, Alice, Christina, Mary, Eve), `batch-2-top.typ` (bust: Frank, Grace, Trent, Mallory, Victor), `batch-3-top.typ` (bust: Ina, Murphy, Bella), `batch-4-robots.typ` (bust robots: Bolt, Pixel, Crank, Nova, Sentinel), `batch-5-pets.typ` (bust pets: Whiskers, Barkley, Bamboo, Trunks, Clover).
 
 **`images/render.typ`** — Renders each character on its own page for SVG export. Not part of the published package.
 

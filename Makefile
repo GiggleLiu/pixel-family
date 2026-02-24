@@ -1,4 +1,4 @@
-CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel
+CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel whiskers barkley bamboo trunks clover
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
 LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/0.1.0
 PKG_FILES := lib.typ typst.toml LICENSE README.md
@@ -34,7 +34,12 @@ $(SVGS): images/render.typ lib.typ characters/*.typ
 	mv render-15.svg pixel-char.svg && \
 	mv render-16.svg crank.svg && \
 	mv render-17.svg nova.svg && \
-	mv render-18.svg sentinel.svg
+	mv render-18.svg sentinel.svg && \
+	mv render-19.svg whiskers.svg && \
+	mv render-20.svg barkley.svg && \
+	mv render-21.svg bamboo.svg && \
+	mv render-22.svg trunks.svg && \
+	mv render-23.svg clover.svg
 
 install:
 	@mkdir -p $(LOCAL_PKG)/characters

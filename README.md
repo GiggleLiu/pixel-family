@@ -35,6 +35,13 @@ Inline pixel art characters for Typst, drawn as vector graphics with [CeTZ](http
 <td align="center"><img src="images/nova.svg" width="64"><br><b>Nova</b><br>The Sleek AI</td>
 <td align="center"><img src="images/sentinel.svg" width="64"><br><b>Sentinel</b><br>The Guardian</td>
 </tr>
+<tr>
+<td align="center"><img src="images/whiskers.svg" width="64"><br><b>Whiskers</b><br>The Cat</td>
+<td align="center"><img src="images/barkley.svg" width="64"><br><b>Barkley</b><br>The Dog</td>
+<td align="center"><img src="images/bamboo.svg" width="64"><br><b>Bamboo</b><br>The Panda</td>
+<td align="center"><img src="images/trunks.svg" width="64"><br><b>Trunks</b><br>The Elephant</td>
+<td align="center"><img src="images/clover.svg" width="64"><br><b>Clover</b><br>The Rabbit</td>
+</tr>
 </table>
 
 Their names come from the cast of cryptography: Alice and Bob exchange secret messages, Eve eavesdrops, Frank forges signatures, Grace certifies keys, Trent arbitrates, Mallory attacks, and Victor verifies.

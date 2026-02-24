@@ -12,6 +12,7 @@
     #frank(size: 28pt) #grace(size: 28pt) #trent(size: 28pt) #mallory(size: 28pt) #victor(size: 28pt)
     #ina(size: 28pt) #murphy(size: 28pt) #bella(size: 28pt)
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
+    #whiskers(size: 28pt) #barkley(size: 28pt) #bamboo(size: 28pt) #trunks(size: 28pt) #clover(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -25,7 +26,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of eighteen characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of twenty-three characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -38,6 +39,8 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   #ina(size: 20pt) analyzed the logs, #murphy(size: 20pt) tested the fix, and #bella(size: 20pt) announced it.
   \
   #bolt(size: 20pt) built the server, #crank(size: 20pt) moved it, and #sentinel(size: 20pt) guards the door.
+  \
+  #whiskers(size: 20pt) napped on the keyboard, #barkley(size: 20pt) fetched the logs, and #clover(size: 20pt) hopped away.
 ])
 
 = Meet the Family
@@ -269,6 +272,68 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Perimeter walks, threat assessment, standing in doorways.
 ]
 
+= Meet the Pets
+
+== #whiskers(size: 12pt) Whiskers --- The Cat
+
+#card("Whiskers", whiskers)[
+  *Signature look:* Orange tabby fur, pointy ears, whiskers, red collar with gold bell.
+
+  Whiskers showed up one day and never left. Nobody invited her, but nobody can remember life without her. She sleeps on the warmest server rack, knocks packets off the table for fun, and has an uncanny ability to walk across keyboards at the worst possible moment. She once typed a valid RSA key by stepping on Murphy's laptop. He framed the printout.
+
+  As the *neighborhood cat*, Whiskers answers to no one. She has sat on every lap in the family, though she pretends not to remember. Her collar bell jingles just loud enough to alert Eve, which Whiskers considers a feature. Mallory tried to recruit her once. Whiskers stared at her for thirty seconds and walked away.
+
+  _Hobbies:_ Napping on warm electronics, knocking things off desks, ignoring everyone equally.
+]
+
+== #barkley(size: 12pt) Barkley --- The Dog
+
+#card("Barkley", barkley)[
+  *Signature look:* Golden fur, floppy brown ears, tongue out, blue collar with gold tag.
+
+  Barkley is everyone's best friend and he wants you to know it. His tail wags at 120 BPM regardless of context --- good news, bad news, stack overflow, it doesn't matter. He fetches logs, retrieves lost packets, and once dug up a deprecated API that turned out to be exactly what Christina needed.
+
+  As the *neighborhood dog*, Barkley provides unconditional loyalty and zero judgment. Bob trusts him with plaintext. Alice trusts him with her lunch. Trent trusts him to deliver sealed envelopes without opening them, which is the highest compliment Trent knows how to give. His only flaw is that he barks at every new connection.
+
+  _Hobbies:_ Fetching anything thrown, chasing Pixel around the yard, burying backup drives in the garden.
+]
+
+== #bamboo(size: 12pt) Bamboo --- The Panda
+
+#card("Bamboo", bamboo)[
+  *Signature look:* White face with black eye patches, round ears, black-and-white markings.
+
+  Bamboo moves slowly and deliberately, which everyone mistakes for wisdom. In truth, he is just very, very relaxed. He chews through problems the way he chews through everything --- methodically, one bite at a time. His black-and-white worldview is surprisingly effective: things either work or they don't.
+
+  As the *neighborhood panda*, Bamboo brings calm to chaos. When the network is on fire, Bamboo is the one sitting quietly in the corner, eating bamboo shoots and waiting for everyone to stop yelling. Nova once asked him to explain his optimization strategy. He said "sit down" and went back to eating. Nova's performance metrics improved 15%.
+
+  _Hobbies:_ Eating bamboo, sitting, rolling down gentle slopes, eating more bamboo.
+]
+
+== #trunks(size: 12pt) Trunks --- The Elephant
+
+#card("Trunks", trunks)[
+  *Signature look:* Big floppy ears, short trunk, gray body, pink inner ears.
+
+  Trunks never forgets. Not a password, not a session key, not the time Frank borrowed his stapler in 2019. His memory is legendary --- he can recall every packet that has ever crossed the network, every certificate Grace has ever signed, and every bug Murphy has ever filed. His ears are large because they're full of information, or so he claims.
+
+  As the *neighborhood elephant*, Trunks serves as the living archive. Need to know what the network config looked like three years ago? Ask Trunks. Need a witness for a disputed key exchange? Trunks was there. He once settled an argument between Alice and Bob by reciting their entire message history verbatim. Neither spoke to him for a week.
+
+  _Hobbies:_ Remembering things, reminding people of things they'd rather forget, long walks.
+]
+
+== #clover(size: 12pt) Clover --- The Rabbit
+
+#card("Clover", clover)[
+  *Signature look:* Tall ears with pink insides, cream fur, buck teeth, twitchy nose.
+
+  Clover is fast. Not just quick --- *fast*. She processes requests before they're fully formed, delivers responses before they're expected, and has already read the next three sections of this manual. Her buck teeth are perfect for nibbling through cable ties, which makes her invaluable during hardware deployments.
+
+  As the *neighborhood rabbit*, Clover handles everything that needs to happen quickly. Express delivery? Clover. Urgent patch deployment? Clover. Need someone to test latency by running between two servers? Also Clover. She has twelve siblings, all of whom are also named Clover, which causes exactly the kind of namespace collision Christina warned everyone about.
+
+  _Hobbies:_ Sprinting, multiplying, twitching her nose at suspicious packets, digging escape tunnels.
+]
+
 = Usage
 
 == Installation
@@ -337,7 +402,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All eighteen characters share the same signature:
+All twenty-three characters share the same signature:
 
 ```typst
 #let name(
@@ -375,6 +440,12 @@ All eighteen characters share the same signature:
   [#crank(size: 16pt) `crank`], [orange], [dark-gray (head)], [orange (panel)], [wide shoulders, warning stripe],
   [#nova(size: 16pt) `nova`], [navy], [navy (head)], [dark-blue], [V-visor, cyan glow core],
   [#sentinel(size: 16pt) `sentinel`], [gunmetal], [dark-gray (helmet)], [dark-gray], [red visor slit, shoulder armor],
+  table.hline(stroke: 0.5pt),
+  [#whiskers(size: 16pt) `whiskers`], [orange], [dark-orange (stripes)], [red (collar)], [whiskers, pink nose, bell],
+  [#barkley(size: 16pt) `barkley`], [golden], [brown (ears)], [blue (collar)], [floppy ears, tongue, tag],
+  [#bamboo(size: 16pt) `bamboo`], [white], [black (patches)], [green], [eye patches, black arms],
+  [#trunks(size: 16pt) `trunks`], [gray], [dark-gray (ears)], [red], [big ears, trunk, pink inner ears],
+  [#clover(size: 16pt) `clover`], [cream], [brown (ear tips)], [green], [tall ears, buck teeth, pink nose],
 )
 
 == Color Palette
@@ -397,6 +468,10 @@ The library exports individual color constants:
   [], [], [`chassis-orange`],
   [], [], [`chassis-navy`],
   [], [], [`chassis-gunmetal`],
+  [], [], [`fur-orange`],
+  [], [], [`fur-golden`],
+  [], [], [`fur-cream`],
+  [], [], [`fur-gray`],
 )
 
 == Custom Characters with `pixel-grid`

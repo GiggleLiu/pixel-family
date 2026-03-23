@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Pixel Family — a Typst package (`pixel-family`) that renders 16x16 pixel art characters as inline vector graphics via CeTZ.
+Pixel Family — a Typst package (`pixel-family`) that renders 16x16 pixel art characters as native inline vector graphics (zero dependencies).
 
-Repo: GiggleLiu/pixel-family. Dependency: `@preview/cetz:0.4.2`. Compiler: Typst 0.13.1+.
+Repo: GiggleLiu/pixel-family. Compiler: Typst 0.13.1+.
 
 ## Commands
 
@@ -27,8 +27,8 @@ There is no separate test file — `manual.typ` exercises all characters, sizes,
 
 **`lib.typ`** — Package entrypoint. In order:
 1. Color palette constants and `palette` dictionary
-2. `pixel-grid(data, colors)` — core renderer: 2D color-index array → CeTZ `draw.rect()` calls
-3. `_char-box(size, baseline, data, colors)` — helper wrapping pixel-grid into inline `box(canvas(...))`
+2. `pixel-grid(data, colors, cell-size)` — core renderer: groups pixels by color, emits one `curve()` per color with multi-subpath
+3. `_char-box(size, baseline, data, colors)` — helper wrapping pixel-grid into inline `box(width, height)`
 4. Character function definitions (one per character, all share the same signature)
 
 **`characters/batch-*.typ`** — Pure data files (no imports). Each character exports:
@@ -58,14 +58,20 @@ When adding new characters, follow this checklist exactly:
 ## Key Design Decisions
 
 - `baseline: auto` centers characters with text via `(size - 1em) / 2`; pass `0pt` for bottom alignment
-- `pixel-grid` uses unitless integer coordinates; `canvas(length: size / 16)` handles scaling
+- `pixel-grid` takes a `cell-size` length parameter; `_char-box` passes `size / 16`
 - Color index 5 maps to `pants` color (reused for eyes/details — both typically black)
 - Accent colors (pin, glasses, flower, etc.) are hardcoded in `xxx-colors()`, not exposed as parameters
 - Batch files are pure data with no imports to avoid circular dependencies
 - `typst.toml` excludes images/, manual.*, Makefile, CLAUDE.md, .github/* from the published package
 
+## Releasing
+
+Version is specified in three places — update all when bumping:
+- `typst.toml` (`version`)
+- `Makefile` (`LOCAL_PKG` path)
+- `lib.typ`, `manual.typ`, `README.md` (import examples)
+
 ## Reference
 
-- CeTZ source: `~/tcode/cetz`
 - Pixel art reference: `~/tcode/pixel-people.typ` (Brave Workz LINE Store)
 - Style reference: `~/tcode/periodic-table`

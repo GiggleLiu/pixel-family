@@ -1,6 +1,6 @@
 CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
-LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/0.1.0
+LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/0.2.0
 PKG_FILES := lib.typ typst.toml LICENSE README.md
 
 .PHONY: all manual images install uninstall test clean

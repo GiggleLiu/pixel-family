@@ -1,7 +1,7 @@
 // Pixel Family — Inline pixel characters for Typst
 //
 // Usage:
-//   #import "@preview/pixel-family:0.1.0": bob, alice, eve
+//   #import "@preview/pixel-family:0.2.0": bob, alice, eve
 //   Hello #bob() and #alice() and #eve()!
 
 // === Color Palette ===

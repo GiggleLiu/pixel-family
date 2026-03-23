@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/GiggleLiu/pixel-family/actions/workflows/ci.yml/badge.svg)](https://github.com/GiggleLiu/pixel-family/actions/workflows/ci.yml)
 
-Inline pixel art characters for Typst, drawn as vector graphics with [CeTZ](https://github.com/cetz-package/cetz). Drop them into running text like emoji.
+Inline pixel art characters for Typst, rendered as native vector graphics. Drop them into running text like emoji.
 
 **[Download the manual (PDF)](https://github.com/GiggleLiu/pixel-family/releases/latest/download/manual.pdf)**
 
@@ -44,7 +44,7 @@ Their names come from the cast of cryptography: Alice and Bob exchange secret me
 ## Quick Start
 
 ```typst
-#import "@preview/pixel-family:0.1.0": *
+#import "@preview/pixel-family:0.2.0": *
 
 Hello #bob() and #alice() are talking while #eve() listens.
 ```

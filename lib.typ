@@ -4,8 +4,6 @@
 //   #import "@preview/pixel-family:0.1.0": bob, alice, eve
 //   Hello #bob() and #alice() and #eve()!
 
-#import "@preview/cetz:0.4.2": canvas, draw
-
 // === Color Palette ===
 
 #let skin-default = rgb("#e8b8a0")
@@ -64,26 +62,41 @@
 
 // === Pixel Grid Renderer ===
 
-/// Render a 2D pixel array as CeTZ rectangles (draw commands, for use inside canvas).
-/// Coordinates are unitless integers; use canvas `length` to control output size.
+/// Render a 2D pixel array as native Typst content using one `curve()` per color.
+/// Groups all pixels of the same color into a single multi-subpath curve element,
+/// reducing ~200 draw calls to ~6 (one per distinct color).
 ///
 /// - data (array): 2D array of color indices (0 = transparent)
 /// - colors (array): color palette where colors.at(index) gives the fill color
-/// -> CeTZ draw commands
-#let pixel-grid(data, colors) = {
+/// - cell-size (length): size of each pixel cell
+/// -> content (placed curve elements)
+#let pixel-grid(data, colors, cell-size) = {
   let rows = data.len()
+  // Group pixel positions by color index
+  let groups = (:)
   for (row-idx, row) in data.enumerate() {
     for (col-idx, color-idx) in row.enumerate() {
       if color-idx > 0 and color-idx < colors.len() {
-        let x = col-idx
-        let y = rows - row-idx - 1
-        draw.rect(
-          (x, y), (x + 1, y + 1),
-          fill: colors.at(color-idx),
-          stroke: none,
-        )
+        let key = str(color-idx)
+        if key not in groups { groups.insert(key, ()) }
+        groups.at(key).push((col-idx, row-idx))
       }
     }
+  }
+  // Emit one curve() per color with all pixels as sub-paths
+  for (key, positions) in groups {
+    let color = colors.at(int(key))
+    let commands = ()
+    for (col, row) in positions {
+      let x = col * cell-size
+      let y = row * cell-size
+      commands.push(curve.move((x, y)))
+      commands.push(curve.line((x + cell-size, y)))
+      commands.push(curve.line((x + cell-size, y + cell-size)))
+      commands.push(curve.line((x, y + cell-size)))
+      commands.push(curve.close(mode: "straight"))
+    }
+    place(curve(fill: color, stroke: none, ..commands))
   }
 }
 
@@ -92,9 +105,9 @@
 // baseline: auto = center-aligned with text, or pass a length (e.g. 0pt for bottom)
 #let _char-box(size, baseline, data, colors) = box(
   baseline: if baseline == auto { (size - 1em) / 2 } else { baseline },
-  canvas(length: size / 16, {
-    pixel-grid(data, colors)
-  })
+  width: size,
+  height: size,
+  pixel-grid(data, colors, size / 16),
 )
 
 // === Character Definitions (Batch 1) ===

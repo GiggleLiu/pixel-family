@@ -25,7 +25,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of eighteen characters drawn as 16x16 pixel art, rendered natively as vector graphics with CeTZ. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of eighteen characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -401,13 +401,13 @@ The library exports individual color constants:
 
 == Custom Characters with `pixel-grid`
 
-For advanced use, the `pixel-grid` function is exported. Define a 2D array and a color palette to draw your own pixel art:
+For advanced use, the `pixel-grid` function is exported. Define a 2D array, a color palette, and a cell size to draw your own pixel art:
 
 ```typst
 #import "lib.typ": pixel-grid
-#import "@preview/cetz:0.4.2": canvas, draw
 
-#box(canvas(length: 0.3cm, {
+#let size = 0.9cm
+#box(width: size, height: size,
   pixel-grid(
     (
       (0, 1, 0),
@@ -415,8 +415,9 @@ For advanced use, the `pixel-grid` function is exported. Define a 2D array and a
       (0, 1, 0),
     ),
     (none, red),  // index 0 = transparent, index 1 = red
+    size / 3,     // cell size = total size / grid dimension
   )
-}))
+)
 ```
 
 = License

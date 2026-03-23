@@ -9,4 +9,4 @@ repository = "https://github.com/GiggleLiu/pixel-family"
 keywords = ["pixel", "character", "avatar", "inline"]
 categories = ["components"]
 compiler = "0.13.1"
-exclude = ["images/*", "manual.*", "Makefile", "CLAUDE.md", ".github/*"]
+exclude = ["images/*", "manual.*", "Makefile", "CLAUDE.md", ".github/*", "dist/*", "docs/*"]

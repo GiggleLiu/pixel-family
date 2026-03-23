@@ -18,6 +18,8 @@ make install      # install to local Typst packages (~/.local/share/typst/packag
 make uninstall    # remove local package
 make test         # install + compile manual (the test suite)
 make clean        # remove generated files
+make bump-version V=X.Y.Z   # bump version in all files
+make release-pkg  V=X.Y.Z   # stage package files in dist/
 typst watch manual.typ manual.pdf  # live reload during development
 ```
 
@@ -64,12 +66,14 @@ When adding new characters, follow this checklist exactly:
 - Batch files are pure data with no imports to avoid circular dependencies
 - `typst.toml` excludes images/, manual.*, Makefile, CLAUDE.md, .github/* from the published package
 
-## Releasing
+## Releasing (Skill: /release)
 
-Version is specified in three places — update all when bumping:
-- `typst.toml` (`version`)
-- `Makefile` (`LOCAL_PKG` path)
-- `lib.typ`, `manual.typ`, `README.md` (import examples)
+Run `/release X.Y.Z` to release a new version. The skill handles:
+version bump (`make bump-version`), testing, building, git tag, GitHub release,
+and Typst Universe PR via the `GiggleLiu/packages` fork.
+
+`make bump-version V=X.Y.Z` updates version in: `typst.toml`, `lib.typ`, `manual.typ`, `README.md`.
+`Makefile` reads version dynamically from `typst.toml` (`CUR_VERSION`).
 
 ## Reference
 

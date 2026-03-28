@@ -328,7 +328,7 @@
 
 #import "characters/batch-5-community.typ": *
 
-/// Alien: big brain dome, glowing green eyes (inspired by GiggleLiu)
+/// Alien: big brain dome, glowing green eyes (prototype GiggleLiu)
 /// -> content (inline)
 #let alien(
   size: 1em,
@@ -339,7 +339,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, alien-data, alien-colors(skin, hair, shirt, pants))
 
-/// Seraphim: fiery crown, eye-covered body, folded wings (inspired by RJG)
+/// Seraphim: fiery crown, eye-covered body, folded wings (prototype RJG)
 /// -> content (inline)
 #let seraphim(
   size: 1em,
@@ -350,7 +350,7 @@
   pants: rgb("#8b0000"),
 ) = _char-box(size, baseline, seraphim-data, seraphim-colors(skin, hair, shirt, pants))
 
-/// Shamir: vertically split in two halves (inspired by ShawnAn)
+/// Shamir: vertically split in two halves (prototype ShawnAn)
 /// -> content (inline)
 #let shamir(
   size: 1em,
@@ -361,7 +361,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, shamir-data, shamir-colors(skin, hair, shirt, pants))
 
-/// Steve: longer hair with glasses, teal shirt (inspired by Zhongyi)
+/// Steve: longer hair with glasses, teal shirt (prototype Zhongyi)
 /// -> content (inline)
 #let steve(
   size: 1em,
@@ -372,7 +372,7 @@
   pants: rgb("#6a0dad"),
 ) = _char-box(size, baseline, steve-data, steve-colors(skin, hair, shirt, pants))
 
-/// Yui: brown hair with yellow hairclips, sailor collar (inspired by Yui)
+/// Yui: brown hair with yellow hairclips, sailor collar (prototype Yui)
 /// -> content (inline)
 #let yui(
   size: 1em,
@@ -383,7 +383,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, yui-data, yui-colors(skin, hair, shirt, pants))
 
-/// Logic: gate-shaped head, LED eyes, circuit-trace body (inspired by Hongkuan)
+/// Logic: gate-shaped head, LED eyes, circuit-trace body (prototype Hongkuan)
 /// -> content (inline)
 #let logic(
   size: 1em,
@@ -394,7 +394,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, logic-data, logic-colors(skin, hair, shirt, pants))
 
-/// Tabby: chonky orange cat, half-closed happy eyes (inspired by Patrick)
+/// Tabby: chonky orange cat, half-closed happy eyes (prototype Patrick)
 /// -> content (inline)
 #let tabby(
   size: 1em,
@@ -405,7 +405,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, tabby-data, tabby-colors(skin, hair, shirt, pants))
 
-/// Schrodinger: half-solid half-ghostly cat (inspired by GuoyiZhu)
+/// Schrodinger: half-solid half-ghostly cat (prototype GuoyiZhu)
 /// -> content (inline)
 #let schrodinger(
   size: 1em,
@@ -416,7 +416,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, schrodinger-data, schrodinger-colors(skin, hair, shirt, pants))
 
-/// Enaga: maximum fluffball Shima Enaga bird (inspired by hmyuuu)
+/// Enaga: maximum fluffball Shima Enaga bird (prototype hmyuuu)
 /// -> content (inline)
 #let enaga(
   size: 1em,
@@ -427,7 +427,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, enaga-data, enaga-colors(skin, hair, shirt, pants))
 
-/// Noir: black cat with wind-blown red scarf (inspired by xuanzhao)
+/// Noir: black cat with wind-blown red scarf (prototype xuanzhao)
 /// -> content (inline)
 #let noir(
   size: 1em,
@@ -438,7 +438,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, noir-data, noir-colors(skin, hair, shirt, pants))
 
-/// Milady: bob-cut hair, headphones, cyber glow (inspired by Qingyun)
+/// Milady: bob-cut hair, headphones, cyber glow (prototype Qingyun)
 /// -> content (inline)
 #let milady(
   size: 1em,
@@ -449,7 +449,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, milady-data, milady-colors(skin, hair, shirt, pants))
 
-/// Tigris: white tiger, black stripes, blue eyes (inspired by YushengZhao)
+/// Tigris: white tiger, black stripes, blue eyes (prototype YushengZhao)
 /// -> content (inline)
 #let tigris(
   size: 1em,
@@ -460,7 +460,7 @@
   pants: rgb("#555555"),
 ) = _char-box(size, baseline, tigris-data, tigris-colors(skin, hair, shirt, pants))
 
-/// Porcellum: royal piglet with gold crown and bowtie (inspired by Han Wang)
+/// Porcellum: royal piglet with gold crown and bowtie (prototype Han Wang)
 /// -> content (inline)
 #let porcellum(
   size: 1em,
@@ -471,7 +471,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, porcellum-data, porcellum-colors(skin, hair, shirt, pants))
 
-/// Lain: bear-suit hoodie, antenna wire (inspired by longli zheng)
+/// Lain: bear-suit hoodie, antenna wire (prototype longli zheng)
 /// -> content (inline)
 #let lain(
   size: 1em,
@@ -482,7 +482,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, lain-data, lain-colors(skin, hair, shirt, pants))
 
-/// Dragon: eastern dragon head, curved horns, gold whiskers (inspired by Yuqing)
+/// Dragon: eastern dragon head, curved horns, gold whiskers (prototype Yuqing)
 /// -> content (inline)
 #let dragon(
   size: 1em,
@@ -493,7 +493,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, dragon-data, dragon-colors(skin, hair, shirt, pants))
 
-/// Paddler: brown bear with ping-pong paddle (inspired by Guanhua)
+/// Paddler: brown bear with ping-pong paddle (prototype Guanhua)
 /// -> content (inline)
 #let paddler(
   size: 1em,
@@ -504,7 +504,7 @@
   pants: pants-black,
 ) = _char-box(size, baseline, paddler-data, paddler-colors(skin, hair, shirt, pants))
 
-/// Chaser: solar crown, sun-ray spikes, golden emblem (inspired by zhaohui)
+/// Chaser: solar crown, sun-ray spikes, golden emblem (prototype zhaohui)
 /// -> content (inline)
 #let chaser(
   size: 1em,

@@ -3,7 +3,7 @@
 // Designed with inspiration from real people who voted for their favorites.
 
 // ---------------------------------------------------------------------------
-// Alien (inspired by GiggleLiu) — Big Brain variant
+// Alien (prototype GiggleLiu) — Big Brain variant
 // Enormous cranium dome, tiny face, lab coat feel, glowing green eyes.
 // ---------------------------------------------------------------------------
 #let alien-data = (
@@ -28,7 +28,7 @@
 #let alien-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#76ff03"))
 
 // ---------------------------------------------------------------------------
-// Seraphim (inspired by RJG) — Eye-Covered variant
+// Seraphim (prototype RJG) — Eye-Covered variant
 // Fiery crown, folded wings, eyes covering the body, compact form.
 // ---------------------------------------------------------------------------
 #let seraphim-data = (
@@ -53,7 +53,7 @@
 #let seraphim-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ff6d00"))
 
 // ---------------------------------------------------------------------------
-// Shamir (inspired by ShawnAn) — Vertical Split variant
+// Shamir (prototype ShawnAn) — Vertical Split variant
 // Character split down the middle, left half shirt, right half pants color.
 // Ties to Shamir's secret sharing — literally split in two.
 // ---------------------------------------------------------------------------
@@ -79,7 +79,7 @@
 #let shamir-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants)
 
 // ---------------------------------------------------------------------------
-// Steve (inspired by Zhongyi) — Longer Hair with Glasses variant
+// Steve (prototype Zhongyi) — Longer Hair with Glasses variant
 // Medium-length dark brown hair, glasses accent, teal shirt, purple jeans.
 // ---------------------------------------------------------------------------
 #let steve-data = (
@@ -104,7 +104,7 @@
 #let steve-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#555555"))
 
 // ---------------------------------------------------------------------------
-// Yui (inspired by Yui) — Hairclips variant
+// Yui (prototype Yui) — Hairclips variant
 // Short-medium brown hair, yellow hairclips, sailor-collar uniform.
 // Based on Hirasawa Yui from K-ON!
 // ---------------------------------------------------------------------------
@@ -130,7 +130,7 @@
 #let yui-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#f1c40f"))
 
 // ---------------------------------------------------------------------------
-// Logic (inspired by Hongkuan) — Logic Gate variant
+// Logic (prototype Hongkuan) — Logic Gate variant
 // Trapezoidal gate-shaped head, green LED eyes, circuit traces on body.
 // ---------------------------------------------------------------------------
 #let logic-data = (
@@ -155,7 +155,7 @@
 #let logic-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#4caf50"))
 
 // ---------------------------------------------------------------------------
-// Tabby (inspired by Patrick) — Chonky Cat variant
+// Tabby (prototype Patrick) — Chonky Cat variant
 // Extra round orange cat, half-closed happy eyes, very wide body.
 // ---------------------------------------------------------------------------
 #let tabby-data = (
@@ -180,7 +180,7 @@
 #let tabby-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#2ecc71"))
 
 // ---------------------------------------------------------------------------
-// Schrodinger (inspired by GuoyiZhu) — Schrodinger Cat variant
+// Schrodinger (prototype GuoyiZhu) — Schrodinger Cat variant
 // Left half solid, right half dithered/ghostly. Superposition of alive and dead.
 // ---------------------------------------------------------------------------
 #let schrodinger-data = (
@@ -205,7 +205,7 @@
 #let schrodinger-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#00e5ff"))
 
 // ---------------------------------------------------------------------------
-// Enaga (inspired by hmyuuu) — Maximum Fluffball variant
+// Enaga (prototype hmyuuu) — Maximum Fluffball variant
 // Ultra-round Shima Enaga bird, pure white head, dark wings, tiny beak.
 // ---------------------------------------------------------------------------
 #let enaga-data = (
@@ -230,7 +230,7 @@
 #let enaga-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#e67e22"))
 
 // ---------------------------------------------------------------------------
-// Noir (inspired by xuanzhao) — Wind-Blown Scarf variant
+// Noir (prototype xuanzhao) — Wind-Blown Scarf variant
 // Black cat with green eyes and a red scarf blowing to the right.
 // ---------------------------------------------------------------------------
 #let noir-data = (
@@ -255,7 +255,7 @@
 #let noir-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#2ecc71"), rgb("#e74c3c"))
 
 // ---------------------------------------------------------------------------
-// Milady (inspired by Qingyun) — Cyber Milady variant
+// Milady (prototype Qingyun) — Cyber Milady variant
 // Bob-cut dark hair, headphones on sides, glowing cyan element on chest.
 // ---------------------------------------------------------------------------
 #let milady-data = (
@@ -280,7 +280,7 @@
 #let milady-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#00e5ff"))
 
 // ---------------------------------------------------------------------------
-// Tigris (inspired by YushengZhao) — White Tiger variant
+// Tigris (prototype YushengZhao) — White Tiger variant
 // White fur, black stripes, blue eyes, regal pose, pink nose.
 // ---------------------------------------------------------------------------
 #let tigris-data = (
@@ -305,7 +305,7 @@
 #let tigris-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#3498db"), rgb("#ff69b4"))
 
 // ---------------------------------------------------------------------------
-// Porcellum (inspired by Han Wang) — Royal Piglet variant
+// Porcellum (prototype Han Wang) — Royal Piglet variant
 // Gold crown between ears, bowtie at neck, round pink body.
 // ---------------------------------------------------------------------------
 #let porcellum-data = (
@@ -330,7 +330,7 @@
 #let porcellum-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#e8909a"), rgb("#f1c40f"))
 
 // ---------------------------------------------------------------------------
-// Lain (inspired by longli zheng) — Bear Suit variant
+// Lain (prototype longli zheng) — Bear Suit variant
 // Bear hoodie with round ears, face peeking out, antenna wire.
 // Based on Iwakura Lain from Serial Experiments Lain.
 // ---------------------------------------------------------------------------
@@ -356,7 +356,7 @@
 #let lain-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ff5252"))
 
 // ---------------------------------------------------------------------------
-// Dragon (inspired by Yuqing) — Eastern Dragon variant
+// Dragon (prototype Yuqing) — Eastern Dragon variant
 // Serpentine head, curved horns, whiskers, wise eyes, segmented body.
 // ---------------------------------------------------------------------------
 #let dragon-data = (
@@ -381,7 +381,7 @@
 #let dragon-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffd700"))
 
 // ---------------------------------------------------------------------------
-// Paddler (inspired by Guanhua) — Brown Bear with Paddle variant
+// Paddler (prototype Guanhua) — Brown Bear with Paddle variant
 // Round ears, muzzle, ping-pong paddle held to right side.
 // ---------------------------------------------------------------------------
 #let paddler-data = (
@@ -406,7 +406,7 @@
 #let paddler-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#e53935"))
 
 // ---------------------------------------------------------------------------
-// Chaser (inspired by zhaohui) — Solar Crown variant
+// Chaser (prototype zhaohui) — Solar Crown variant
 // Sun-ray spikes radiating from head, warm-toned, golden sun emblem on chest.
 // ---------------------------------------------------------------------------
 #let chaser-data = (

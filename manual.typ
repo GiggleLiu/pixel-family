@@ -277,7 +277,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #alien(size: 12pt) Alien --- The Big Brain
 
 #card("Alien", alien)[
-  *Signature look:* Enormous cranium dome, tiny face, glowing green eyes, lab coat body. Inspired by GiggleLiu.
+  *Signature look:* Enormous cranium dome, tiny face, glowing green eyes, lab coat body. Prototype: GiggleLiu.
 
   Alien arrived from a dimension where brains are the primary fashion accessory. Its cranium contains not one but three parallel thought processes, all of which are currently wondering why humans encrypt things so slowly. The glowing green eyes see in twelve spectra, though it mostly uses them to read Typst documentation.
 
@@ -287,7 +287,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #seraphim(size: 12pt) Seraphim --- The All-Seeing
 
 #card("Seraphim", seraphim)[
-  *Signature look:* Fiery crown, folded wings, eyes covering the entire body. Inspired by RJG.
+  *Signature look:* Fiery crown, folded wings, eyes covering the entire body. Prototype: RJG.
 
   Seraphim is covered in eyes --- on its wings, its torso, everywhere. It sees all traffic, all packets, all side channels. Eve is jealous; Seraphim doesn't even need to try. The fiery crown burns with the intensity of a thousand failed login attempts. Six wings, though it keeps four folded for aerodynamic efficiency.
 
@@ -297,7 +297,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #shamir(size: 12pt) Shamir --- The Splitter
 
 #card("Shamir", shamir)[
-  *Signature look:* Vertically split down the middle --- left half in shirt color, right half in pants color. Inspired by ShawnAn.
+  *Signature look:* Vertically split down the middle --- left half in shirt color, right half in pants color. Prototype: ShawnAn.
 
   Shamir takes secret sharing literally. Every day, it splits itself in half. Each half carries a share of the secret, and neither half alone can reconstruct it. The gap down the middle is not a flaw --- it is the protocol working as designed. Alice needs both halves to recover the message; Eve can stare at one half all day and learn nothing.
 
@@ -307,7 +307,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #steve(size: 12pt) Steve --- The Bespectacled
 
 #card("Steve", steve)[
-  *Signature look:* Longer dark brown hair, glasses, teal shirt, purple jeans. Inspired by Zhongyi.
+  *Signature look:* Longer dark brown hair, glasses, teal shirt, purple jeans. Prototype: Zhongyi.
 
   Steve adjusts his glasses before every code review. The frames are not prescription --- they contain a heads-up display showing real-time entropy measurements. His teal shirt is precisely the color of a secure TLS handshake indicator, which he insists is a coincidence. His purple jeans are not a coincidence; they are a statement.
 
@@ -317,7 +317,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #yui(size: 12pt) Yui --- The Guitarist
 
 #card("Yui", yui)[
-  *Signature look:* Brown hair with yellow hairclips, sailor-collar uniform. Inspired by Yui / Hirasawa Yui from K-ON!
+  *Signature look:* Brown hair with yellow hairclips, sailor-collar uniform. Prototype: Yui / Hirasawa Yui from K-ON!
 
   Yui approaches cryptography the way she approaches guitar: with boundless enthusiasm and occasional accidental genius. Her yellow hairclips are tuning forks that resonate at the frequency of correctly encrypted data. She once solved a key exchange problem by humming the solution. Nobody could reproduce it, but it worked.
 
@@ -327,7 +327,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #logic(size: 12pt) Logic --- The Gate
 
 #card("Logic", logic)[
-  *Signature look:* Trapezoidal gate-shaped head, green LED eyes, circuit traces on body. Inspired by Hongkuan.
+  *Signature look:* Trapezoidal gate-shaped head, green LED eyes, circuit traces on body. Prototype: Hongkuan.
 
   Logic thinks in Boolean. Its gate-shaped head processes inputs and produces exactly one output: TRUE or FALSE. The circuit traces on its body light up as signals propagate through its decision tree. It has no ambiguity, no uncertainty, no maybe. Christina finds it refreshing; everyone else finds it exhausting.
 
@@ -337,7 +337,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #tabby(size: 12pt) Tabby --- The Chonky Cat
 
 #card("Tabby", tabby)[
-  *Signature look:* Extra-round orange tabby, half-closed happy eyes, very wide body. Inspired by Patrick.
+  *Signature look:* Extra-round orange tabby, half-closed happy eyes, very wide body. Prototype: Patrick.
 
   Tabby is the neighborhood's emotional support animal. Its half-closed eyes convey permanent contentment, and its round body suggests it has never missed a meal. It sits on keyboards at critical moments, contributing random bytes that Murphy insists improve entropy. Tabby neither confirms nor denies this theory.
 
@@ -347,7 +347,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #schrodinger(size: 12pt) Schrodinger --- The Quantum Cat
 
 #card("Schrodinger", schrodinger)[
-  *Signature look:* Left half solid, right half dithered/ghostly --- exists in superposition. Inspired by GuoyiZhu.
+  *Signature look:* Left half solid, right half dithered/ghostly --- exists in superposition. Prototype: GuoyiZhu.
 
   Schrodinger is simultaneously alive and not-quite-there. The left half is a perfectly normal cat; the right half is dissolving into probability. Opening the box does not help --- it just makes both halves argue about which one is real. It travels through hyperspace and many worlds, leaving pixel artifacts in its wake.
 
@@ -357,7 +357,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #enaga(size: 12pt) Enaga --- The Fluffball
 
 #card("Enaga", enaga)[
-  *Signature look:* Ultra-round Shima Enaga bird, pure white head, dark wings, tiny orange beak. Inspired by hmyuuu.
+  *Signature look:* Ultra-round Shima Enaga bird, pure white head, dark wings, tiny orange beak. Prototype: hmyuuu.
 
   Enaga is 90% fluff and 10% bird. Its pure white head is the softest thing in the neighborhood, and its tiny orange beak delivers messages with surprising precision. Despite being approximately spherical, it can fly at remarkable speeds. Pixel considers Enaga a kindred spirit; both are round and helpful.
 
@@ -367,7 +367,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #noir(size: 12pt) Noir --- The Shadow Cat
 
 #card("Noir", noir)[
-  *Signature look:* Black cat with green eyes and a red scarf blowing in the wind. Inspired by xuanzhao.
+  *Signature look:* Black cat with green eyes and a red scarf blowing in the wind. Prototype: xuanzhao.
 
   Noir moves through the neighborhood like a shadow with a fashion sense. The red scarf is always blowing dramatically, even indoors. Its green eyes can see in absolute darkness, which is useful for reading encrypted messages at midnight. Eve respects Noir's surveillance capabilities; Mallory gives it a wide berth.
 
@@ -377,7 +377,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #milady(size: 12pt) Milady --- The Cyber Geek
 
 #card("Milady", milady)[
-  *Signature look:* Dark bob-cut hair, headphones, glowing cyan element on chest. Inspired by Qingyun.
+  *Signature look:* Dark bob-cut hair, headphones, glowing cyan element on chest. Prototype: Qingyun.
 
   Milady's headphones are always on, tuned to frequencies that only she can hear --- or so she claims. The glowing cyan element on her chest pulses with network traffic. Her bob-cut hair is precisely angled at 45 degrees, which she maintains is the optimal angle for both aesthetics and signal reception. She writes code in dark mode exclusively.
 
@@ -387,7 +387,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #tigris(size: 12pt) Tigris --- The White Tiger
 
 #card("Tigris", tigris)[
-  *Signature look:* White fur, black stripes, blue eyes, pink nose, regal bearing. Inspired by YushengZhao.
+  *Signature look:* White fur, black stripes, blue eyes, pink nose, regal bearing. Prototype: YushengZhao.
 
   Tigris is the rarest creature in the neighborhood. Its white fur and blue eyes command attention in any room, and its black stripes form patterns that some claim encode prime numbers. It moves with the quiet confidence of something that has never needed to prove anything. Sentinel respects its perimeter awareness.
 
@@ -397,7 +397,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #porcellum(size: 12pt) Porcellum --- The Royal Piglet
 
 #card("Porcellum", porcellum)[
-  *Signature look:* Pink piglet with a gold crown and a bowtie at the neck. Inspired by Han Wang.
+  *Signature look:* Pink piglet with a gold crown and a bowtie at the neck. Prototype: Han Wang.
 
   Porcellum rules a kingdom of exactly one (itself) but does so with magnificent pomp. The gold crown was a gift; the bowtie was a choice. Its snout can detect truffle-encrypted messages at fifty meters. Despite its royal bearing, it is approachable and surprisingly good at protocol arbitration --- Trent considers it a worthy understudy.
 
@@ -407,7 +407,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #lain(size: 12pt) Lain --- The Wired
 
 #card("Lain", lain)[
-  *Signature look:* Bear-suit hoodie with round ears, face peeking out, red antenna wire. Inspired by longli zheng / Iwakura Lain.
+  *Signature look:* Bear-suit hoodie with round ears, face peeking out, red antenna wire. Prototype: longli zheng / Iwakura Lain.
 
   Lain exists at the boundary between the physical and digital worlds. The bear suit is not a costume --- it is an interface. The antenna wire connects to everything and nothing. She speaks rarely but when she does, the network listens. Mallory once tried to intercept Lain's traffic; the traffic intercepted Mallory instead.
 
@@ -417,7 +417,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #dragon(size: 12pt) Dragon --- The Ancient
 
 #card("Dragon", dragon)[
-  *Signature look:* Eastern dragon head, curved horns, gold whiskers, segmented body. Inspired by Yuqing.
+  *Signature look:* Eastern dragon head, curved horns, gold whiskers, segmented body. Prototype: Yuqing.
 
   Dragon has existed since before the first cipher was written. Its gold whiskers sense electromagnetic fields; its curved horns are tuned to detect unauthorized frequency use. The segmented body contains millennia of accumulated wisdom, most of which it considers too obvious to share. Christina once asked for advice; Dragon replied with a single number. It was the right number.
 
@@ -427,7 +427,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #paddler(size: 12pt) Paddler --- The Athlete
 
 #card("Paddler", paddler)[
-  *Signature look:* Brown bear with round ears, muzzle, and a red ping-pong paddle. Inspired by Guanhua.
+  *Signature look:* Brown bear with round ears, muzzle, and a red ping-pong paddle. Prototype: Guanhua.
 
   Paddler combines brute strength with surgical precision. The ping-pong paddle is both a weapon and a metaphor: every packet that crosses the network gets a swift, calculated return. Its serve is unreturnable; its backhand violates the laws of physics. Murphy once challenged it to a match. The score was not recorded, out of mercy.
 
@@ -437,7 +437,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #chaser(size: 12pt) Chaser --- The Sun Chaser
 
 #card("Chaser", chaser)[
-  *Signature look:* Sun-ray spikes radiating from head, warm-toned skin, golden sun emblem on chest. Inspired by zhaohui.
+  *Signature look:* Sun-ray spikes radiating from head, warm-toned skin, golden sun emblem on chest. Prototype: zhaohui.
 
   Chaser runs toward the dawn every morning and has never caught it. This does not discourage Chaser; it motivates. The sun-ray spikes channel solar energy that powers a perpetual optimism even Bob finds excessive. The golden emblem on its chest stores exactly one day of sunlight, which it redistributes to whoever needs it most.
 

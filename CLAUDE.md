@@ -43,6 +43,10 @@ Four batches: `batch-1-initial.typ` (full-body: Bob, Alice, Christina, Mary, Eve
 
 **`manual.typ`** — Documentation + test suite. Not part of the published package.
 
+## Designing a Character (Skill: /design-character)
+
+Interactive workflow: asks user's name + description, generates 3 pixel art variants as PDF for review, suggests function names, then integrates the chosen design into the repo and commits.
+
 ## Adding a Character (Skill: /add-character)
 
 When adding new characters, follow this checklist exactly:

@@ -22,10 +22,11 @@ jobs:
 
       - name: Verify all SVGs generated
         run: |
-          for i in $(seq -w 1 35); do
-            test -f "images/render-${i}.svg" || { echo "Missing render-${i}.svg"; exit 1; }
-          done
-          echo "All 35 character SVGs generated successfully"
+          expected=$(grep -c '#pagebreak()' images/render.typ)
+          expected=$((expected + 1))
+          count=$(ls images/render-*.svg 2>/dev/null | wc -l)
+          echo "Expected $expected SVGs, found $count"
+          [ "$count" -eq "$expected" ] || { echo "SVG count mismatch"; exit 1; }
 
       - name: Upload manual PDF
         if: github.ref == 'refs/heads/main'

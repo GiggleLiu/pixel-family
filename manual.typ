@@ -12,6 +12,9 @@
     #frank(size: 28pt) #grace(size: 28pt) #trent(size: 28pt) #mallory(size: 28pt) #victor(size: 28pt)
     #ina(size: 28pt) #murphy(size: 28pt) #bella(size: 28pt)
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
+    #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
+    #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -25,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of eighteen characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of thirty-five characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -269,6 +272,178 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Perimeter walks, threat assessment, standing in doorways.
 ]
 
+= Meet the Community
+
+== #alien(size: 12pt) Alien --- The Big Brain
+
+#card("Alien", alien)[
+  *Signature look:* Enormous cranium dome, tiny face, glowing green eyes, lab coat body. Inspired by GiggleLiu.
+
+  Alien arrived from a dimension where brains are the primary fashion accessory. Its cranium contains not one but three parallel thought processes, all of which are currently wondering why humans encrypt things so slowly. The glowing green eyes see in twelve spectra, though it mostly uses them to read Typst documentation.
+
+  _Hobbies:_ Quantum sudoku, telepathic chess, cataloguing Earth's primitive number systems.
+]
+
+== #seraphim(size: 12pt) Seraphim --- The All-Seeing
+
+#card("Seraphim", seraphim)[
+  *Signature look:* Fiery crown, folded wings, eyes covering the entire body. Inspired by RJG.
+
+  Seraphim is covered in eyes --- on its wings, its torso, everywhere. It sees all traffic, all packets, all side channels. Eve is jealous; Seraphim doesn't even need to try. The fiery crown burns with the intensity of a thousand failed login attempts. Six wings, though it keeps four folded for aerodynamic efficiency.
+
+  _Hobbies:_ Watching (everything), flame calligraphy, counting prime numbers simultaneously in all eyes.
+]
+
+== #shamir(size: 12pt) Shamir --- The Splitter
+
+#card("Shamir", shamir)[
+  *Signature look:* Vertically split down the middle --- left half in shirt color, right half in pants color. Inspired by ShawnAn.
+
+  Shamir takes secret sharing literally. Every day, it splits itself in half. Each half carries a share of the secret, and neither half alone can reconstruct it. The gap down the middle is not a flaw --- it is the protocol working as designed. Alice needs both halves to recover the message; Eve can stare at one half all day and learn nothing.
+
+  _Hobbies:_ Splitting things, threshold cryptography, jigsaw puzzles (always starts from the middle).
+]
+
+== #steve(size: 12pt) Steve --- The Bespectacled
+
+#card("Steve", steve)[
+  *Signature look:* Longer dark brown hair, glasses, teal shirt, purple jeans. Inspired by Zhongyi.
+
+  Steve adjusts his glasses before every code review. The frames are not prescription --- they contain a heads-up display showing real-time entropy measurements. His teal shirt is precisely the color of a secure TLS handshake indicator, which he insists is a coincidence. His purple jeans are not a coincidence; they are a statement.
+
+  _Hobbies:_ Collecting fonts, adjusting glasses, debating tab widths.
+]
+
+== #yui(size: 12pt) Yui --- The Guitarist
+
+#card("Yui", yui)[
+  *Signature look:* Brown hair with yellow hairclips, sailor-collar uniform. Inspired by Yui / Hirasawa Yui from K-ON!
+
+  Yui approaches cryptography the way she approaches guitar: with boundless enthusiasm and occasional accidental genius. Her yellow hairclips are tuning forks that resonate at the frequency of correctly encrypted data. She once solved a key exchange problem by humming the solution. Nobody could reproduce it, but it worked.
+
+  _Hobbies:_ Guitar practice, eating cake, accidentally discovering zero-day vulnerabilities.
+]
+
+== #logic(size: 12pt) Logic --- The Gate
+
+#card("Logic", logic)[
+  *Signature look:* Trapezoidal gate-shaped head, green LED eyes, circuit traces on body. Inspired by Hongkuan.
+
+  Logic thinks in Boolean. Its gate-shaped head processes inputs and produces exactly one output: TRUE or FALSE. The circuit traces on its body light up as signals propagate through its decision tree. It has no ambiguity, no uncertainty, no maybe. Christina finds it refreshing; everyone else finds it exhausting.
+
+  _Hobbies:_ Truth table construction, minimizing Boolean expressions, debating whether NULL is falsy.
+]
+
+== #tabby(size: 12pt) Tabby --- The Chonky Cat
+
+#card("Tabby", tabby)[
+  *Signature look:* Extra-round orange tabby, half-closed happy eyes, very wide body. Inspired by Patrick.
+
+  Tabby is the neighborhood's emotional support animal. Its half-closed eyes convey permanent contentment, and its round body suggests it has never missed a meal. It sits on keyboards at critical moments, contributing random bytes that Murphy insists improve entropy. Tabby neither confirms nor denies this theory.
+
+  _Hobbies:_ Sitting on warm laptops, knocking things off desks, purring at exactly 26 Hz.
+]
+
+== #schrodinger(size: 12pt) Schrodinger --- The Quantum Cat
+
+#card("Schrodinger", schrodinger)[
+  *Signature look:* Left half solid, right half dithered/ghostly --- exists in superposition. Inspired by GuoyiZhu.
+
+  Schrodinger is simultaneously alive and not-quite-there. The left half is a perfectly normal cat; the right half is dissolving into probability. Opening the box does not help --- it just makes both halves argue about which one is real. It travels through hyperspace and many worlds, leaving pixel artifacts in its wake.
+
+  _Hobbies:_ Existing in superposition, collapsing wave functions, ignoring observers.
+]
+
+== #enaga(size: 12pt) Enaga --- The Fluffball
+
+#card("Enaga", enaga)[
+  *Signature look:* Ultra-round Shima Enaga bird, pure white head, dark wings, tiny orange beak. Inspired by hmyuuu.
+
+  Enaga is 90% fluff and 10% bird. Its pure white head is the softest thing in the neighborhood, and its tiny orange beak delivers messages with surprising precision. Despite being approximately spherical, it can fly at remarkable speeds. Pixel considers Enaga a kindred spirit; both are round and helpful.
+
+  _Hobbies:_ Fluffing up, perching on things, being mistaken for a snowball.
+]
+
+== #noir(size: 12pt) Noir --- The Shadow Cat
+
+#card("Noir", noir)[
+  *Signature look:* Black cat with green eyes and a red scarf blowing in the wind. Inspired by xuanzhao.
+
+  Noir moves through the neighborhood like a shadow with a fashion sense. The red scarf is always blowing dramatically, even indoors. Its green eyes can see in absolute darkness, which is useful for reading encrypted messages at midnight. Eve respects Noir's surveillance capabilities; Mallory gives it a wide berth.
+
+  _Hobbies:_ Night walks, dramatic entrances, sitting in patches of moonlight.
+]
+
+== #milady(size: 12pt) Milady --- The Cyber Geek
+
+#card("Milady", milady)[
+  *Signature look:* Dark bob-cut hair, headphones, glowing cyan element on chest. Inspired by Qingyun.
+
+  Milady's headphones are always on, tuned to frequencies that only she can hear --- or so she claims. The glowing cyan element on her chest pulses with network traffic. Her bob-cut hair is precisely angled at 45 degrees, which she maintains is the optimal angle for both aesthetics and signal reception. She writes code in dark mode exclusively.
+
+  _Hobbies:_ Lo-fi beats, midnight coding sessions, collecting rare NFTs ironically.
+]
+
+== #tigris(size: 12pt) Tigris --- The White Tiger
+
+#card("Tigris", tigris)[
+  *Signature look:* White fur, black stripes, blue eyes, pink nose, regal bearing. Inspired by YushengZhao.
+
+  Tigris is the rarest creature in the neighborhood. Its white fur and blue eyes command attention in any room, and its black stripes form patterns that some claim encode prime numbers. It moves with the quiet confidence of something that has never needed to prove anything. Sentinel respects its perimeter awareness.
+
+  _Hobbies:_ Surveying territory, looking regal, intimidating lesser cats.
+]
+
+== #porcellum(size: 12pt) Porcellum --- The Royal Piglet
+
+#card("Porcellum", porcellum)[
+  *Signature look:* Pink piglet with a gold crown and a bowtie at the neck. Inspired by Han Wang.
+
+  Porcellum rules a kingdom of exactly one (itself) but does so with magnificent pomp. The gold crown was a gift; the bowtie was a choice. Its snout can detect truffle-encrypted messages at fifty meters. Despite its royal bearing, it is approachable and surprisingly good at protocol arbitration --- Trent considers it a worthy understudy.
+
+  _Hobbies:_ Truffle hunting, royal decrees, wearing increasingly elaborate accessories.
+]
+
+== #lain(size: 12pt) Lain --- The Wired
+
+#card("Lain", lain)[
+  *Signature look:* Bear-suit hoodie with round ears, face peeking out, red antenna wire. Inspired by longli zheng / Iwakura Lain.
+
+  Lain exists at the boundary between the physical and digital worlds. The bear suit is not a costume --- it is an interface. The antenna wire connects to everything and nothing. She speaks rarely but when she does, the network listens. Mallory once tried to intercept Lain's traffic; the traffic intercepted Mallory instead.
+
+  _Hobbies:_ Being online, being offline (simultaneously), contemplating the nature of identity.
+]
+
+== #dragon(size: 12pt) Dragon --- The Ancient
+
+#card("Dragon", dragon)[
+  *Signature look:* Eastern dragon head, curved horns, gold whiskers, segmented body. Inspired by Yuqing.
+
+  Dragon has existed since before the first cipher was written. Its gold whiskers sense electromagnetic fields; its curved horns are tuned to detect unauthorized frequency use. The segmented body contains millennia of accumulated wisdom, most of which it considers too obvious to share. Christina once asked for advice; Dragon replied with a single number. It was the right number.
+
+  _Hobbies:_ Guarding ancient secrets, sleeping on treasure, being cryptic (literally and figuratively).
+]
+
+== #paddler(size: 12pt) Paddler --- The Athlete
+
+#card("Paddler", paddler)[
+  *Signature look:* Brown bear with round ears, muzzle, and a red ping-pong paddle. Inspired by Guanhua.
+
+  Paddler combines brute strength with surgical precision. The ping-pong paddle is both a weapon and a metaphor: every packet that crosses the network gets a swift, calculated return. Its serve is unreturnable; its backhand violates the laws of physics. Murphy once challenged it to a match. The score was not recorded, out of mercy.
+
+  _Hobbies:_ Table tennis, bench-pressing server racks, honey.
+]
+
+== #chaser(size: 12pt) Chaser --- The Sun Chaser
+
+#card("Chaser", chaser)[
+  *Signature look:* Sun-ray spikes radiating from head, warm-toned skin, golden sun emblem on chest. Inspired by zhaohui.
+
+  Chaser runs toward the dawn every morning and has never caught it. This does not discourage Chaser; it motivates. The sun-ray spikes channel solar energy that powers a perpetual optimism even Bob finds excessive. The golden emblem on its chest stores exactly one day of sunlight, which it redistributes to whoever needs it most.
+
+  _Hobbies:_ Sunrise watching, marathon running, motivational speaking to servers.
+]
+
 = Usage
 
 == Installation
@@ -337,7 +512,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All eighteen characters share the same signature:
+All thirty-five characters share the same signature:
 
 ```typst
 #let name(
@@ -375,6 +550,24 @@ All eighteen characters share the same signature:
   [#crank(size: 16pt) `crank`], [orange], [dark-gray (head)], [orange (panel)], [wide shoulders, warning stripe],
   [#nova(size: 16pt) `nova`], [navy], [navy (head)], [dark-blue], [V-visor, cyan glow core],
   [#sentinel(size: 16pt) `sentinel`], [gunmetal], [dark-gray (helmet)], [dark-gray], [red visor slit, shoulder armor],
+  table.hline(stroke: 0.5pt),
+  [#alien(size: 16pt) `alien`], [blue-gray], [blue (dome)], [white (coat)], [big brain, green eyes],
+  [#seraphim(size: 16pt) `seraphim`], [light], [golden (wings)], [crimson], [fiery crown, eyes on body],
+  [#shamir(size: 16pt) `shamir`], [default], [brown], [blue], [split in half vertically],
+  [#steve(size: 16pt) `steve`], [default], [brown], [teal], [glasses, purple jeans],
+  [#yui(size: 16pt) `yui`], [default], [brown], [white], [yellow hairclips, sailor collar],
+  [#logic(size: 16pt) `logic`], [silver], [gray (gate)], [dark-blue], [LED eyes, circuit traces],
+  [#tabby(size: 16pt) `tabby`], [orange], [dark-orange], [cream (belly)], [chonky, half-closed eyes],
+  [#schrodinger(size: 16pt) `schrodinger`], [gray-purple], [dark-purple], [purple], [half-ghostly, cyan eyes],
+  [#enaga(size: 16pt) `enaga`], [white], [dark (wings)], [light-gray], [round fluffball, orange beak],
+  [#noir(size: 16pt) `noir`], [black], [dark-gray], [red (scarf)], [green eyes, wind-blown scarf],
+  [#milady(size: 16pt) `milady`], [light], [dark (bob)], [dark (hoodie)], [headphones, cyan glow],
+  [#tigris(size: 16pt) `tigris`], [white], [black (stripes)], [gray], [blue eyes, pink nose],
+  [#porcellum(size: 16pt) `porcellum`], [pink], [rose (ear)], [blush (belly)], [gold crown, bowtie],
+  [#lain(size: 16pt) `lain`], [light], [brown], [tan (bear suit)], [bear ears, antenna wire],
+  [#dragon(size: 16pt) `dragon`], [green], [dark-green (horns)], [light-green], [gold whiskers, segmented body],
+  [#paddler(size: 16pt) `paddler`], [brown], [dark-brown], [tan (belly)], [bear ears, red paddle],
+  [#chaser(size: 16pt) `chaser`], [medium], [red], [red (shirt)], [sun-ray crown, golden emblem],
 )
 
 == Color Palette

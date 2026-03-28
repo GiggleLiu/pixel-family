@@ -323,3 +323,194 @@
   shirt: rgb("#455a64"),
   pants: pants-black,
 ) = _char-box(size, baseline, sentinel-data, sentinel-colors(skin, hair, shirt, pants))
+
+// === Character Definitions (Batch 5 — Community, bust/portrait) ===
+
+#import "characters/batch-5-community.typ": *
+
+/// Alien: big brain dome, glowing green eyes (inspired by GiggleLiu)
+/// -> content (inline)
+#let alien(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#a8c8e8"),
+  hair: rgb("#6a8cba"),
+  shirt: rgb("#f0f0f0"),
+  pants: pants-black,
+) = _char-box(size, baseline, alien-data, alien-colors(skin, hair, shirt, pants))
+
+/// Seraphim: fiery crown, eye-covered body, folded wings (inspired by RJG)
+/// -> content (inline)
+#let seraphim(
+  size: 1em,
+  baseline: auto,
+  skin: skin-light,
+  hair: rgb("#fff3b0"),
+  shirt: rgb("#c0392b"),
+  pants: rgb("#8b0000"),
+) = _char-box(size, baseline, seraphim-data, seraphim-colors(skin, hair, shirt, pants))
+
+/// Shamir: vertically split in two halves (inspired by ShawnAn)
+/// -> content (inline)
+#let shamir(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-blue,
+  pants: pants-black,
+) = _char-box(size, baseline, shamir-data, shamir-colors(skin, hair, shirt, pants))
+
+/// Steve: longer hair with glasses, teal shirt (inspired by Zhongyi)
+/// -> content (inline)
+#let steve(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: rgb("#008080"),
+  pants: rgb("#6a0dad"),
+) = _char-box(size, baseline, steve-data, steve-colors(skin, hair, shirt, pants))
+
+/// Yui: brown hair with yellow hairclips, sailor collar (inspired by Yui)
+/// -> content (inline)
+#let yui(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#8b5a2b"),
+  shirt: shirt-white,
+  pants: pants-black,
+) = _char-box(size, baseline, yui-data, yui-colors(skin, hair, shirt, pants))
+
+/// Logic: gate-shaped head, LED eyes, circuit-trace body (inspired by Hongkuan)
+/// -> content (inline)
+#let logic(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#b0b0b0"),
+  hair: rgb("#555555"),
+  shirt: rgb("#2c3e50"),
+  pants: pants-black,
+) = _char-box(size, baseline, logic-data, logic-colors(skin, hair, shirt, pants))
+
+/// Tabby: chonky orange cat, half-closed happy eyes (inspired by Patrick)
+/// -> content (inline)
+#let tabby(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#e8932f"),
+  hair: rgb("#c06a1a"),
+  shirt: rgb("#ffe0b2"),
+  pants: pants-black,
+) = _char-box(size, baseline, tabby-data, tabby-colors(skin, hair, shirt, pants))
+
+/// Schrodinger: half-solid half-ghostly cat (inspired by GuoyiZhu)
+/// -> content (inline)
+#let schrodinger(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#555577"),
+  hair: rgb("#333355"),
+  shirt: rgb("#7777aa"),
+  pants: pants-black,
+) = _char-box(size, baseline, schrodinger-data, schrodinger-colors(skin, hair, shirt, pants))
+
+/// Enaga: maximum fluffball Shima Enaga bird (inspired by hmyuuu)
+/// -> content (inline)
+#let enaga(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#fafafa"),
+  hair: rgb("#555555"),
+  shirt: rgb("#e8e8e8"),
+  pants: pants-black,
+) = _char-box(size, baseline, enaga-data, enaga-colors(skin, hair, shirt, pants))
+
+/// Noir: black cat with wind-blown red scarf (inspired by xuanzhao)
+/// -> content (inline)
+#let noir(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#1a1a1a"),
+  hair: rgb("#333333"),
+  shirt: rgb("#e74c3c"),
+  pants: pants-black,
+) = _char-box(size, baseline, noir-data, noir-colors(skin, hair, shirt, pants))
+
+/// Milady: bob-cut hair, headphones, cyber glow (inspired by Qingyun)
+/// -> content (inline)
+#let milady(
+  size: 1em,
+  baseline: auto,
+  skin: skin-light,
+  hair: rgb("#1a1a2e"),
+  shirt: rgb("#1a1a2e"),
+  pants: pants-black,
+) = _char-box(size, baseline, milady-data, milady-colors(skin, hair, shirt, pants))
+
+/// Tigris: white tiger, black stripes, blue eyes (inspired by YushengZhao)
+/// -> content (inline)
+#let tigris(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#f5f5f5"),
+  hair: hair-black,
+  shirt: rgb("#e8e8e8"),
+  pants: rgb("#555555"),
+) = _char-box(size, baseline, tigris-data, tigris-colors(skin, hair, shirt, pants))
+
+/// Porcellum: royal piglet with gold crown and bowtie (inspired by Han Wang)
+/// -> content (inline)
+#let porcellum(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#ffb6c1"),
+  hair: rgb("#e8909a"),
+  shirt: rgb("#ffe4e1"),
+  pants: pants-black,
+) = _char-box(size, baseline, porcellum-data, porcellum-colors(skin, hair, shirt, pants))
+
+/// Lain: bear-suit hoodie, antenna wire (inspired by longli zheng)
+/// -> content (inline)
+#let lain(
+  size: 1em,
+  baseline: auto,
+  skin: skin-light,
+  hair: hair-brown,
+  shirt: rgb("#8b7355"),
+  pants: pants-black,
+) = _char-box(size, baseline, lain-data, lain-colors(skin, hair, shirt, pants))
+
+/// Dragon: eastern dragon head, curved horns, gold whiskers (inspired by Yuqing)
+/// -> content (inline)
+#let dragon(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#2e7d32"),
+  hair: rgb("#1b5e20"),
+  shirt: rgb("#a5d6a7"),
+  pants: pants-black,
+) = _char-box(size, baseline, dragon-data, dragon-colors(skin, hair, shirt, pants))
+
+/// Paddler: brown bear with ping-pong paddle (inspired by Guanhua)
+/// -> content (inline)
+#let paddler(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#8b6914"),
+  hair: rgb("#654321"),
+  shirt: rgb("#d2b48c"),
+  pants: pants-black,
+) = _char-box(size, baseline, paddler-data, paddler-colors(skin, hair, shirt, pants))
+
+/// Chaser: solar crown, sun-ray spikes, golden emblem (inspired by zhaohui)
+/// -> content (inline)
+#let chaser(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#c6865c"),
+  hair: rgb("#c73e1d"),
+  shirt: rgb("#e74c3c"),
+  pants: pants-black,
+) = _char-box(size, baseline, chaser-data, chaser-colors(skin, hair, shirt, pants))

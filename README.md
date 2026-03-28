@@ -35,6 +35,31 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/nova.svg" width="64" alt="Nova robot character"><br><b>Nova</b><br>The Sleek AI</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/sentinel.svg" width="64" alt="Sentinel robot character"><br><b>Sentinel</b><br>The Guardian</td>
 </tr>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/alien.svg" width="64" alt="Alien character"><br><b>Alien</b><br>The Big Brain</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/seraphim.svg" width="64" alt="Seraphim character"><br><b>Seraphim</b><br>The All-Seeing</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/shamir.svg" width="64" alt="Shamir character"><br><b>Shamir</b><br>The Splitter</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/steve.svg" width="64" alt="Steve character"><br><b>Steve</b><br>The Bespectacled</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/yui.svg" width="64" alt="Yui character"><br><b>Yui</b><br>The Guitarist</td>
+</tr>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/logic.svg" width="64" alt="Logic character"><br><b>Logic</b><br>The Gate</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/tabby.svg" width="64" alt="Tabby character"><br><b>Tabby</b><br>The Chonky Cat</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/schrodinger.svg" width="64" alt="Schrodinger character"><br><b>Schrodinger</b><br>The Quantum Cat</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/enaga.svg" width="64" alt="Enaga character"><br><b>Enaga</b><br>The Fluffball</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/noir.svg" width="64" alt="Noir character"><br><b>Noir</b><br>The Shadow Cat</td>
+</tr>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/milady.svg" width="64" alt="Milady character"><br><b>Milady</b><br>The Cyber Geek</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/tigris.svg" width="64" alt="Tigris character"><br><b>Tigris</b><br>The White Tiger</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/porcellum.svg" width="64" alt="Porcellum character"><br><b>Porcellum</b><br>The Royal Piglet</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/lain.svg" width="64" alt="Lain character"><br><b>Lain</b><br>The Wired</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/dragon.svg" width="64" alt="Dragon character"><br><b>Dragon</b><br>The Ancient</td>
+</tr>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/paddler.svg" width="64" alt="Paddler character"><br><b>Paddler</b><br>The Athlete</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/v0.2.0/images/chaser.svg" width="64" alt="Chaser character"><br><b>Chaser</b><br>The Sun Chaser</td>
+</tr>
 </table>
 
 Their names come from the cast of cryptography: Alice and Bob exchange secret messages, Eve eavesdrops, Frank forges signatures, Grace certifies keys, Trent arbitrates, Mallory attacks, and Victor verifies.

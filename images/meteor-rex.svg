@@ -1,0 +1,14 @@
+<svg class="typst-doc" viewBox="0 0 128 128" width="128pt" height="128pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml">
+    <g>
+        <g class="typst-group">
+            <g>
+                <path class="typst-shape" fill="#ff5722" fill-rule="nonzero" d="M 0 0m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 0 8 h 8 v 8 h -8 Z m 16 8 h 8 v 8 h -8 Z "/>
+                <path class="typst-shape" fill="#9e9e9e" fill-rule="nonzero" d="M 0 0m 24 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z "/>
+                <path class="typst-shape" fill="#fdd835" fill-rule="nonzero" d="M 0 0m 96 24 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m -16 8 h 8 v 8 h -8 Z m -56 24 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z "/>
+                <path class="typst-shape" fill="#fff176" fill-rule="nonzero" d="M 0 0m 96 32 h 8 v 8 h -8 Z m 16 0 h 8 v 8 h -8 Z m -24 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m -24 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m -8 8 h 8 v 8 h -8 Z m -40 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m -32 8 h 8 v 8 h -8 Z m 24 0 h 8 v 8 h -8 Z m -24 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 16 0 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m -40 8 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z m 32 0 h 8 v 8 h -8 Z m -40 8 h 8 v 8 h -8 Z m 48 0 h 8 v 8 h -8 Z "/>
+                <path class="typst-shape" fill="#000000" fill-rule="nonzero" d="M 0 0m 104 32 h 8 v 8 h -8 Z "/>
+                <path class="typst-shape" fill="#fffde7" fill-rule="nonzero" d="M 0 0m 56 72 h 8 v 8 h -8 Z m 8 0 h 8 v 8 h -8 Z "/>
+            </g>
+        </g>
+    </g>
+</svg>

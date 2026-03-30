@@ -77,3 +77,5 @@
 #align(center + horizon, alchemist(size: sz))
 #pagebreak()
 #align(center + horizon, hongyuan(size: sz))
+#pagebreak()
+#align(center + horizon, fox(size: sz))

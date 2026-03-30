@@ -61,6 +61,7 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/chaser.svg" width="64" alt="Chaser character"><br><b>Chaser</b><br>The Sun Chaser</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/alchemist.svg" width="64" alt="Alchemist character"><br><b>Alchemist</b><br>The Silicon Alchemist</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/hongyuan.svg" width="64" alt="Hong Yuan character"><br><b>Hong Yuan</b><br>The Researcher</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/fox.svg" width="64" alt="Fox character"><br><b>Fox</b><br>The Trickster</td>
 </tr>
 </table>
 

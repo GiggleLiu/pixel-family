@@ -536,3 +536,14 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = _char-box(size, baseline, hongyuan-data, hongyuan-colors(skin, hair, shirt, pants))
+
+/// Fox: orange trickster fox, pointed ears, bushy tail (prototype sqwu)
+/// -> content (inline)
+#let fox(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#e8932f"),
+  hair: rgb("#b5651d"),
+  shirt: rgb("#ffe0b2"),
+  pants: pants-black,
+) = _char-box(size, baseline, fox-data, fox-colors(skin, hair, shirt, pants))

@@ -482,3 +482,29 @@
 )
 // palette: (none, skin, hair, blouse=shirt, blazer-dark, eyes=pants, mug-brown, crystal-teal)
 #let hongyuan-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#2c3e50"), pants, rgb("#8B4513"), rgb("#00bcd4"))
+
+// ---------------------------------------------------------------------------
+// Fox (prototype sqwu) — The Trickster
+// Classic orange fox with pointed dark ears, sly eyes, cream muzzle,
+// and a bushy tail curving to the right with a cream tip.
+// ---------------------------------------------------------------------------
+#let fox-data = (
+  (0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0),
+  (0, 0, 2, 1, 2, 0, 0, 0, 0, 0, 2, 1, 2, 0, 0, 0),
+  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0),
+  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0),
+  (0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0),
+  (0, 0, 1, 1, 5, 1, 3, 3, 3, 5, 1, 1, 1, 0, 0, 0),
+  (0, 0, 0, 1, 3, 3, 3, 6, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 1, 1, 3, 3, 3, 3, 3, 1, 1, 0, 0, 0, 0),
+  (0, 0, 1, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 0, 0, 0),
+  (0, 0, 1, 1, 3, 3, 3, 3, 3, 3, 3, 1, 2, 2, 0, 0),
+  (0, 0, 0, 1, 1, 3, 3, 3, 3, 1, 1, 2, 2, 3, 0, 0),
+  (0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, fur-orange, dark-ears/tail, cream-muzzle/belly, pants, eyes=pants, black-nose)
+#let fox-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#1a1a1a"))

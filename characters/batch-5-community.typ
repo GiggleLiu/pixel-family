@@ -429,3 +429,29 @@
 )
 // palette: (none, skin, hair, shirt, pants, eyes, golden-sun/ray)
 #let chaser-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffab00"))
+
+// ---------------------------------------------------------------------------
+// Alchemist (prototype Shiqinrui Xu) — The Goggled Forger
+// Spiky wild hair, amber alchemy goggles on forehead, white lab coat,
+// glowing cyan silicon chip emblem on chest.
+// ---------------------------------------------------------------------------
+#let alchemist-data = (
+  (0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 6, 2, 2, 2, 6, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 5, 1, 1, 1, 5, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 7, 7, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 7, 7, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, coat=shirt, pants, eyes=pants, amber-goggles, cyan-chip)
+#let alchemist-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#f39c12"), rgb("#00e5ff"))

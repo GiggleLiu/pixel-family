@@ -73,3 +73,5 @@
 #align(center + horizon, paddler(size: sz))
 #pagebreak()
 #align(center + horizon, chaser(size: sz))
+#pagebreak()
+#align(center + horizon, alchemist(size: sz))

@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of thirty-five characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of thirty-six characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -444,6 +444,16 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Sunrise watching, marathon running, motivational speaking to servers.
 ]
 
+== #alchemist(size: 12pt) Alchemist --- The Silicon Alchemist
+
+#card("Alchemist", alchemist)[
+  *Signature look:* Spiky wild hair, amber alchemy goggles on forehead, white lab coat, glowing cyan silicon chip emblem. Prototype: Shiqinrui Xu.
+
+  Alchemist transmutes silicon into intelligence. Where medieval alchemists sought to turn lead into gold, this one turns sand into thought --- one wafer at a time. The goggles are not for safety; they are for seeing the molecular structure of semiconductors with the naked eye (or so the claim goes). The glowing chip on the chest is a prototype that actually works, though nobody is allowed to ask what it does.
+
+  _Hobbies:_ Growing silicon crystals, reading Paracelsus, debugging neural architectures at 3am.
+]
+
 = Usage
 
 == Installation
@@ -512,7 +522,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All thirty-five characters share the same signature:
+All thirty-six characters share the same signature:
 
 ```typst
 #let name(
@@ -568,6 +578,7 @@ All thirty-five characters share the same signature:
   [#dragon(size: 16pt) `dragon`], [green], [dark-green (horns)], [light-green], [gold whiskers, segmented body],
   [#paddler(size: 16pt) `paddler`], [brown], [dark-brown], [tan (belly)], [bear ears, red paddle],
   [#chaser(size: 16pt) `chaser`], [medium], [red], [red (shirt)], [sun-ray crown, golden emblem],
+  [#alchemist(size: 16pt) `alchemist`], [brown], [white (coat)], [black], [goggles, cyan chip emblem],
 )
 
 == Color Palette

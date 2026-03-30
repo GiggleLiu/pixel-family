@@ -514,3 +514,14 @@
   shirt: rgb("#e74c3c"),
   pants: pants-black,
 ) = _char-box(size, baseline, chaser-data, chaser-colors(skin, hair, shirt, pants))
+
+/// Alchemist: spiky hair, goggles, lab coat, cyan chip (prototype Shiqinrui Xu)
+/// -> content (inline)
+#let alchemist(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-white,
+  pants: pants-black,
+) = _char-box(size, baseline, alchemist-data, alchemist-colors(skin, hair, shirt, pants))

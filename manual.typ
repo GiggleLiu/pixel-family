@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -478,6 +478,16 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Lock-picking, social engineering, napping in sunbeams, stealing socks.
 ]
 
+== #tuxedo(size: 12pt) Tuxedo --- The Split Face
+
+#card("Tuxedo", tuxedo)[
+  *Signature look:* Half-black, half-white face split down the middle, pink inner ears, pink nose. Prototype: jiahutang.
+
+  Tuxedo sees the world in exactly two colors and refuses to compromise. The left half is midnight black; the right half is pristine white. Where other cats blend, Tuxedo draws a hard line. It sits on the boundary between light and shadow, belonging fully to neither. Alice thinks it is making a philosophical statement; Tuxedo thinks Alice is overthinking it.
+
+  _Hobbies:_ Sitting in doorways, judging from windowsills, existing in binary.
+]
+
 = Usage
 
 == Installation
@@ -546,7 +556,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All thirty-eight characters share the same signature:
+All thirty-nine characters share the same signature:
 
 ```typst
 #let name(
@@ -605,6 +615,7 @@ All thirty-eight characters share the same signature:
   [#alchemist(size: 16pt) `alchemist`], [brown], [white (coat)], [black], [goggles, cyan chip emblem],
   [#hongyuan(size: 16pt) `hongyuan`], [black], [white (blouse)], [black], [bob cut, blazer, coffee mug, crystal pin],
   [#fox(size: 16pt) `fox`], [orange], [dark-orange (ears)], [cream (belly)], [pointed ears, bushy tail, black nose],
+  [#tuxedo(size: 16pt) `tuxedo`], [black], [black (left)], [white (right)], [split face, pink ears, pink nose],
 )
 
 == Color Palette

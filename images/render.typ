@@ -79,3 +79,5 @@
 #align(center + horizon, hongyuan(size: sz))
 #pagebreak()
 #align(center + horizon, fox(size: sz))
+#pagebreak()
+#align(center + horizon, tuxedo(size: sz))

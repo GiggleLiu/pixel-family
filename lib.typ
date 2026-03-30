@@ -547,3 +547,14 @@
   shirt: rgb("#ffe0b2"),
   pants: pants-black,
 ) = _char-box(size, baseline, fox-data, fox-colors(skin, hair, shirt, pants))
+
+/// Tuxedo: split-face black and white cat (prototype jiahutang)
+/// -> content (inline)
+#let tuxedo(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#222222"),
+  hair: rgb("#1a1a1a"),
+  shirt: rgb("#f0f0f0"),
+  pants: pants-black,
+) = _char-box(size, baseline, tuxedo-data, tuxedo-colors(skin, hair, shirt, pants))

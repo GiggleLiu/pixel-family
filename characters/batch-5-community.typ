@@ -508,3 +508,29 @@
 )
 // palette: (none, fur-orange, dark-ears/tail, cream-muzzle/belly, pants, eyes=pants, black-nose)
 #let fox-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#1a1a1a"))
+
+// ---------------------------------------------------------------------------
+// Tuxedo (prototype jiahutang) — Split Face
+// Half-black, half-white cat face split down the middle.
+// Asymmetric ears, pink nose, curious expression.
+// ---------------------------------------------------------------------------
+#let tuxedo-data = (
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0),
+  (0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 4, 2, 2, 3, 3, 4, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 5, 2, 2, 3, 3, 5, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 6, 6, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 2, 2, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, -, black-fur, white-fur, inner-ear-pink, eyes, pink-nose)
+#let tuxedo-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#ffb0c0"), pants, rgb("#ff8a9e"))

@@ -63,6 +63,9 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/hongyuan.svg" width="64" alt="Hong Yuan character"><br><b>Hong Yuan</b><br>The Researcher</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/fox.svg" width="64" alt="Fox character"><br><b>Fox</b><br>The Trickster</td>
 </tr>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/tuxedo.svg" width="64" alt="Tuxedo character"><br><b>Tuxedo</b><br>The Split Face</td>
+</tr>
 </table>
 
 Their names come from the cast of cryptography: Alice and Bob exchange secret messages, Eve eavesdrops, Frank forges signatures, Grace certifies keys, Trent arbitrates, Mallory attacks, and Victor verifies.

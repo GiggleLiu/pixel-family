@@ -83,3 +83,5 @@
 #align(center + horizon, tuxedo(size: sz))
 #pagebreak()
 #align(center + horizon, climber(size: sz))
+#pagebreak()
+#align(center + horizon, sleeper(size: sz))

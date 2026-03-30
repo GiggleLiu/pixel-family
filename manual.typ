@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-one characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -498,6 +498,16 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Bouldering, reading topographic maps, collecting carabiners, brewing camp coffee at altitude.
 ]
 
+== #sleeper(size: 12pt) Sleeper --- The Napper
+
+#card("Sleeper", sleeper)[
+  *Signature look:* Floppy nightcap drooping to the right with a yellow pom-pom, closed eyes, pajama top with center buttons. Prototype: J.-T. Jin.
+
+  Sleeper has mastered the art of napping anywhere, anytime. The nightcap is not decorative --- it is load-bearing. Without it, Sleeper cannot achieve REM sleep in under four seconds, which is the current personal record. The closed eyes are not a sign of inattention; Sleeper processes more information asleep than most characters do awake. Alice once tried to wake Sleeper for an urgent key exchange; Sleeper mumbled the correct shared secret without opening an eye.
+
+  _Hobbies:_ Power napping, lucid dreaming, sleep optimization, collecting pillows from every timezone.
+]
+
 = Usage
 
 == Installation
@@ -566,7 +576,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty characters share the same signature:
+All forty-one characters share the same signature:
 
 ```typst
 #let name(
@@ -627,6 +637,7 @@ All forty characters share the same signature:
   [#fox(size: 16pt) `fox`], [orange], [dark-orange (ears)], [cream (belly)], [pointed ears, bushy tail, black nose],
   [#tuxedo(size: 16pt) `tuxedo`], [black], [black (left)], [white (right)], [split face, pink ears, pink nose],
   [#climber(size: 16pt) `climber`], [brown], [red (jacket)], [green (beanie)], [pom-pom, rope across chest],
+  [#sleeper(size: 16pt) `sleeper`], [brown], [blue (pajamas)], [navy (nightcap)], [nightcap, pom-pom, closed eyes, buttons],
 )
 
 == Color Palette

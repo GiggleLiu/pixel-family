@@ -560,3 +560,29 @@
 )
 // palette: (none, skin, hair, jacket, beanie, eyes=pants, rope-gold, pom+band-white)
 #let climber-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#c8a951"), rgb("#f0f0f0"))
+
+// ---------------------------------------------------------------------------
+// Sleeper (prototype J.-T. Jin) — Nightcap Napper variant
+// Classic sleeper: floppy nightcap drooping right with pom-pom, closed eyes
+// (horizontal dash marks), pajama top with center buttons. Peaceful napper.
+// ---------------------------------------------------------------------------
+#let sleeper-data = (
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 6, 0, 0, 0),
+  (0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0),
+  (0, 0, 0, 4, 4, 2, 2, 2, 2, 2, 4, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 5, 5, 1, 5, 5, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 1, 3, 3, 3, 3, 6, 3, 3, 3, 3, 1, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, pajamas, nightcap=pants, eyes=pants, yellow-accent)
+#let sleeper-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffd54f"))

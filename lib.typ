@@ -569,3 +569,14 @@
   shirt: shirt-red,
   pants: rgb("#2e7d32"),
 ) = _char-box(size, baseline, climber-data, climber-colors(skin, hair, shirt, pants))
+
+/// Sleeper: nightcap with pom-pom, closed eyes, pajama buttons (prototype J.-T. Jin)
+/// -> content (inline)
+#let sleeper(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-blue,
+  pants: rgb("#1a237e"),
+) = _char-box(size, baseline, sleeper-data, sleeper-colors(skin, hair, shirt, pants))

@@ -1,4 +1,4 @@
-CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel alien seraphim shamir steve yui logic tabby schrodinger enaga noir milady tigris porcellum lain dragon paddler chaser alchemist hongyuan fox tuxedo climber
+CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel alien seraphim shamir steve yui logic tabby schrodinger enaga noir milady tigris porcellum lain dragon paddler chaser alchemist hongyuan fox tuxedo climber sleeper
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
 CUR_VERSION := $(shell grep '^version' typst.toml | head -1 | sed 's/.*"\(.*\)"/\1/')
 LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/$(CUR_VERSION)
@@ -57,7 +57,8 @@ $(SVGS): images/render.typ lib.typ characters/*.typ
 	mv render-37.svg hongyuan.svg && \
 	mv render-38.svg fox.svg && \
 	mv render-39.svg tuxedo.svg && \
-	mv render-40.svg climber.svg
+	mv render-40.svg climber.svg && \
+	mv render-41.svg sleeper.svg
 
 install:
 	@mkdir -p $(LOCAL_PKG)/characters

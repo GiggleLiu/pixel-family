@@ -613,3 +613,25 @@
   shirt: rgb("#0d0d2b"),
   pants: pants-black,
 ) = _char-box(size, baseline, echo-data, echo-colors(skin, hair, shirt, pants))
+
+/// Meteor Rex: side-view running dino fleeing a meteorite (prototype Huan-Hai Zhou)
+/// -> content (inline)
+#let meteor-rex(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#fff176"),
+  hair: rgb("#fdd835"),
+  shirt: rgb("#fffde7"),
+  pants: pants-black,
+) = _char-box(size, baseline, meteor-rex-data, meteor-rex-colors(skin, hair, shirt, pants))
+
+/// Dirac: flowing hair, lab coat, wave lines on chest (prototype Xi Dai)
+/// -> content (inline)
+#let dirac(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-black,
+  shirt: shirt-white,
+  pants: pants-black,
+) = _char-box(size, baseline, dirac-data, dirac-colors(skin, hair, shirt, pants))

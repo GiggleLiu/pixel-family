@@ -664,3 +664,56 @@
 )
 // palette: (none, skin, hair, robe=shirt, -, eyes=pants, star-glow)
 #let echo-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffd740"))
+
+// ---------------------------------------------------------------------------
+// Meteor Rex (prototype Huan-Hai Zhou) — Flee variant
+// Side-view light yellow dino fleeing to the right. Grey meteorite streaks
+// from the top-left — the dino is running away from it. Running stride.
+// ---------------------------------------------------------------------------
+#let meteor-rex-data = (
+  (0, 7, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 7, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 5, 1, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 1, 3, 3, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, body, ridge, belly, -, eyes=pants, grey-meteorite, fire-trail)
+#let meteor-rex-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#9e9e9e"), rgb("#ff5722"))
+
+// ---------------------------------------------------------------------------
+// Dirac (prototype Xi Dai) — The Liquid Theorist
+// Long flowing hair draping past the face on both sides. Lab coat over shirt.
+// Diagonal wave/flow lines on chest representing liquid states.
+// Physicist themed around Dirac fermions, topological materials, and liquid states.
+// ---------------------------------------------------------------------------
+#let dirac-data = (
+  (0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0),
+  (0, 0, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0),
+  (0, 0, 2, 2, 1, 5, 1, 1, 1, 5, 1, 2, 2, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0),
+  (0, 0, 1, 4, 3, 6, 3, 3, 6, 3, 3, 4, 1, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 6, 3, 3, 6, 3, 4, 0, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 3, 6, 3, 3, 6, 4, 0, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0),
+  (0, 0, 0, 0, 4, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, shirt, lab-coat-gray, eyes=pants, wave-teal)
+#let dirac-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#cfd8dc"), pants, rgb("#00bcd4"))

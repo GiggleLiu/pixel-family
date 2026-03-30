@@ -70,6 +70,8 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/astronaut.svg" width="64" alt="Astronaut character"><br><b>Astronaut</b><br>The Interstellar</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/arpes.svg" width="64" alt="ARPES character"><br><b>ARPES</b><br>The Beamline Physicist</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/echo.svg" width="64" alt="Echo character"><br><b>Echo</b><br>The Stellar Echo</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/meteor-rex.svg" width="64" alt="Meteor Rex character"><br><b>Meteor Rex</b><br>The Last Runner</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/dirac.svg" width="64" alt="Dirac character"><br><b>Dirac</b><br>The Liquid Theorist</td>
 </tr>
 </table>
 

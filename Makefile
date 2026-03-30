@@ -1,4 +1,4 @@
-CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel alien seraphim shamir steve yui logic tabby schrodinger enaga noir milady tigris porcellum lain dragon paddler chaser alchemist hongyuan fox tuxedo climber sleeper astronaut arpes echo
+CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel alien seraphim shamir steve yui logic tabby schrodinger enaga noir milady tigris porcellum lain dragon paddler chaser alchemist hongyuan fox tuxedo climber sleeper astronaut arpes echo meteor-rex dirac
 SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
 CUR_VERSION := $(shell grep '^version' typst.toml | head -1 | sed 's/.*"\(.*\)"/\1/')
 LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/$(CUR_VERSION)
@@ -61,7 +61,9 @@ $(SVGS): images/render.typ lib.typ characters/*.typ
 	mv render-41.svg sleeper.svg && \
 	mv render-42.svg astronaut.svg && \
 	mv render-43.svg arpes.svg && \
-	mv render-44.svg echo.svg
+	mv render-44.svg echo.svg && \
+	mv render-45.svg meteor-rex.svg && \
+	mv render-46.svg dirac.svg
 
 install:
 	@mkdir -p $(LOCAL_PKG)/characters

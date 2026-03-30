@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty-four characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-six characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -544,6 +544,30 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Retracing old orbits, listening to background radiation, being faintly visible, cataloguing extinct constellations.
 ]
 
+== #meteor-rex(size: 12pt) Meteor Rex --- The Last Runner
+
+#card("Meteor Rex", meteor-rex)[
+  *Signature look:* Light yellow side-view dinosaur in full running stride, grey meteorite with orange fire trail streaking from the top-left. Prototype: Huan-Hai Zhou.
+
+  Meteor Rex has been running for sixty-five million years and has not looked back once. The meteorite behind is always there, always falling, never quite landing. The stride is wide, the tail is level, and the tiny legs blur with a determination that physics textbooks call impossible for a creature this size.
+
+  As the *last runner*, Meteor Rex represents the final sprint --- the moment between knowing the sky is wrong and the ground confirming it. Every other dinosaur stopped. Meteor Rex chose velocity. The meteorite is grey because by the time you see the color, the atmosphere has already stolen everything interesting about it.
+
+  _Hobbies:_ Outrunning extinction events, not looking up, maintaining a personal best, leaving footprints in sedimentary rock for future scientists to argue about.
+]
+
+== #dirac(size: 12pt) Dirac --- The Liquid Theorist
+
+#card("Dirac", dirac)[
+  *Signature look:* Long dark hair draping past the face on both sides, white shirt under a gray lab coat, two diagonal teal wave lines flowing across the chest. Prototype: Xi Dai.
+
+  Dirac works at the boundary where topology meets liquid. The flowing hair is not a style choice --- it is what happens when you spend fourteen-hour days in a building where the air conditioning was sacrificed to keep the compute cluster cool. The lab coat is gray because white coats turn gray after enough encounters with whiteboard markers and instant noodle broth.
+
+  As the *liquid theorist*, Dirac studies Dirac fermions in topological materials and the strange things that happen when electronic states flow like a liquid. The teal wave lines on the coat are from a diagram that was supposed to be on paper but ended up on the lapel during a late-night derivation. The coat has not been washed since, because the diagram turned out to be correct.
+
+  _Hobbies:_ Deriving dispersion relations on any flat surface, collecting band structure plots, arguing about topological invariants, drinking tea at exactly the temperature where it stops being enjoyable.
+]
+
 = Usage
 
 == Installation
@@ -612,7 +636,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty-four characters share the same signature:
+All forty-six characters share the same signature:
 
 ```typst
 #let name(
@@ -677,6 +701,8 @@ All forty-four characters share the same signature:
   [#astronaut(size: 16pt) `astronaut`], [silver (helmet)], [white (suit)], [black], [fishbowl helmet, gold visor, neck ring, patch],
   [#arpes(size: 16pt) `arpes`], [dark-brown], [white (coat)], [navy (inner)], [UV goggles, teal spectral pin],
   [#echo(size: 16pt) `echo`], [midnight], [dark (robe)], [black], [star halo, constellation dots],
+  [#meteor-rex(size: 16pt) `meteor-rex`], [gold (ridge)], [light-yellow (body)], [cream (belly)], [side-view, running, grey meteorite, fire trail],
+  [#dirac(size: 16pt) `dirac`], [black], [white (shirt)], [black], [flowing hair, gray lab coat, teal wave lines],
 )
 
 == Color Palette

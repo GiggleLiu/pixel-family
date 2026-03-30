@@ -91,3 +91,7 @@
 #align(center + horizon, arpes(size: sz))
 #pagebreak()
 #align(center + horizon, echo(size: sz))
+#pagebreak()
+#align(center + horizon, meteor-rex(size: sz))
+#pagebreak()
+#align(center + horizon, dirac(size: sz))

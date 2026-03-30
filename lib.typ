@@ -635,3 +635,14 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = _char-box(size, baseline, dirac-data, dirac-colors(skin, hair, shirt, pants))
+
+/// Split-Phase: vertically split hair+shirt, golden domain wall line (prototype Shangqiang Ning)
+/// -> content (inline)
+#let split-phase(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#2c1654"),
+  shirt: rgb("#1a237e"),
+  pants: pants-black,
+) = _char-box(size, baseline, split-phase-data, split-phase-colors(skin, hair, shirt, pants))

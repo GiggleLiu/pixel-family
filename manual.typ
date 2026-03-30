@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt) #split-phase(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty-six characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-seven characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -568,6 +568,18 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Deriving dispersion relations on any flat surface, collecting band structure plots, arguing about topological invariants, drinking tea at exactly the temperature where it stops being enjoyable.
 ]
 
+== #split-phase(size: 12pt) Split-Phase --- The Domain Wall
+
+#card("Split-Phase", split-phase)[
+  *Signature look:* Hair split vertically --- dark indigo on the left, cyan on the right --- with a golden line running down the center. Shirt mirrors the split: navy left, sky-blue right, divided by the same golden seam. Prototype: Shangqiang Ning.
+
+  Split-Phase lives at the boundary. Not metaphorically --- literally at the interface between two ordered domains. The hair and clothing are not a fashion statement; they are an occupational hazard of spending too long studying decorated domain walls until the boundary decided to study back. The golden line is not a zipper. It is a topological defect, and it is load-bearing.
+
+  As the *domain wall*, Split-Phase mediates between regions that would rather not talk to each other. When two phases disagree, Split-Phase stands in the gap, decorated with symmetry-protected degrees of freedom that nobody asked for but everyone needs. The left side is always certain; the right side is always certain; the middle is where the interesting physics happens.
+
+  _Hobbies:_ Drawing phase diagrams on napkins, arguing about boundary conditions, collecting order parameters, standing exactly halfway through every doorway.
+]
+
 = Usage
 
 == Installation
@@ -636,7 +648,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty-six characters share the same signature:
+All forty-seven characters share the same signature:
 
 ```typst
 #let name(
@@ -703,6 +715,7 @@ All forty-six characters share the same signature:
   [#echo(size: 16pt) `echo`], [midnight], [dark (robe)], [black], [star halo, constellation dots],
   [#meteor-rex(size: 16pt) `meteor-rex`], [gold (ridge)], [light-yellow (body)], [cream (belly)], [side-view, running, grey meteorite, fire trail],
   [#dirac(size: 16pt) `dirac`], [black], [white (shirt)], [black], [flowing hair, gray lab coat, teal wave lines],
+  [#split-phase(size: 16pt) `split-phase`], [indigo (left)], [navy (left shirt)], [black], [split hair+shirt, golden domain wall line, cyan right side],
 )
 
 == Color Palette

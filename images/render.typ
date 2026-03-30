@@ -95,3 +95,5 @@
 #align(center + horizon, meteor-rex(size: sz))
 #pagebreak()
 #align(center + horizon, dirac(size: sz))
+#pagebreak()
+#align(center + horizon, split-phase(size: sz))

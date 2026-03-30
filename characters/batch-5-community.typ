@@ -717,3 +717,35 @@
 )
 // palette: (none, skin, hair, shirt, lab-coat-gray, eyes=pants, wave-teal)
 #let dirac-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#cfd8dc"), pants, rgb("#00bcd4"))
+
+// ---------------------------------------------------------------------------
+// Split-Phase — The Domain Wall
+// Vertically split hair and shirt: left domain (dark indigo) vs right domain
+// (cyan), connected by a golden decorative line — the domain wall itself.
+// Prototype: Shangqiang Ning.
+// Color map: 0=none, 1=skin, 2=left-hair, 3=left-shirt, 4=pants, 5=eyes,
+//            6=gold wall, 7=right-hair, 8=right-shirt
+// ---------------------------------------------------------------------------
+#let split-phase-data = (
+  (0, 0, 0, 0, 0, 2, 2, 6, 7, 7, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 6, 7, 7, 7, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 6, 7, 7, 7, 7, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 6, 7, 7, 7, 7, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 7, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 5, 1, 1, 1, 5, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 8, 8, 8, 8, 0, 0, 0, 0),
+  (0, 0, 1, 3, 3, 3, 3, 6, 8, 8, 8, 8, 1, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 8, 8, 8, 8, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 8, 8, 8, 8, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 6, 8, 8, 8, 8, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 6, 8, 8, 8, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 6, 8, 8, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, left-hair, left-shirt, pants, eyes=pants, gold-wall, right-hair, right-shirt)
+#let split-phase-colors(skin, hair, shirt, pants) = (
+  none, skin, hair, shirt, pants, pants,
+  rgb("#ffd700"), rgb("#5dade2"), rgb("#85c1e9"),
+)

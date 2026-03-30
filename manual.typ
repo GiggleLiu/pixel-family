@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty-two characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-four characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -520,6 +520,30 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Collecting soil samples from exoplanets, zero-gravity origami, staring out the porthole, writing postcards that will arrive centuries late.
 ]
 
+== #arpes(size: 12pt) ARPES --- The Beamline Physicist
+
+#card("ARPES", arpes)[
+  *Signature look:* Messy dark hair, purple UV-protective goggles pushed up on forehead, white lab coat over dark shirt, teal spectral pin. Prototype: keyuan.
+
+  ARPES lives at the synchrotron. The UV goggles are not fashion --- they are the only thing between those eyes and a photon beam that could ruin a retina before lunch. The lab coat has been washed exactly twice since grad school, and the teal pin on the lapel is from the first beamline that produced a clean Fermi surface. It has never been unpinned.
+
+  As the resident angle-resolved photoemission spectroscopist, ARPES maps the electronic structure of materials one photoelectron at a time. The hemispherical analyzer hums, the sample cools to 10 K, and the band structure unfolds on screen like a secret the crystal was keeping. Murphy once asked what the data meant. ARPES talked for forty minutes. Murphy did not ask again.
+
+  _Hobbies:_ Tweaking sample alignment at 3 AM, arguing about Fermi level references, collecting band structure plots like trading cards, drinking cold coffee.
+]
+
+== #echo(size: 12pt) Echo --- The Stellar Echo
+
+#card("Echo", echo)[
+  *Signature look:* Dark hair with floating star-halo, pale ghostly skin, dark constellation robe scattered with golden star-dots. Prototype: Qiushan.
+
+  Echo is eternal in time, constantly retracing paths that others have forgotten. The star-halo is not worn --- it orbits, a ring of points that were once full stars before entropy took its cut. The constellation dots on the robe shift when no one is looking; Ina swears they mapped a different sky last Tuesday.
+
+  As the *stellar echo*, this figure exists at the boundary between signal and noise. Every message that was ever sent still reverberates somewhere, and Echo can hear all of them --- the problem is sorting the important ones from the cosmic background radiation. Astronaut once picked up Echo's frequency by accident and spent three days convinced the ship was haunted.
+
+  _Hobbies:_ Retracing old orbits, listening to background radiation, being faintly visible, cataloguing extinct constellations.
+]
+
 = Usage
 
 == Installation
@@ -588,7 +612,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty-two characters share the same signature:
+All forty-four characters share the same signature:
 
 ```typst
 #let name(
@@ -651,6 +675,8 @@ All forty-two characters share the same signature:
   [#climber(size: 16pt) `climber`], [brown], [red (jacket)], [green (beanie)], [pom-pom, rope across chest],
   [#sleeper(size: 16pt) `sleeper`], [brown], [blue (pajamas)], [navy (nightcap)], [nightcap, pom-pom, closed eyes, buttons],
   [#astronaut(size: 16pt) `astronaut`], [silver (helmet)], [white (suit)], [black], [fishbowl helmet, gold visor, neck ring, patch],
+  [#arpes(size: 16pt) `arpes`], [dark-brown], [white (coat)], [navy (inner)], [UV goggles, teal spectral pin],
+  [#echo(size: 16pt) `echo`], [midnight], [dark (robe)], [black], [star halo, constellation dots],
 )
 
 == Color Palette

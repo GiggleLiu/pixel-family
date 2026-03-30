@@ -612,3 +612,55 @@
 )
 // palette: (none, skin, helmet=hair, suit=shirt, -, eyes=pants, visor-gold, metal-silver)
 #let astronaut-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffa000"), rgb("#9e9e9e"))
+
+// ---------------------------------------------------------------------------
+// ARPES (prototype keyuan) — Beamline Physicist variant
+// Lab physicist with messy hair, UV-protective goggles pushed up on forehead,
+// white lab coat over dark shirt, teal spectral pin on coat.
+// ---------------------------------------------------------------------------
+#let arpes-data = (
+  (0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 6, 6, 2, 6, 6, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 5, 1, 1, 1, 5, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 5, 5, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 1, 3, 3, 4, 4, 4, 4, 4, 3, 3, 1, 0, 0, 0),
+  (0, 0, 0, 3, 3, 4, 4, 4, 4, 4, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 4, 7, 4, 4, 4, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, lab-coat, inner-shirt, eyes=pants, purple-UV-goggles, teal-spectral-pin)
+#let arpes-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#7b1fa2"), rgb("#00bcd4"))
+
+// ---------------------------------------------------------------------------
+// Echo (prototype Qiushan) — Stellar Echo variant
+// Star-halo floating around the head, constellation dots scattered across
+// a dark robe. A figure woven from starlight, faintly visible in the void.
+// ---------------------------------------------------------------------------
+#let echo-data = (
+  (0, 0, 0, 0, 0, 0, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 6, 2, 2, 2, 2, 2, 6, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 5, 1, 1, 1, 5, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 1, 3, 6, 3, 3, 3, 3, 6, 3, 3, 1, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 6, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 6, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 6, 3, 3, 3, 3, 6, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 6, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, robe=shirt, -, eyes=pants, star-glow)
+#let echo-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffd740"))

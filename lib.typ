@@ -591,3 +591,25 @@
   shirt: rgb("#f5f5f5"),
   pants: pants-black,
 ) = _char-box(size, baseline, astronaut-data, astronaut-colors(skin, hair, shirt, pants))
+
+/// ARPES: messy hair, UV goggles, lab coat, spectral pin (prototype keyuan)
+/// -> content (inline)
+#let arpes(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#3e2723"),
+  shirt: rgb("#ecf0f1"),
+  pants: rgb("#2c3e50"),
+) = _char-box(size, baseline, arpes-data, arpes-colors(skin, hair, shirt, pants))
+
+/// Echo: star halo, constellation robe, starlight figure (prototype Qiushan)
+/// -> content (inline)
+#let echo(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#d5c8d6"),
+  hair: rgb("#1a1a3e"),
+  shirt: rgb("#0d0d2b"),
+  pants: pants-black,
+) = _char-box(size, baseline, echo-data, echo-colors(skin, hair, shirt, pants))

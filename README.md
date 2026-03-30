@@ -68,6 +68,8 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/climber.svg" width="64" alt="Climber character"><br><b>Climber</b><br>The Summit Seeker</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/sleeper.svg" width="64" alt="Sleeper character"><br><b>Sleeper</b><br>The Napper</td>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/astronaut.svg" width="64" alt="Astronaut character"><br><b>Astronaut</b><br>The Interstellar</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/arpes.svg" width="64" alt="ARPES character"><br><b>ARPES</b><br>The Beamline Physicist</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/echo.svg" width="64" alt="Echo character"><br><b>Echo</b><br>The Stellar Echo</td>
 </tr>
 </table>
 

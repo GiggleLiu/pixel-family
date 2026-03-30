@@ -87,3 +87,7 @@
 #align(center + horizon, sleeper(size: sz))
 #pagebreak()
 #align(center + horizon, astronaut(size: sz))
+#pagebreak()
+#align(center + horizon, arpes(size: sz))
+#pagebreak()
+#align(center + horizon, echo(size: sz))

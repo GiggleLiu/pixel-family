@@ -1,3 +1,5 @@
 *.pdf
 dist/
 legacy/
+.DS_Store
+docs/plans/

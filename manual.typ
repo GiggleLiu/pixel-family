@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty-one characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-two characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -508,6 +508,18 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Power napping, lucid dreaming, sleep optimization, collecting pillows from every timezone.
 ]
 
+== #astronaut(size: 12pt) Astronaut --- The Interstellar
+
+#card("Astronaut", astronaut)[
+  *Signature look:* Round fishbowl helmet, gold-tinted visor, white spacesuit, silver neck ring and mission patch. Prototype: Shengwei.
+
+  Astronaut has logged more light-years than anyone in the neighborhood, and it shows. The gold visor is not for style --- it filters radiation from stars that have not been catalogued yet. The mission patch on the chest records every system visited; it ran out of room two galaxies ago. The fishbowl helmet contains its own atmosphere, three emergency playlists, and a photo of Earth taped to the inside where only Astronaut can see it.
+
+  The suit is always white. Not because of tradition --- because in the void between stars, white is the only color that does not lie about what it reflects.
+
+  _Hobbies:_ Collecting soil samples from exoplanets, zero-gravity origami, staring out the porthole, writing postcards that will arrive centuries late.
+]
+
 = Usage
 
 == Installation
@@ -576,7 +588,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty-one characters share the same signature:
+All forty-two characters share the same signature:
 
 ```typst
 #let name(
@@ -638,6 +650,7 @@ All forty-one characters share the same signature:
   [#tuxedo(size: 16pt) `tuxedo`], [black], [black (left)], [white (right)], [split face, pink ears, pink nose],
   [#climber(size: 16pt) `climber`], [brown], [red (jacket)], [green (beanie)], [pom-pom, rope across chest],
   [#sleeper(size: 16pt) `sleeper`], [brown], [blue (pajamas)], [navy (nightcap)], [nightcap, pom-pom, closed eyes, buttons],
+  [#astronaut(size: 16pt) `astronaut`], [silver (helmet)], [white (suit)], [black], [fishbowl helmet, gold visor, neck ring, patch],
 )
 
 == Color Palette

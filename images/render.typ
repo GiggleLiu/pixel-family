@@ -85,3 +85,5 @@
 #align(center + horizon, climber(size: sz))
 #pagebreak()
 #align(center + horizon, sleeper(size: sz))
+#pagebreak()
+#align(center + horizon, astronaut(size: sz))

@@ -586,3 +586,29 @@
 )
 // palette: (none, skin, hair, pajamas, nightcap=pants, eyes=pants, yellow-accent)
 #let sleeper-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffd54f"))
+
+// ---------------------------------------------------------------------------
+// Astronaut (prototype Shengwei) — Bubble Helmet variant
+// Classic astronaut with round fishbowl helmet, gold-tinted visor framing
+// the face, white spacesuit, silver neck ring and mission patch.
+// ---------------------------------------------------------------------------
+#let astronaut-data = (
+  (0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 6, 6, 6, 6, 6, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 1, 1, 1, 1, 1, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 1, 5, 1, 5, 1, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 6, 1, 1, 1, 1, 1, 6, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 6, 6, 6, 6, 6, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 7, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, helmet=hair, suit=shirt, -, eyes=pants, visor-gold, metal-silver)
+#let astronaut-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#ffa000"), rgb("#9e9e9e"))

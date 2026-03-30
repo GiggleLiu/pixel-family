@@ -580,3 +580,14 @@
   shirt: shirt-blue,
   pants: rgb("#1a237e"),
 ) = _char-box(size, baseline, sleeper-data, sleeper-colors(skin, hair, shirt, pants))
+
+/// Astronaut: fishbowl helmet, gold visor, white suit, mission patch (prototype Shengwei)
+/// -> content (inline)
+#let astronaut(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: rgb("#e0e0e0"),
+  shirt: rgb("#f5f5f5"),
+  pants: pants-black,
+) = _char-box(size, baseline, astronaut-data, astronaut-colors(skin, hair, shirt, pants))

@@ -525,3 +525,14 @@
   shirt: shirt-white,
   pants: pants-black,
 ) = _char-box(size, baseline, alchemist-data, alchemist-colors(skin, hair, shirt, pants))
+
+/// Hong Yuan: short bob, dark blazer, coffee mug, crystal pin (prototype Hong Yuan)
+/// -> content (inline)
+#let hongyuan(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-black,
+  shirt: shirt-white,
+  pants: pants-black,
+) = _char-box(size, baseline, hongyuan-data, hongyuan-colors(skin, hair, shirt, pants))

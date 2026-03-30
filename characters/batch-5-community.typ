@@ -455,3 +455,30 @@
 )
 // palette: (none, skin, hair, coat=shirt, pants, eyes=pants, amber-goggles, cyan-chip)
 #let alchemist-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#f39c12"), rgb("#00e5ff"))
+
+// ---------------------------------------------------------------------------
+// Hong Yuan — The Researcher
+// Short bob framing face, dark blazer over blouse, coffee mug in left hand,
+// teal crystal pin on lapel. Polished condensed matter physicist.
+// Prototype: Hong Yuan.
+// ---------------------------------------------------------------------------
+#let hongyuan-data = (
+  (0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 2, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 5, 1, 1, 1, 5, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 4, 4, 3, 3, 3, 3, 3, 4, 4, 0, 0, 0, 0),
+  (6, 6, 1, 4, 3, 3, 7, 3, 3, 3, 3, 4, 1, 0, 0, 0),
+  (6, 6, 0, 4, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0),
+  (0, 0, 0, 4, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0),
+  (0, 0, 0, 0, 4, 3, 3, 3, 3, 3, 4, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, blouse=shirt, blazer-dark, eyes=pants, mug-brown, crystal-teal)
+#let hongyuan-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#2c3e50"), pants, rgb("#8B4513"), rgb("#00bcd4"))

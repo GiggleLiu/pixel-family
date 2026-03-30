@@ -8,8 +8,8 @@ Usage: /design-character
 
 Ask the user two questions (in a single message):
 
-1. **Your name** — used as the data prefix in the batch file (e.g. `zhongyi-a-data`)
-2. **Character description** — what the character looks like, any signature features, vibe, species (human / animal / robot / fantasy)
+1. **Your name** — acknowledged as the character's prototype (creator/designer)
+2. **Character description** — can include visual appearance (signature features, vibe, species: human / animal / robot / fantasy) and/or background story (personality, occupation, hobbies, lore).
 
 **Wait for the user to answer before proceeding.**
 

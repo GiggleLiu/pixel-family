@@ -534,3 +534,29 @@
 )
 // palette: (none, -, black-fur, white-fur, inner-ear-pink, eyes, pink-nose)
 #let tuxedo-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, rgb("#ffb0c0"), pants, rgb("#ff8a9e"))
+
+// ---------------------------------------------------------------------------
+// Climber (prototype M. J.) — Summit Seeker
+// Knit beanie with white pom-pom, climbing rope coiled diagonally across chest.
+// Mountain climber with rugged outdoorsman vibe.
+// ---------------------------------------------------------------------------
+#let climber-data = (
+  (0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 5, 1, 1, 1, 5, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 1, 6, 6, 3, 3, 3, 3, 3, 3, 3, 1, 0, 0, 0),
+  (0, 0, 0, 3, 6, 6, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 6, 6, 3, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 3, 3, 3, 6, 6, 3, 3, 3, 3, 0, 0, 0, 0),
+  (0, 0, 0, 0, 3, 3, 3, 6, 3, 3, 3, 0, 0, 0, 0, 0),
+  (0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0),
+)
+// palette: (none, skin, hair, jacket, beanie, eyes=pants, rope-gold, pom+band-white)
+#let climber-colors(skin, hair, shirt, pants) = (none, skin, hair, shirt, pants, pants, rgb("#c8a951"), rgb("#f0f0f0"))

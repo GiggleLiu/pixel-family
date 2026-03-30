@@ -65,6 +65,7 @@ Inline pixel art characters for Typst, rendered as native vector graphics. Drop 
 </tr>
 <tr>
 <td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/tuxedo.svg" width="64" alt="Tuxedo character"><br><b>Tuxedo</b><br>The Split Face</td>
+<td align="center"><img src="https://raw.githubusercontent.com/GiggleLiu/pixel-family/main/images/climber.svg" width="64" alt="Climber character"><br><b>Climber</b><br>The Summit Seeker</td>
 </tr>
 </table>
 

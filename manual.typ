@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of thirty-eight characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -488,6 +488,16 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Sitting in doorways, judging from windowsills, existing in binary.
 ]
 
+== #climber(size: 12pt) Climber --- The Summit Seeker
+
+#card("Climber", climber)[
+  *Signature look:* Knit beanie with white pom-pom, golden climbing rope coiled diagonally across red jacket. Prototype: M. J.
+
+  The *summit seeker* treats every network topology like a mountain range: there is always a higher peak. Climber routes packets the hard way --- over every ridge and through every pass --- because the scenic path reveals things the tunnel never will. Bob once asked why Climber does not just use the shortcut; Climber replied that the shortcut is how you miss the avalanche warning.
+
+  _Hobbies:_ Bouldering, reading topographic maps, collecting carabiners, brewing camp coffee at altitude.
+]
+
 = Usage
 
 == Installation
@@ -556,7 +566,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All thirty-nine characters share the same signature:
+All forty characters share the same signature:
 
 ```typst
 #let name(
@@ -616,6 +626,7 @@ All thirty-nine characters share the same signature:
   [#hongyuan(size: 16pt) `hongyuan`], [black], [white (blouse)], [black], [bob cut, blazer, coffee mug, crystal pin],
   [#fox(size: 16pt) `fox`], [orange], [dark-orange (ears)], [cream (belly)], [pointed ears, bushy tail, black nose],
   [#tuxedo(size: 16pt) `tuxedo`], [black], [black (left)], [white (right)], [split face, pink ears, pink nose],
+  [#climber(size: 16pt) `climber`], [brown], [red (jacket)], [green (beanie)], [pom-pom, rope across chest],
 )
 
 == Color Palette

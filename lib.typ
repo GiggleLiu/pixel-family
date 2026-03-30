@@ -558,3 +558,14 @@
   shirt: rgb("#f0f0f0"),
   pants: pants-black,
 ) = _char-box(size, baseline, tuxedo-data, tuxedo-colors(skin, hair, shirt, pants))
+
+/// Climber: beanie with pom-pom, climbing rope across chest (prototype M. J.)
+/// -> content (inline)
+#let climber(
+  size: 1em,
+  baseline: auto,
+  skin: skin-default,
+  hair: hair-brown,
+  shirt: shirt-red,
+  pants: rgb("#2e7d32"),
+) = _char-box(size, baseline, climber-data, climber-colors(skin, hair, shirt, pants))

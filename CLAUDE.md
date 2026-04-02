@@ -39,7 +39,7 @@ There is no separate test file — `manual.typ` exercises all characters, sizes,
 
 Four batches: `batch-1-initial.typ` (full-body: Bob, Alice, Christina, Mary, Eve), `batch-2-top.typ` (bust: Frank, Grace, Trent, Mallory, Victor), `batch-3-top.typ` (bust: Ina, Murphy, Bella), `batch-4-robots.typ` (bust robots: Bolt, Pixel, Crank, Nova, Sentinel).
 
-**`images/render.typ`** — Renders each character on its own page for SVG export. Not part of the published package.
+**`images/render.typ`** — Renders all characters as a single gallery grid (`images/gallery.svg`). Not part of the published package.
 
 **`manual.typ`** — Documentation + test suite. Not part of the published package.
 
@@ -53,13 +53,11 @@ When adding new characters, follow this checklist exactly:
 
 1. Add `xxx-data` and `xxx-colors` to the appropriate `characters/batch-*.typ` (or create a new batch file)
 2. In `lib.typ`: import the batch file (if new), add a character function using `_char-box`
-3. In `images/render.typ`: add a page for the new character
-4. In `Makefile`: add the name to `CHARACTERS` and a rename line in the `$(SVGS)` target
-5. In `manual.typ`: add bio section, update title page, update API table
-6. In `README.md`: add to the gallery table
-7. Run `make test` to verify
-8. Run `make images` to generate SVGs, then **commit and push the generated SVG files in `images/`** — these are tracked in git and referenced by README and the GitHub discussion
-9. Edit the [Vote for your favorite character!](https://github.com/GiggleLiu/pixel-family/discussions/1) with `gh` to include the new characters
+3. In `images/render.typ`: add the character to the `characters` array
+4. In `manual.typ`: add bio section, update title page, update API table
+5. Run `make test` to verify
+6. Run `make images` to regenerate the gallery SVG, then **commit and push `images/gallery.svg`**
+7. Edit the [Vote for your favorite character!](https://github.com/GiggleLiu/pixel-family/discussions/1) with `gh` to include the new characters
 
 ## Key Design Decisions
 

@@ -1,5 +1,3 @@
-CHARACTERS := bob alice christina mary eve frank grace trent mallory victor ina murphy bella bolt pixel-char crank nova sentinel alien seraphim shamir steve yui logic tabby schrodinger enaga noir milady tigris porcellum lain dragon paddler chaser alchemist hongyuan fox tuxedo climber sleeper astronaut arpes echo meteor-rex dirac split-phase
-SVGS := $(addprefix images/,$(addsuffix .svg,$(CHARACTERS)))
 CUR_VERSION := $(shell grep '^version' typst.toml | head -1 | sed 's/.*"\(.*\)"/\1/')
 LOCAL_PKG := $(HOME)/.local/share/typst/packages/local/pixel-family/$(CUR_VERSION)
 PKG_FILES := lib.typ typst.toml LICENSE README.md
@@ -13,58 +11,10 @@ manual: manual.pdf
 manual.pdf: manual.typ lib.typ characters/*.typ
 	typst compile manual.typ manual.pdf
 
-images: $(SVGS)
+images: images/gallery.svg
 
-$(SVGS): images/render.typ lib.typ characters/*.typ
-	typst compile --root . --format svg images/render.typ 'images/render-{0p}.svg'
-	@cd images && \
-	mv render-01.svg bob.svg && \
-	mv render-02.svg alice.svg && \
-	mv render-03.svg christina.svg && \
-	mv render-04.svg mary.svg && \
-	mv render-05.svg eve.svg && \
-	mv render-06.svg frank.svg && \
-	mv render-07.svg grace.svg && \
-	mv render-08.svg trent.svg && \
-	mv render-09.svg mallory.svg && \
-	mv render-10.svg victor.svg && \
-	mv render-11.svg ina.svg && \
-	mv render-12.svg murphy.svg && \
-	mv render-13.svg bella.svg && \
-	mv render-14.svg bolt.svg && \
-	mv render-15.svg pixel-char.svg && \
-	mv render-16.svg crank.svg && \
-	mv render-17.svg nova.svg && \
-	mv render-18.svg sentinel.svg && \
-	mv render-19.svg alien.svg && \
-	mv render-20.svg seraphim.svg && \
-	mv render-21.svg shamir.svg && \
-	mv render-22.svg steve.svg && \
-	mv render-23.svg yui.svg && \
-	mv render-24.svg logic.svg && \
-	mv render-25.svg tabby.svg && \
-	mv render-26.svg schrodinger.svg && \
-	mv render-27.svg enaga.svg && \
-	mv render-28.svg noir.svg && \
-	mv render-29.svg milady.svg && \
-	mv render-30.svg tigris.svg && \
-	mv render-31.svg porcellum.svg && \
-	mv render-32.svg lain.svg && \
-	mv render-33.svg dragon.svg && \
-	mv render-34.svg paddler.svg && \
-	mv render-35.svg chaser.svg && \
-	mv render-36.svg alchemist.svg && \
-	mv render-37.svg hongyuan.svg && \
-	mv render-38.svg fox.svg && \
-	mv render-39.svg tuxedo.svg && \
-	mv render-40.svg climber.svg && \
-	mv render-41.svg sleeper.svg && \
-	mv render-42.svg astronaut.svg && \
-	mv render-43.svg arpes.svg && \
-	mv render-44.svg echo.svg && \
-	mv render-45.svg meteor-rex.svg && \
-	mv render-46.svg dirac.svg && \
-	mv render-47.svg split-phase.svg
+images/gallery.svg: images/render.typ lib.typ characters/*.typ
+	typst compile --root . --format svg images/render.typ images/gallery.svg
 
 install:
 	@mkdir -p $(LOCAL_PKG)/characters

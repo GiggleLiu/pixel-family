@@ -1,99 +1,33 @@
-// Render each character as a separate page for SVG export
+// Render all characters as a single gallery page for SVG export
 #import "../lib.typ": *
 
-#let sz = 128pt
-#set page(width: sz, height: sz, margin: 0pt, fill: none)
+#let sz = 64pt
+#let cols = 10
 
-#align(center + horizon, bob(size: sz))
-#pagebreak()
-#align(center + horizon, alice(size: sz))
-#pagebreak()
-#align(center + horizon, christina(size: sz))
-#pagebreak()
-#align(center + horizon, mary(size: sz))
-#pagebreak()
-#align(center + horizon, eve(size: sz))
-#pagebreak()
-#align(center + horizon, frank(size: sz))
-#pagebreak()
-#align(center + horizon, grace(size: sz))
-#pagebreak()
-#align(center + horizon, trent(size: sz))
-#pagebreak()
-#align(center + horizon, mallory(size: sz))
-#pagebreak()
-#align(center + horizon, victor(size: sz))
-#pagebreak()
-#align(center + horizon, ina(size: sz))
-#pagebreak()
-#align(center + horizon, murphy(size: sz))
-#pagebreak()
-#align(center + horizon, bella(size: sz))
-#pagebreak()
-#align(center + horizon, bolt(size: sz))
-#pagebreak()
-#align(center + horizon, pixel-char(size: sz))
-#pagebreak()
-#align(center + horizon, crank(size: sz))
-#pagebreak()
-#align(center + horizon, nova(size: sz))
-#pagebreak()
-#align(center + horizon, sentinel(size: sz))
-#pagebreak()
-#align(center + horizon, alien(size: sz))
-#pagebreak()
-#align(center + horizon, seraphim(size: sz))
-#pagebreak()
-#align(center + horizon, shamir(size: sz))
-#pagebreak()
-#align(center + horizon, steve(size: sz))
-#pagebreak()
-#align(center + horizon, yui(size: sz))
-#pagebreak()
-#align(center + horizon, logic(size: sz))
-#pagebreak()
-#align(center + horizon, tabby(size: sz))
-#pagebreak()
-#align(center + horizon, schrodinger(size: sz))
-#pagebreak()
-#align(center + horizon, enaga(size: sz))
-#pagebreak()
-#align(center + horizon, noir(size: sz))
-#pagebreak()
-#align(center + horizon, milady(size: sz))
-#pagebreak()
-#align(center + horizon, tigris(size: sz))
-#pagebreak()
-#align(center + horizon, porcellum(size: sz))
-#pagebreak()
-#align(center + horizon, lain(size: sz))
-#pagebreak()
-#align(center + horizon, dragon(size: sz))
-#pagebreak()
-#align(center + horizon, paddler(size: sz))
-#pagebreak()
-#align(center + horizon, chaser(size: sz))
-#pagebreak()
-#align(center + horizon, alchemist(size: sz))
-#pagebreak()
-#align(center + horizon, hongyuan(size: sz))
-#pagebreak()
-#align(center + horizon, fox(size: sz))
-#pagebreak()
-#align(center + horizon, tuxedo(size: sz))
-#pagebreak()
-#align(center + horizon, climber(size: sz))
-#pagebreak()
-#align(center + horizon, sleeper(size: sz))
-#pagebreak()
-#align(center + horizon, astronaut(size: sz))
-#pagebreak()
-#align(center + horizon, arpes(size: sz))
-#pagebreak()
-#align(center + horizon, echo(size: sz))
-#pagebreak()
-#align(center + horizon, meteor-rex(size: sz))
-#pagebreak()
-#align(center + horizon, dirac(size: sz))
-#pagebreak()
-#align(center + horizon, split-phase(size: sz))
+#let characters = (
+  (bob, "Bob"), (alice, "Alice"), (christina, "Christina"), (mary, "Mary"), (eve, "Eve"),
+  (frank, "Frank"), (grace, "Grace"), (trent, "Trent"), (mallory, "Mallory"), (victor, "Victor"),
+  (ina, "Ina"), (murphy, "Murphy"), (bella, "Bella"),
+  (bolt, "Bolt"), (pixel-char, "Pixel"), (crank, "Crank"), (nova, "Nova"), (sentinel, "Sentinel"),
+  (alien, "Alien"), (seraphim, "Seraphim"), (shamir, "Shamir"), (steve, "Steve"), (yui, "Yui"),
+  (logic, "Logic"), (tabby, "Tabby"), (schrodinger, "Schrödinger"), (enaga, "Enaga"), (noir, "Noir"),
+  (milady, "Milady"), (tigris, "Tigris"), (porcellum, "Porcellum"), (lain, "Lain"), (dragon, "Dragon"),
+  (paddler, "Paddler"), (chaser, "Chaser"), (alchemist, "Alchemist"), (hongyuan, "Hong Yuan"), (fox, "Fox"),
+  (tuxedo, "Tuxedo"), (climber, "Climber"), (sleeper, "Sleeper"), (astronaut, "Astronaut"), (arpes, "ARPES"),
+  (echo, "Echo"), (meteor-rex, "Meteor Rex"), (dirac, "Dirac"), (split-phase, "Split-Phase"),
+)
+
+#set page(width: auto, height: auto, margin: 10pt, fill: none)
+#set text(size: 7pt)
+
+#grid(
+  columns: (76pt,) * cols,
+  column-gutter: 4pt,
+  row-gutter: 8pt,
+  ..characters.map(((func, name)) => align(center, stack(
+    dir: ttb,
+    spacing: 4pt,
+    func(size: sz, baseline: 0pt),
+    name,
+  )))
+)

@@ -586,10 +586,10 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 
 ```typst
 // From the Typst package registry
-#import "@preview/pixel-family:0.2.0": *
+#import "@preview/pixel-family:0.2.1": *
 
 // Or locally
-#import "@local/pixel-family:0.2.0": *
+#import "@local/pixel-family:0.2.1": *
 ```
 
 == Inline Characters

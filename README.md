@@ -17,7 +17,7 @@ Their names come from the cast of cryptography: Alice and Bob exchange secret me
 ## Quick Start
 
 ```typst
-#import "@preview/pixel-family:0.2.0": *
+#import "@preview/pixel-family:0.2.1": *
 
 Hello #bob() and #alice() are talking while #eve() listens.
 ```

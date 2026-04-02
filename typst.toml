@@ -1,6 +1,6 @@
 [package]
 name = "pixel-family"
-version = "0.2.0"
+version = "0.2.1"
 entrypoint = "lib.typ"
 authors = ["GiggleLiu <@GiggleLiu>"]
 license = "MIT"

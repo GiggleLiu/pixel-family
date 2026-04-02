@@ -75,6 +75,7 @@ version bump (`make bump-version`), testing, building, git tag, GitHub release,
 and Typst Universe PR via the `GiggleLiu/packages` fork.
 
 `make bump-version V=X.Y.Z` updates version in: `typst.toml`, `lib.typ`, `manual.typ`, `README.md`.
+`make release-pkg V=X.Y.Z` rewrites the manual download link in the packaged README to point to the specific release (e.g. `releases/download/vX.Y.Z/manual.pdf`) instead of `/latest/`. The source README keeps using `/latest/`.
 `Makefile` reads version dynamically from `typst.toml` (`CUR_VERSION`).
 
 ## Reference

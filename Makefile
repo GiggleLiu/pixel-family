@@ -45,6 +45,7 @@ endif
 	@mkdir -p dist/pixel-family/$(V)/characters
 	@cp $(PKG_FILES) dist/pixel-family/$(V)/
 	@cp characters/*.typ dist/pixel-family/$(V)/characters/
+	@sed -i '' 's|releases/latest/download|releases/download/v$(V)|g' dist/pixel-family/$(V)/README.md
 	@echo "Package staged in dist/pixel-family/$(V)/"
 
 clean:

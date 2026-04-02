@@ -2,7 +2,7 @@
 #import "../lib.typ": *
 
 #let sz = 64pt
-#let cols = 10
+#let cols = 8
 
 #let characters = (
   (bob, "Bob"), (alice, "Alice"), (christina, "Christina"), (mary, "Mary"), (eve, "Eve"),
@@ -18,12 +18,12 @@
 )
 
 #set page(width: auto, height: auto, margin: 10pt, fill: none)
-#set text(size: 7pt)
+#set text(size: 11pt)
 
 #grid(
-  columns: (76pt,) * cols,
-  column-gutter: 4pt,
-  row-gutter: 8pt,
+  columns: (90pt,) * cols,
+  column-gutter: 8pt,
+  row-gutter: 12pt,
   ..characters.map(((func, name)) => align(center, stack(
     dir: ttb,
     spacing: 4pt,

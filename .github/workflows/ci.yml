@@ -17,16 +17,8 @@ jobs:
       - name: Compile manual (test)
         run: typst compile manual.typ manual.pdf
 
-      - name: Render character SVGs
-        run: typst compile --root . --format svg images/render.typ 'images/render-{0p}.svg'
-
-      - name: Verify all SVGs generated
-        run: |
-          expected=$(grep -c '#pagebreak()' images/render.typ)
-          expected=$((expected + 1))
-          count=$(ls images/render-*.svg 2>/dev/null | wc -l)
-          echo "Expected $expected SVGs, found $count"
-          [ "$count" -eq "$expected" ] || { echo "SVG count mismatch"; exit 1; }
+      - name: Render gallery SVG
+        run: typst compile --root . --format svg images/render.typ images/gallery.svg
 
       - name: Upload manual PDF
         if: github.ref == 'refs/heads/main'

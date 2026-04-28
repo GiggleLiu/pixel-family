@@ -1,3 +1,9 @@
+---
+name: design-character
+description: Design a new pixel-family character interactively. Use when the user wants to add a new character to the pixel-family package.
+disable-model-invocation: true
+---
+
 # Design a new pixel-family character
 
 Interactive workflow: gather requirements, design pixel art, name it, and integrate into the repo.

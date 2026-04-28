@@ -1,3 +1,10 @@
+---
+name: release
+description: Release a new version of pixel-family to GitHub and Typst Universe.
+argument-hint: X.Y.Z
+disable-model-invocation: true
+---
+
 # Release pixel-family
 
 Release a new version of pixel-family to GitHub and Typst Universe.

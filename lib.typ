@@ -651,35 +651,21 @@
 
 #import "characters/batch-6-horses.typ": *
 
-/// Huanma: lavender running horse in full gallop
+/// Huanma: lavender running horse with violet particle trail.
+/// `pose` selects the stride frame: "gallop" (default), "canter", or "prance".
+/// All three poses share head, neck, body, mane, and tail-base anatomy; only
+/// the legs and the trail vary, so calling the function with each pose in
+/// sequence produces a stable run-cycle animation.
 /// -> content (inline)
 #let huanma(
   size: 1em,
   baseline: auto,
+  pose: "gallop",
   skin: rgb("#e8e2f4"),
   hair: rgb("#2f2f7f"),
   shirt: rgb("#9b83ec"),
   pants: pants-black,
-) = _char-box(size, baseline, huanma-data, huanma-colors(skin, hair, shirt, pants))
-
-/// Huanma Canter: compact mid-stride running horse
-/// -> content (inline)
-#let huanma-canter(
-  size: 1em,
-  baseline: auto,
-  skin: rgb("#e8e2f4"),
-  hair: rgb("#2f2f7f"),
-  shirt: rgb("#9b83ec"),
-  pants: pants-black,
-) = _char-box(size, baseline, huanma-canter-data, huanma-colors(skin, hair, shirt, pants))
-
-/// Huanma Prance: lifted-tail sprinting horse
-/// -> content (inline)
-#let huanma-prance(
-  size: 1em,
-  baseline: auto,
-  skin: rgb("#e8e2f4"),
-  hair: rgb("#2f2f7f"),
-  shirt: rgb("#9b83ec"),
-  pants: pants-black,
-) = _char-box(size, baseline, huanma-prance-data, huanma-colors(skin, hair, shirt, pants))
+) = {
+  let data = if pose == "gallop" { huanma-gallop-data } else if pose == "canter" { huanma-canter-data } else if pose == "prance" { huanma-prance-data } else { panic("huanma: unknown pose '" + pose + "', expected one of \"gallop\", \"canter\", \"prance\"") }
+  _char-box(size, baseline, data, huanma-colors(skin, hair, shirt, pants))
+}

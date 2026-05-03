@@ -14,8 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt) #split-phase(size: 28pt)
-    #huanma(size: 28pt) #huanma-canter(size: 28pt) #huanma-prance(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt) #split-phase(size: 28pt) #huanma(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -29,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of fifty characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-eight characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -584,37 +583,23 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 == #huanma(size: 12pt) Huanma --- The Galloper
 
 #card("Huanma", huanma)[
-  *Signature look:* Pale lavender running horse with a deep indigo outline, black eye and hooves, and soft violet particle trail.
+  *Signature look:* Pale lavender running horse with a deep indigo outline and mane, black eye and hooves, and a violet particle trail kicked up behind the back hooves.
 
-  Huanma is motion compressed into sixteen pixels. Its stride stretches from nose to tail, every dark edge tuned for speed and every stray spark left behind by the last place it occupied. The body is light enough to feel spectral, but the hooves land with absolute certainty.
+  Huanma is motion compressed into sixteen pixels. The body is light enough to feel spectral, but the hooves land with absolute certainty. Three running poses share the same head, neck, mane, and tail-base, so Huanma reads as the same horse mid-stride no matter the frame:
+
+  #align(center, box(inset: 6pt, [
+    #huanma(size: 36pt, baseline: 0pt) #h(8pt)
+    #huanma(size: 36pt, baseline: 0pt, pose: "canter") #h(8pt)
+    #huanma(size: 36pt, baseline: 0pt, pose: "prance")
+    \
+    #text(size: 9pt, fill: luma(40%))[gallop --- canter --- prance]
+  ]))
+
+  Selected by passing `pose: "gallop"` (the default), `pose: "canter"`, or `pose: "prance"`. The poses are designed to cycle: calling each in sequence produces a stable run-cycle animation.
 
   As the *galloper*, Huanma carries urgent messages across the neighborhood when even Pixel is too slow. Bob trusts it with plaintext only after Alice encrypts it twice; Huanma considers the extra weight negligible.
 
   _Hobbies:_ Sprint intervals, kicking up quantum dust, arriving before the timestamp.
-]
-
-== #huanma-canter(size: 12pt) Huanma Canter --- The Mid-Strider
-
-#card("Huanma Canter", huanma-canter)[
-  *Signature look:* Compact lavender horse in mid-stride, raised foreleg, dark indigo mane and outline, black hooves.
-
-  Huanma Canter keeps the same speed in a tighter frame. The pose is coiled rather than stretched, with the neck lifted and the legs cycling under the body like a precise clock. It is the variant Christina prefers for diagrams, because the silhouette reads clearly even beside dense notation.
-
-  As the *mid-strider*, Canter handles repeatable routes: certificate deliveries, protocol drafts, and any errand where arriving exactly on beat matters more than arriving dramatically.
-
-  _Hobbies:_ Rhythm training, pacing long proofs, counting steps modulo primes.
-]
-
-== #huanma-prance(size: 12pt) Huanma Prance --- The Lifted Tail
-
-#card("Huanma Prance", huanma-prance)[
-  *Signature look:* Lavender sprinting horse with lifted tail, high stepping legs, deep indigo outline, and black hoof accents.
-
-  Huanma Prance is the showier sibling: same velocity, more flourish. The lifted tail marks a burst of confidence, while the tucked legs make the whole figure feel like it has just cleared an invisible fence. It is cleaner than the first sketch, but keeps the playful trailing energy that made the reference work.
-
-  As the *prancer*, it handles announcements, celebratory releases, and any delivery Bella wants people to notice.
-
-  _Hobbies:_ Victory laps, dramatic entrances, leaving decorative hoofprints.
 ]
 
 = Usage
@@ -685,7 +670,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All fifty characters share the same signature:
+All forty-eight characters share the same signature:
 
 ```typst
 #let name(
@@ -697,6 +682,8 @@ All fifty characters share the same signature:
   pants: color,    // pants/bottom color
 ) -> content       // inline content, like a box
 ```
+
+Huanma additionally accepts `pose: "gallop" | "canter" | "prance"` (default `"gallop"`) to select the running frame.
 
 #table(
   columns: (auto, auto, auto, auto, auto),
@@ -753,9 +740,7 @@ All fifty characters share the same signature:
   [#meteor-rex(size: 16pt) `meteor-rex`], [gold (ridge)], [light-yellow (body)], [cream (belly)], [side-view, running, grey meteorite, fire trail],
   [#dirac(size: 16pt) `dirac`], [black], [white (shirt)], [black], [flowing hair, gray lab coat, teal wave lines],
   [#split-phase(size: 16pt) `split-phase`], [indigo (left)], [navy (left shirt)], [black], [split hair+shirt, golden domain wall line, cyan right side],
-  [#huanma(size: 16pt) `huanma`], [indigo outline], [lavender body], [black], [full gallop, particle tail],
-  [#huanma-canter(size: 16pt) `huanma-canter`], [indigo outline], [lavender body], [black], [compact mid-stride, raised foreleg],
-  [#huanma-prance(size: 16pt) `huanma-prance`], [indigo outline], [lavender body], [black], [lifted tail, high stepping sprint],
+  [#huanma(size: 16pt) `huanma`], [indigo outline + mane], [lavender body], [black], [running horse, three poses via `pose:`, particle trail],
 )
 
 == Color Palette

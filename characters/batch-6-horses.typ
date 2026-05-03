@@ -1,14 +1,16 @@
-// Pixel Family - Batch 6: Running Horse Variants
-// Each character is a 16x16 grid with indexed colors.
+// Pixel Family - Batch 6: Huanma running horse poses (cute variant)
+// Three poses cycle a stride. Each pose is its own little drawing — silhouettes
+// shift between frames rather than sharing a strict anchor — kept that way for
+// the chubby/cute aesthetic.
+//
 // Index map: 0=transparent, 1=body, 2=outline/mane/tail,
 //            4=hooves, 5=eye, 6=violet trail accent.
 
 // ---------------------------------------------------------------------------
 // Huanma - Full Gallop
 // Side-view lavender horse facing right, stretched into a fast running pose.
-// Deep indigo outline, black eye/hooves, and a small violet particle trail.
 // ---------------------------------------------------------------------------
-#let huanma-data = (
+#let huanma-gallop-data = (
   (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
   (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0),
   (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 0),

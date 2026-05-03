@@ -646,3 +646,40 @@
   shirt: rgb("#1a237e"),
   pants: pants-black,
 ) = _char-box(size, baseline, split-phase-data, split-phase-colors(skin, hair, shirt, pants))
+
+// === Character Definitions (Batch 6 — Running horses) ===
+
+#import "characters/batch-6-horses.typ": *
+
+/// Huanma: lavender running horse in full gallop
+/// -> content (inline)
+#let huanma(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#e8e2f4"),
+  hair: rgb("#2f2f7f"),
+  shirt: rgb("#9b83ec"),
+  pants: pants-black,
+) = _char-box(size, baseline, huanma-data, huanma-colors(skin, hair, shirt, pants))
+
+/// Huanma Canter: compact mid-stride running horse
+/// -> content (inline)
+#let huanma-canter(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#e8e2f4"),
+  hair: rgb("#2f2f7f"),
+  shirt: rgb("#9b83ec"),
+  pants: pants-black,
+) = _char-box(size, baseline, huanma-canter-data, huanma-colors(skin, hair, shirt, pants))
+
+/// Huanma Prance: lifted-tail sprinting horse
+/// -> content (inline)
+#let huanma-prance(
+  size: 1em,
+  baseline: auto,
+  skin: rgb("#e8e2f4"),
+  hair: rgb("#2f2f7f"),
+  shirt: rgb("#9b83ec"),
+  pants: pants-black,
+) = _char-box(size, baseline, huanma-prance-data, huanma-colors(skin, hair, shirt, pants))

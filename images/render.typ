@@ -15,6 +15,7 @@
   (paddler, "Paddler"), (chaser, "Chaser"), (alchemist, "Alchemist"), (hongyuan, "Hong Yuan"), (fox, "Fox"),
   (tuxedo, "Tuxedo"), (climber, "Climber"), (sleeper, "Sleeper"), (astronaut, "Astronaut"), (arpes, "ARPES"),
   (echo, "Echo"), (meteor-rex, "Meteor Rex"), (dirac, "Dirac"), (split-phase, "Split-Phase"),
+  (huanma, "Huanma"), (huanma-canter, "Huanma Canter"), (huanma-prance, "Huanma Prance"),
 )
 
 #set page(width: auto, height: auto, margin: 10pt, fill: none)

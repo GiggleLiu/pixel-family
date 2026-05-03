@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Pixel Character GIF"
+  short_description: "Animate Typst pixel character frames"
+  default_prompt: "Use $create-pixel-character-gif to animate these Typst pixel character functions into a looping GIF."

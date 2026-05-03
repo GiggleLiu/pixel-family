@@ -653,9 +653,8 @@
 
 /// Huanma: lavender running horse with violet particle trail.
 /// `pose` selects the stride frame: "gallop" (default), "canter", or "prance".
-/// All three poses share head, neck, body, mane, and tail-base anatomy; only
-/// the legs and the trail vary, so calling the function with each pose in
-/// sequence produces a stable run-cycle animation.
+/// The poses are intentionally separate silhouettes, tuned as a cute three-frame
+/// run cycle rather than locked to a strict anatomical anchor.
 /// -> content (inline)
 #let huanma(
   size: 1em,

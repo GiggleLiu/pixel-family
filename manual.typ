@@ -585,7 +585,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
 #card("Huanma", huanma)[
   *Signature look:* Pale lavender running horse with a deep indigo outline and mane, black eye and hooves, and a violet particle trail kicked up behind the back hooves.
 
-  Huanma is motion compressed into sixteen pixels. The body is light enough to feel spectral, but the hooves land with absolute certainty. Three running poses share the same head, neck, mane, and tail-base, so Huanma reads as the same horse mid-stride no matter the frame:
+  Huanma is motion compressed into sixteen pixels. The body is light enough to feel spectral, but the hooves land with absolute certainty. Three running poses intentionally shift silhouette: stretched gallop, compact canter, and lifted prance:
 
   #align(center, box(inset: 6pt, [
     #huanma(size: 36pt, baseline: 0pt) #h(8pt)
@@ -595,7 +595,7 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
     #text(size: 9pt, fill: luma(40%))[gallop --- canter --- prance]
   ]))
 
-  Selected by passing `pose: "gallop"` (the default), `pose: "canter"`, or `pose: "prance"`. The poses are designed to cycle: calling each in sequence produces a stable run-cycle animation.
+  Selected by passing `pose: "gallop"` (the default), `pose: "canter"`, or `pose: "prance"`. The poses are designed to cycle as distinct drawings in a cute run animation.
 
   As the *galloper*, Huanma carries urgent messages across the neighborhood when even Pixel is too slow. Bob trusts it with plaintext only after Alice encrypts it twice; Huanma considers the extra weight negligible.
 

@@ -14,7 +14,7 @@
     #bolt(size: 28pt) #pixel-char(size: 28pt) #crank(size: 28pt) #nova(size: 28pt) #sentinel(size: 28pt)
     #alien(size: 28pt) #seraphim(size: 28pt) #shamir(size: 28pt) #steve(size: 28pt) #yui(size: 28pt) #logic(size: 28pt)
     #tabby(size: 28pt) #schrodinger(size: 28pt) #enaga(size: 28pt) #noir(size: 28pt) #milady(size: 28pt) #tigris(size: 28pt)
-    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt) #split-phase(size: 28pt)
+    #porcellum(size: 28pt) #lain(size: 28pt) #dragon(size: 28pt) #paddler(size: 28pt) #chaser(size: 28pt) #alchemist(size: 28pt) #hongyuan(size: 28pt) #fox(size: 28pt) #tuxedo(size: 28pt) #climber(size: 28pt) #sleeper(size: 28pt) #astronaut(size: 28pt) #arpes(size: 28pt) #echo(size: 28pt) #meteor-rex(size: 28pt) #dirac(size: 28pt) #split-phase(size: 28pt) #huanma(size: 28pt)
   ]
   #v(4pt)
   #text(size: 24pt, weight: "bold")[The Pixel Family]
@@ -28,7 +28,7 @@
 
 = Introduction
 
-The Pixel Family is a cast of forty-seven characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
+The Pixel Family is a cast of forty-eight characters drawn as 16x16 pixel art, rendered as native Typst vector graphics. They are designed to be used *inline* --- drop them into running text just like a letter or emoji.
 
 Their names are no coincidence. In the world of cryptography, Alice and Bob are the classic pair who exchange secret messages, Eve is the infamous eavesdropper, and the rest of the cast has grown from there. Here, they've settled down into a pixelated neighborhood.
 
@@ -580,6 +580,28 @@ Their names are no coincidence. In the world of cryptography, Alice and Bob are 
   _Hobbies:_ Drawing phase diagrams on napkins, arguing about boundary conditions, collecting order parameters, standing exactly halfway through every doorway.
 ]
 
+== #huanma(size: 12pt) Huanma --- The Galloper
+
+#card("Huanma", huanma)[
+  *Signature look:* Pale lavender running horse with a deep indigo outline and mane, black eye and hooves, and a violet particle trail kicked up behind the back hooves.
+
+  Huanma is motion compressed into sixteen pixels. The body is light enough to feel spectral, but the hooves land with absolute certainty. Three running poses intentionally shift silhouette: stretched gallop, compact canter, and lifted prance:
+
+  #align(center, box(inset: 6pt, [
+    #huanma(size: 36pt, baseline: 0pt) #h(8pt)
+    #huanma(size: 36pt, baseline: 0pt, pose: "canter") #h(8pt)
+    #huanma(size: 36pt, baseline: 0pt, pose: "prance")
+    \
+    #text(size: 9pt, fill: luma(40%))[gallop --- canter --- prance]
+  ]))
+
+  Selected by passing `pose: "gallop"` (the default), `pose: "canter"`, or `pose: "prance"`. The poses are designed to cycle as distinct drawings in a cute run animation.
+
+  As the *galloper*, Huanma carries urgent messages across the neighborhood when even Pixel is too slow. Bob trusts it with plaintext only after Alice encrypts it twice; Huanma considers the extra weight negligible.
+
+  _Hobbies:_ Sprint intervals, kicking up quantum dust, arriving before the timestamp.
+]
+
 = Usage
 
 == Installation
@@ -648,7 +670,7 @@ Built-in skin tone presets:
 
 == Character Functions
 
-All forty-seven characters share the same signature:
+All forty-eight characters share the same signature:
 
 ```typst
 #let name(
@@ -660,6 +682,8 @@ All forty-seven characters share the same signature:
   pants: color,    // pants/bottom color
 ) -> content       // inline content, like a box
 ```
+
+Huanma additionally accepts `pose: "gallop" | "canter" | "prance"` (default `"gallop"`) to select the running frame.
 
 #table(
   columns: (auto, auto, auto, auto, auto),
@@ -716,6 +740,7 @@ All forty-seven characters share the same signature:
   [#meteor-rex(size: 16pt) `meteor-rex`], [gold (ridge)], [light-yellow (body)], [cream (belly)], [side-view, running, grey meteorite, fire trail],
   [#dirac(size: 16pt) `dirac`], [black], [white (shirt)], [black], [flowing hair, gray lab coat, teal wave lines],
   [#split-phase(size: 16pt) `split-phase`], [indigo (left)], [navy (left shirt)], [black], [split hair+shirt, golden domain wall line, cyan right side],
+  [#huanma(size: 16pt) `huanma`], [indigo outline + mane], [lavender body], [black], [running horse, three poses via `pose:`, particle trail],
 )
 
 == Color Palette

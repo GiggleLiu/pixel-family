@@ -646,3 +646,25 @@
   shirt: rgb("#1a237e"),
   pants: pants-black,
 ) = _char-box(size, baseline, split-phase-data, split-phase-colors(skin, hair, shirt, pants))
+
+// === Character Definitions (Batch 6 — Running horses) ===
+
+#import "characters/batch-6-horses.typ": *
+
+/// Huanma: lavender running horse with violet particle trail.
+/// `pose` selects the stride frame: "gallop" (default), "canter", or "prance".
+/// The poses are intentionally separate silhouettes, tuned as a cute three-frame
+/// run cycle rather than locked to a strict anatomical anchor.
+/// -> content (inline)
+#let huanma(
+  size: 1em,
+  baseline: auto,
+  pose: "gallop",
+  skin: rgb("#e8e2f4"),
+  hair: rgb("#2f2f7f"),
+  shirt: rgb("#9b83ec"),
+  pants: pants-black,
+) = {
+  let data = if pose == "gallop" { huanma-gallop-data } else if pose == "canter" { huanma-canter-data } else if pose == "prance" { huanma-prance-data } else { panic("huanma: unknown pose '" + pose + "', expected one of \"gallop\", \"canter\", \"prance\"") }
+  _char-box(size, baseline, data, huanma-colors(skin, hair, shirt, pants))
+}
